@@ -22,6 +22,15 @@ finish-args:
   # It is rw, because the file picker requires write access by default.
   - --filesystem=home
 
+add-extensions:
+  org.freedesktop.Platform.openh264:
+    version: 2.4.1
+    directory: lib/openh264
+    add-ld-path: extra
+
+cleanup-commands:
+  - mkdir -p ${FLATPAK_DEST}/lib/openh264
+
 modules:
   - name: ruffle
     buildsystem: simple
