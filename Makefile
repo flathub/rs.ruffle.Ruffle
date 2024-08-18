@@ -39,9 +39,9 @@ regenerate-sources:
 				git fetch --depth 1 origin "$(BUILDER_TOOLS_COMMIT)" && \
 				git checkout -q FETCH_HEAD) && \
 			\
-		  	echo Installing dependencies... && \
+			echo Installing dependencies... && \
 			pip install toml aiohttp && \
-		  	echo Regenerating sources... && \
+			echo Regenerating sources... && \
 			python3 /tools/cargo/flatpak-cargo-generator.py /ruffle/Cargo.lock -o /cargo-sources.json'
 
 clean:
