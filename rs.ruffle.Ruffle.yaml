@@ -29,8 +29,8 @@ modules:
       env:
         CARGO_HOME: /run/build/ruffle/cargo
     build-commands:
-      - cargo --offline fetch --manifest-path Cargo.toml --verbose
-      - cargo --offline build --release --verbose
+      - cargo --frozen fetch --manifest-path Cargo.toml --verbose
+      - cargo --frozen build --release --verbose --package ruffle_desktop
       - install -D -T ./desktop/assets/icon.svg /app/share/icons/hicolor/scalable/apps/rs.ruffle.Ruffle.svg
       - install -D -T ./desktop/packages/linux/rs.ruffle.Ruffle.desktop /app/share/applications/rs.ruffle.Ruffle.desktop
       - install -D -T ./desktop/packages/linux/rs.ruffle.Ruffle.metainfo.xml /app/share/metainfo/rs.ruffle.Ruffle.metainfo.xml
