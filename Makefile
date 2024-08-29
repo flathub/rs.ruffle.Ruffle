@@ -20,7 +20,7 @@ install:
 		rs.ruffle.Ruffle.yaml
 
 regenerate-sources:
-	@if [[ -z "$(RUFFLE_COMMIT)" ]]; then echo "Missing RUFFLE_COMMIT"; exit 1; fi
+	@if [ -z "$(RUFFLE_COMMIT)" ]; then echo "Missing RUFFLE_COMMIT"; exit 1; fi
 	$(DOCKER_CMD) run --rm \
 		--volume=$(REPO_DIR)/cargo-sources.json:/cargo-sources.json:rw \
 		python:3.12.4 \
