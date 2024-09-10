@@ -38,8 +38,8 @@
     {
         "type": "git",
         "url": "https://github.com/polymeilex/rfd",
-        "commit": "42dcc7d61fc5e278b4ed76bb9720ba4d89266f01",
-        "dest": "flatpak-cargo/git/rfd-42dcc7d"
+        "commit": "e0e725ec9a426acf7c93d9877c41e230fcee3fac",
+        "dest": "flatpak-cargo/git/rfd-e0e725e"
     },
     {
         "type": "archive",
@@ -291,14 +291,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/anyhow/anyhow-1.0.86.crate",
-        "sha256": "b3d1d046238990b9cf5bcde22a3fb3584ee5cf65fb2765f454ed428c7a0063da",
-        "dest": "cargo/vendor/anyhow-1.0.86"
+        "url": "https://static.crates.io/crates/anyhow/anyhow-1.0.87.crate",
+        "sha256": "10f00e1f6e58a40e807377c75c6a7f97bf9044fab57816f2414e6f5f4499d7b8",
+        "dest": "cargo/vendor/anyhow-1.0.87"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"b3d1d046238990b9cf5bcde22a3fb3584ee5cf65fb2765f454ed428c7a0063da\", \"files\": {}}",
-        "dest": "cargo/vendor/anyhow-1.0.86",
+        "contents": "{\"package\": \"10f00e1f6e58a40e807377c75c6a7f97bf9044fab57816f2414e6f5f4499d7b8\", \"files\": {}}",
+        "dest": "cargo/vendor/anyhow-1.0.87",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -395,14 +395,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/ashpd/ashpd-0.8.1.crate",
-        "sha256": "dd884d7c72877a94102c3715f3b1cd09ff4fac28221add3e57cfbe25c236d093",
-        "dest": "cargo/vendor/ashpd-0.8.1"
+        "url": "https://static.crates.io/crates/ashpd/ashpd-0.9.1.crate",
+        "sha256": "bfe7e0dd0ac5a401dc116ed9f9119cf9decc625600474cb41f0fc0a0050abc9a",
+        "dest": "cargo/vendor/ashpd-0.9.1"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"dd884d7c72877a94102c3715f3b1cd09ff4fac28221add3e57cfbe25c236d093\", \"files\": {}}",
-        "dest": "cargo/vendor/ashpd-0.8.1",
+        "contents": "{\"package\": \"bfe7e0dd0ac5a401dc116ed9f9119cf9decc625600474cb41f0fc0a0050abc9a\", \"files\": {}}",
+        "dest": "cargo/vendor/ashpd-0.9.1",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -798,14 +798,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/bytemuck/bytemuck-1.17.1.crate",
-        "sha256": "773d90827bc3feecfb67fab12e24de0749aad83c74b9504ecde46237b5cd24e2",
-        "dest": "cargo/vendor/bytemuck-1.17.1"
+        "url": "https://static.crates.io/crates/bytemuck/bytemuck-1.18.0.crate",
+        "sha256": "94bbb0ad554ad961ddc5da507a12a29b14e4ae5bda06b19f575a3e6079d2e2ae",
+        "dest": "cargo/vendor/bytemuck-1.18.0"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"773d90827bc3feecfb67fab12e24de0749aad83c74b9504ecde46237b5cd24e2\", \"files\": {}}",
-        "dest": "cargo/vendor/bytemuck-1.17.1",
+        "contents": "{\"package\": \"94bbb0ad554ad961ddc5da507a12a29b14e4ae5bda06b19f575a3e6079d2e2ae\", \"files\": {}}",
+        "dest": "cargo/vendor/bytemuck-1.18.0",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -1071,27 +1071,27 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/clap/clap-4.5.16.crate",
-        "sha256": "ed6719fffa43d0d87e5fd8caeab59be1554fb028cd30edc88fc4369b17971019",
-        "dest": "cargo/vendor/clap-4.5.16"
+        "url": "https://static.crates.io/crates/clap/clap-4.5.17.crate",
+        "sha256": "3e5a21b8495e732f1b3c364c9949b201ca7bae518c502c80256c96ad79eaf6ac",
+        "dest": "cargo/vendor/clap-4.5.17"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"ed6719fffa43d0d87e5fd8caeab59be1554fb028cd30edc88fc4369b17971019\", \"files\": {}}",
-        "dest": "cargo/vendor/clap-4.5.16",
+        "contents": "{\"package\": \"3e5a21b8495e732f1b3c364c9949b201ca7bae518c502c80256c96ad79eaf6ac\", \"files\": {}}",
+        "dest": "cargo/vendor/clap-4.5.17",
         "dest-filename": ".cargo-checksum.json"
     },
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/clap_builder/clap_builder-4.5.15.crate",
-        "sha256": "216aec2b177652e3846684cbfe25c9964d18ec45234f0f5da5157b207ed1aab6",
-        "dest": "cargo/vendor/clap_builder-4.5.15"
+        "url": "https://static.crates.io/crates/clap_builder/clap_builder-4.5.17.crate",
+        "sha256": "8cf2dd12af7a047ad9d6da2b6b249759a22a7abc0f474c1dae1777afa4b21a73",
+        "dest": "cargo/vendor/clap_builder-4.5.17"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"216aec2b177652e3846684cbfe25c9964d18ec45234f0f5da5157b207ed1aab6\", \"files\": {}}",
-        "dest": "cargo/vendor/clap_builder-4.5.15",
+        "contents": "{\"package\": \"8cf2dd12af7a047ad9d6da2b6b249759a22a7abc0f474c1dae1777afa4b21a73\", \"files\": {}}",
+        "dest": "cargo/vendor/clap_builder-4.5.17",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -3401,14 +3401,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/insta/insta-1.39.0.crate",
-        "sha256": "810ae6042d48e2c9e9215043563a58a80b877bc863228a74cf10c49d4620a6f5",
-        "dest": "cargo/vendor/insta-1.39.0"
+        "url": "https://static.crates.io/crates/insta/insta-1.40.0.crate",
+        "sha256": "6593a41c7a73841868772495db7dc1e8ecab43bb5c0b6da2059246c4b506ab60",
+        "dest": "cargo/vendor/insta-1.40.0"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"810ae6042d48e2c9e9215043563a58a80b877bc863228a74cf10c49d4620a6f5\", \"files\": {}}",
-        "dest": "cargo/vendor/insta-1.39.0",
+        "contents": "{\"package\": \"6593a41c7a73841868772495db7dc1e8ecab43bb5c0b6da2059246c4b506ab60\", \"files\": {}}",
+        "dest": "cargo/vendor/insta-1.40.0",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -5480,12 +5480,12 @@
     {
         "type": "shell",
         "commands": [
-            "cp -r --reflink=auto \"flatpak-cargo/git/rfd-42dcc7d/.\" \"cargo/vendor/rfd\""
+            "cp -r --reflink=auto \"flatpak-cargo/git/rfd-e0e725e/.\" \"cargo/vendor/rfd\""
         ]
     },
     {
         "type": "inline",
-        "contents": "[[example]]\nname = \"simple\"\n\n[[example]]\nname = \"async\"\n\n[package]\nname = \"rfd\"\nversion = \"0.14.1\"\nedition = \"2021\"\nauthors = [ \"Poly <marynczak.bartlomiej@gmail.com>\",]\ndescription = \"Rusty File Dialog\"\nkeywords = [ \"file\", \"ui\", \"dialog\",]\nlicense = \"MIT\"\nrepository = \"https://github.com/PolyMeilex/rfd\"\ndocumentation = \"https://docs.rs/rfd\"\n\n[features]\ndefault = [ \"xdg-portal\", \"async-std\",]\nfile-handle-inner = []\ngtk3 = [ \"gtk-sys\", \"glib-sys\", \"gobject-sys\",]\nxdg-portal = [ \"ashpd\", \"urlencoding\", \"pollster\",]\nasync-std = [ \"ashpd?/async-std\",]\ntokio = [ \"ashpd?/tokio\",]\ncommon-controls-v6 = [ \"windows-sys/Win32_UI_Controls\",]\n\n[dev-dependencies]\nfutures = \"0.3.12\"\n\n[dependencies]\nraw-window-handle = \"0.6\"\nlog = \"0.4\"\n\n[target.\"cfg(target_os = \\\"macos\\\")\".dependencies]\nblock2 = \"0.5.0\"\nobjc2 = \"0.5.1\"\n\n[target.\"cfg(target_arch = \\\"wasm32\\\")\".dependencies]\nwasm-bindgen = \"0.2.69\"\njs-sys = \"0.3.46\"\nwasm-bindgen-futures = \"0.4.19\"\n\n[package.metadata.docs.rs]\nfeatures = [ \"file-handle-inner\",]\n\n[target.\"cfg(target_os = \\\"macos\\\")\".dependencies.objc2-foundation]\nversion = \"0.2.0\"\nfeatures = [ \"dispatch\", \"NSArray\", \"NSEnumerator\", \"NSString\", \"NSThread\", \"NSURL\",]\n\n[target.\"cfg(target_os = \\\"macos\\\")\".dependencies.objc2-app-kit]\nversion = \"0.2.0\"\nfeatures = [ \"block2\", \"NSAlert\", \"NSApplication\", \"NSButton\", \"NSControl\", \"NSOpenPanel\", \"NSPanel\", \"NSResponder\", \"NSRunningApplication\", \"NSSavePanel\", \"NSView\", \"NSWindow\",]\n\n[target.\"cfg(target_os = \\\"windows\\\")\".dependencies.windows-sys]\nversion = \"0.48\"\nfeatures = [ \"Win32_Foundation\", \"Win32_System_Com\", \"Win32_UI_Shell_Common\", \"Win32_UI_Shell\", \"Win32_UI_WindowsAndMessaging\",]\n\n[target.\"cfg(any(target_os = \\\"linux\\\", target_os = \\\"freebsd\\\", target_os = \\\"dragonfly\\\", target_os = \\\"netbsd\\\", target_os = \\\"openbsd\\\"))\".dependencies.ashpd]\nversion = \"0.8\"\noptional = true\ndefault-features = false\nfeatures = [ \"raw_handle\",]\n\n[target.\"cfg(any(target_os = \\\"linux\\\", target_os = \\\"freebsd\\\", target_os = \\\"dragonfly\\\", target_os = \\\"netbsd\\\", target_os = \\\"openbsd\\\"))\".dependencies.urlencoding]\nversion = \"2.1.0\"\noptional = true\n\n[target.\"cfg(any(target_os = \\\"linux\\\", target_os = \\\"freebsd\\\", target_os = \\\"dragonfly\\\", target_os = \\\"netbsd\\\", target_os = \\\"openbsd\\\"))\".dependencies.pollster]\nversion = \"0.3\"\noptional = true\n\n[target.\"cfg(any(target_os = \\\"linux\\\", target_os = \\\"freebsd\\\", target_os = \\\"dragonfly\\\", target_os = \\\"netbsd\\\", target_os = \\\"openbsd\\\"))\".dependencies.gtk-sys]\nversion = \"0.18.0\"\nfeatures = [ \"v3_24\",]\noptional = true\n\n[target.\"cfg(any(target_os = \\\"linux\\\", target_os = \\\"freebsd\\\", target_os = \\\"dragonfly\\\", target_os = \\\"netbsd\\\", target_os = \\\"openbsd\\\"))\".dependencies.glib-sys]\nversion = \"0.18.0\"\noptional = true\n\n[target.\"cfg(any(target_os = \\\"linux\\\", target_os = \\\"freebsd\\\", target_os = \\\"dragonfly\\\", target_os = \\\"netbsd\\\", target_os = \\\"openbsd\\\"))\".dependencies.gobject-sys]\nversion = \"0.18.0\"\noptional = true\n\n[target.\"cfg(target_arch = \\\"wasm32\\\")\".dependencies.web-sys]\nversion = \"0.3.46\"\nfeatures = [ \"Document\", \"Element\", \"HtmlInputElement\", \"HtmlButtonElement\", \"HtmlAnchorElement\", \"Window\", \"File\", \"FileList\", \"FileReader\", \"Blob\", \"BlobPropertyBag\", \"Url\",]\n",
+        "contents": "[[example]]\nname = \"simple\"\n\n[[example]]\nname = \"async\"\n\n[package]\nname = \"rfd\"\nversion = \"0.14.1\"\nedition = \"2021\"\nauthors = [ \"Poly <marynczak.bartlomiej@gmail.com>\",]\ndescription = \"Rusty File Dialog\"\nkeywords = [ \"file\", \"ui\", \"dialog\",]\nlicense = \"MIT\"\nrepository = \"https://github.com/PolyMeilex/rfd\"\ndocumentation = \"https://docs.rs/rfd\"\n\n[features]\ndefault = [ \"xdg-portal\", \"async-std\",]\nfile-handle-inner = []\ngtk3 = [ \"gtk-sys\", \"glib-sys\", \"gobject-sys\",]\nxdg-portal = [ \"ashpd\", \"urlencoding\", \"pollster\",]\nasync-std = [ \"ashpd?/async-std\",]\ntokio = [ \"ashpd?/tokio\",]\ncommon-controls-v6 = [ \"windows-sys/Win32_UI_Controls\",]\n\n[dev-dependencies]\nfutures = \"0.3.12\"\n\n[dependencies]\nraw-window-handle = \"0.6\"\nlog = \"0.4\"\n\n[target.\"cfg(target_os = \\\"macos\\\")\".dependencies]\nblock2 = \"0.5.0\"\nobjc2 = \"0.5.1\"\n\n[target.\"cfg(target_arch = \\\"wasm32\\\")\".dependencies]\nwasm-bindgen = \"0.2.69\"\njs-sys = \"0.3.46\"\nwasm-bindgen-futures = \"0.4.19\"\n\n[package.metadata.docs.rs]\nfeatures = [ \"file-handle-inner\",]\n\n[target.\"cfg(target_os = \\\"macos\\\")\".dependencies.objc2-foundation]\nversion = \"0.2.0\"\nfeatures = [ \"dispatch\", \"NSArray\", \"NSEnumerator\", \"NSString\", \"NSThread\", \"NSURL\",]\n\n[target.\"cfg(target_os = \\\"macos\\\")\".dependencies.objc2-app-kit]\nversion = \"0.2.0\"\nfeatures = [ \"block2\", \"NSAlert\", \"NSApplication\", \"NSButton\", \"NSControl\", \"NSOpenPanel\", \"NSPanel\", \"NSResponder\", \"NSRunningApplication\", \"NSSavePanel\", \"NSView\", \"NSWindow\",]\n\n[target.\"cfg(target_os = \\\"windows\\\")\".dependencies.windows-sys]\nversion = \"0.48\"\nfeatures = [ \"Win32_Foundation\", \"Win32_System_Com\", \"Win32_UI_Shell_Common\", \"Win32_UI_Shell\", \"Win32_UI_WindowsAndMessaging\",]\n\n[target.\"cfg(any(target_os = \\\"linux\\\", target_os = \\\"freebsd\\\", target_os = \\\"dragonfly\\\", target_os = \\\"netbsd\\\", target_os = \\\"openbsd\\\"))\".dependencies.ashpd]\nversion = \"0.9\"\noptional = true\ndefault-features = false\nfeatures = [ \"raw_handle\",]\n\n[target.\"cfg(any(target_os = \\\"linux\\\", target_os = \\\"freebsd\\\", target_os = \\\"dragonfly\\\", target_os = \\\"netbsd\\\", target_os = \\\"openbsd\\\"))\".dependencies.urlencoding]\nversion = \"2.1.0\"\noptional = true\n\n[target.\"cfg(any(target_os = \\\"linux\\\", target_os = \\\"freebsd\\\", target_os = \\\"dragonfly\\\", target_os = \\\"netbsd\\\", target_os = \\\"openbsd\\\"))\".dependencies.pollster]\nversion = \"0.3\"\noptional = true\n\n[target.\"cfg(any(target_os = \\\"linux\\\", target_os = \\\"freebsd\\\", target_os = \\\"dragonfly\\\", target_os = \\\"netbsd\\\", target_os = \\\"openbsd\\\"))\".dependencies.gtk-sys]\nversion = \"0.18.0\"\nfeatures = [ \"v3_24\",]\noptional = true\n\n[target.\"cfg(any(target_os = \\\"linux\\\", target_os = \\\"freebsd\\\", target_os = \\\"dragonfly\\\", target_os = \\\"netbsd\\\", target_os = \\\"openbsd\\\"))\".dependencies.glib-sys]\nversion = \"0.18.0\"\noptional = true\n\n[target.\"cfg(any(target_os = \\\"linux\\\", target_os = \\\"freebsd\\\", target_os = \\\"dragonfly\\\", target_os = \\\"netbsd\\\", target_os = \\\"openbsd\\\"))\".dependencies.gobject-sys]\nversion = \"0.18.0\"\noptional = true\n\n[target.\"cfg(target_arch = \\\"wasm32\\\")\".dependencies.web-sys]\nversion = \"0.3.46\"\nfeatures = [ \"Document\", \"Element\", \"HtmlInputElement\", \"HtmlButtonElement\", \"HtmlAnchorElement\", \"Window\", \"File\", \"FileList\", \"FileReader\", \"Blob\", \"BlobPropertyBag\", \"Url\",]\n",
         "dest": "cargo/vendor/rfd",
         "dest-filename": "Cargo.toml"
     },
@@ -5797,14 +5797,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/serde/serde-1.0.209.crate",
-        "sha256": "99fce0ffe7310761ca6bf9faf5115afbc19688edd00171d81b1bb1b116c63e09",
-        "dest": "cargo/vendor/serde-1.0.209"
+        "url": "https://static.crates.io/crates/serde/serde-1.0.210.crate",
+        "sha256": "c8e3592472072e6e22e0a54d5904d9febf8508f65fb8552499a1abc7d1078c3a",
+        "dest": "cargo/vendor/serde-1.0.210"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"99fce0ffe7310761ca6bf9faf5115afbc19688edd00171d81b1bb1b116c63e09\", \"files\": {}}",
-        "dest": "cargo/vendor/serde-1.0.209",
+        "contents": "{\"package\": \"c8e3592472072e6e22e0a54d5904d9febf8508f65fb8552499a1abc7d1078c3a\", \"files\": {}}",
+        "dest": "cargo/vendor/serde-1.0.210",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -5823,27 +5823,27 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/serde_derive/serde_derive-1.0.209.crate",
-        "sha256": "a5831b979fd7b5439637af1752d535ff49f4860c0f341d1baeb6faf0f4242170",
-        "dest": "cargo/vendor/serde_derive-1.0.209"
+        "url": "https://static.crates.io/crates/serde_derive/serde_derive-1.0.210.crate",
+        "sha256": "243902eda00fad750862fc144cea25caca5e20d615af0a81bee94ca738f1df1f",
+        "dest": "cargo/vendor/serde_derive-1.0.210"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"a5831b979fd7b5439637af1752d535ff49f4860c0f341d1baeb6faf0f4242170\", \"files\": {}}",
-        "dest": "cargo/vendor/serde_derive-1.0.209",
+        "contents": "{\"package\": \"243902eda00fad750862fc144cea25caca5e20d615af0a81bee94ca738f1df1f\", \"files\": {}}",
+        "dest": "cargo/vendor/serde_derive-1.0.210",
         "dest-filename": ".cargo-checksum.json"
     },
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/serde_json/serde_json-1.0.127.crate",
-        "sha256": "8043c06d9f82bd7271361ed64f415fe5e12a77fdb52e573e7f06a516dea329ad",
-        "dest": "cargo/vendor/serde_json-1.0.127"
+        "url": "https://static.crates.io/crates/serde_json/serde_json-1.0.128.crate",
+        "sha256": "6ff5456707a1de34e7e37f2a6fd3d3f808c318259cbd01ab6377795054b483d8",
+        "dest": "cargo/vendor/serde_json-1.0.128"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"8043c06d9f82bd7271361ed64f415fe5e12a77fdb52e573e7f06a516dea329ad\", \"files\": {}}",
-        "dest": "cargo/vendor/serde_json-1.0.127",
+        "contents": "{\"package\": \"6ff5456707a1de34e7e37f2a6fd3d3f808c318259cbd01ab6377795054b483d8\", \"files\": {}}",
+        "dest": "cargo/vendor/serde_json-1.0.128",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -7422,6 +7422,19 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
+        "url": "https://static.crates.io/crates/wayland-protocols/wayland-protocols-0.32.1.crate",
+        "sha256": "83d0f1056570486e26a3773ec633885124d79ae03827de05ba6c85f79904026c",
+        "dest": "cargo/vendor/wayland-protocols-0.32.1"
+    },
+    {
+        "type": "inline",
+        "contents": "{\"package\": \"83d0f1056570486e26a3773ec633885124d79ae03827de05ba6c85f79904026c\", \"files\": {}}",
+        "dest": "cargo/vendor/wayland-protocols-0.32.1",
+        "dest-filename": ".cargo-checksum.json"
+    },
+    {
+        "type": "archive",
+        "archive-type": "tar-gzip",
         "url": "https://static.crates.io/crates/wayland-protocols-plasma/wayland-protocols-plasma-0.2.0.crate",
         "sha256": "23803551115ff9ea9bce586860c5c5a971e360825a0309264102a9495a5ff479",
         "dest": "cargo/vendor/wayland-protocols-plasma-0.2.0"
@@ -8500,7 +8513,7 @@
     },
     {
         "type": "inline",
-        "contents": "[source.vendored-sources]\ndirectory = \"cargo/vendor\"\n\n[source.crates-io]\nreplace-with = \"vendored-sources\"\n\n[source.\"https://github.com/emilk/egui\"]\ngit = \"https://github.com/emilk/egui\"\nreplace-with = \"vendored-sources\"\nrev = \"37b1e1504db14697c39ce1c3bb5e58f4f2b819bf\"\n\n[source.\"https://github.com/ruffle-rs/rust-flash-lso\"]\ngit = \"https://github.com/ruffle-rs/rust-flash-lso\"\nreplace-with = \"vendored-sources\"\nrev = \"98679aa0cdcad5fecc5c7321b2eac35b69dbcd5f\"\n\n[source.\"https://github.com/ruffle-rs/h263-rs\"]\ngit = \"https://github.com/ruffle-rs/h263-rs\"\nreplace-with = \"vendored-sources\"\nrev = \"f0fa94c366a1d0383df99aa835add175658d6bad\"\n\n[source.\"https://github.com/ruffle-rs/jpegxr\"]\ngit = \"https://github.com/ruffle-rs/jpegxr\"\nreplace-with = \"vendored-sources\"\nrev = \"db88651220688d2883a90d5477048071507b0493\"\n\n[source.\"https://github.com/ruffle-rs/nellymoser\"]\ngit = \"https://github.com/ruffle-rs/nellymoser\"\nreplace-with = \"vendored-sources\"\nrev = \"754b1184037aa9952a907107284fb73897e26adc\"\n\n[source.\"https://github.com/ruffle-rs/nihav-vp6\"]\ngit = \"https://github.com/ruffle-rs/nihav-vp6\"\nreplace-with = \"vendored-sources\"\nrev = \"83c7e1094d603d9fc1212d39d99abb17f3a3226b\"\n\n[source.\"https://github.com/polymeilex/rfd\"]\ngit = \"https://github.com/polymeilex/rfd\"\nreplace-with = \"vendored-sources\"\nrev = \"42dcc7d61fc5e278b4ed76bb9720ba4d89266f01\"\n",
+        "contents": "[source.vendored-sources]\ndirectory = \"cargo/vendor\"\n\n[source.crates-io]\nreplace-with = \"vendored-sources\"\n\n[source.\"https://github.com/emilk/egui\"]\ngit = \"https://github.com/emilk/egui\"\nreplace-with = \"vendored-sources\"\nrev = \"37b1e1504db14697c39ce1c3bb5e58f4f2b819bf\"\n\n[source.\"https://github.com/ruffle-rs/rust-flash-lso\"]\ngit = \"https://github.com/ruffle-rs/rust-flash-lso\"\nreplace-with = \"vendored-sources\"\nrev = \"98679aa0cdcad5fecc5c7321b2eac35b69dbcd5f\"\n\n[source.\"https://github.com/ruffle-rs/h263-rs\"]\ngit = \"https://github.com/ruffle-rs/h263-rs\"\nreplace-with = \"vendored-sources\"\nrev = \"f0fa94c366a1d0383df99aa835add175658d6bad\"\n\n[source.\"https://github.com/ruffle-rs/jpegxr\"]\ngit = \"https://github.com/ruffle-rs/jpegxr\"\nreplace-with = \"vendored-sources\"\nrev = \"db88651220688d2883a90d5477048071507b0493\"\n\n[source.\"https://github.com/ruffle-rs/nellymoser\"]\ngit = \"https://github.com/ruffle-rs/nellymoser\"\nreplace-with = \"vendored-sources\"\nrev = \"754b1184037aa9952a907107284fb73897e26adc\"\n\n[source.\"https://github.com/ruffle-rs/nihav-vp6\"]\ngit = \"https://github.com/ruffle-rs/nihav-vp6\"\nreplace-with = \"vendored-sources\"\nrev = \"83c7e1094d603d9fc1212d39d99abb17f3a3226b\"\n\n[source.\"https://github.com/polymeilex/rfd\"]\ngit = \"https://github.com/polymeilex/rfd\"\nreplace-with = \"vendored-sources\"\nrev = \"e0e725ec9a426acf7c93d9877c41e230fcee3fac\"\n",
         "dest": "cargo",
         "dest-filename": "config"
     }
