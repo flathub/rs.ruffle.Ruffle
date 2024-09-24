@@ -36,12 +36,6 @@
         "dest": "flatpak-cargo/git/nihav-vp6-83c7e10"
     },
     {
-        "type": "git",
-        "url": "https://github.com/polymeilex/rfd",
-        "commit": "e0e725ec9a426acf7c93d9877c41e230fcee3fac",
-        "dest": "flatpak-cargo/git/rfd-e0e725e"
-    },
-    {
         "type": "archive",
         "archive-type": "tar-gzip",
         "url": "https://static.crates.io/crates/ab_glyph/ab_glyph-0.2.28.crate",
@@ -5535,21 +5529,16 @@
         "dest-filename": ".cargo-checksum.json"
     },
     {
-        "type": "shell",
-        "commands": [
-            "cp -r --reflink=auto \"flatpak-cargo/git/rfd-e0e725e/.\" \"cargo/vendor/rfd\""
-        ]
+        "type": "archive",
+        "archive-type": "tar-gzip",
+        "url": "https://static.crates.io/crates/rfd/rfd-0.15.0.crate",
+        "sha256": "8af382a047821a08aa6bfc09ab0d80ff48d45d8726f7cd8e44891f7cb4a4278e",
+        "dest": "cargo/vendor/rfd-0.15.0"
     },
     {
         "type": "inline",
-        "contents": "[[example]]\nname = \"simple\"\n\n[[example]]\nname = \"async\"\n\n[package]\nname = \"rfd\"\nversion = \"0.14.1\"\nedition = \"2021\"\nauthors = [ \"Poly <marynczak.bartlomiej@gmail.com>\",]\ndescription = \"Rusty File Dialog\"\nkeywords = [ \"file\", \"ui\", \"dialog\",]\nlicense = \"MIT\"\nrepository = \"https://github.com/PolyMeilex/rfd\"\ndocumentation = \"https://docs.rs/rfd\"\n\n[features]\ndefault = [ \"xdg-portal\", \"async-std\",]\nfile-handle-inner = []\ngtk3 = [ \"gtk-sys\", \"glib-sys\", \"gobject-sys\",]\nxdg-portal = [ \"ashpd\", \"urlencoding\", \"pollster\",]\nasync-std = [ \"ashpd?/async-std\",]\ntokio = [ \"ashpd?/tokio\",]\ncommon-controls-v6 = [ \"windows-sys/Win32_UI_Controls\",]\n\n[dev-dependencies]\nfutures = \"0.3.12\"\n\n[dependencies]\nraw-window-handle = \"0.6\"\nlog = \"0.4\"\n\n[target.\"cfg(target_os = \\\"macos\\\")\".dependencies]\nblock2 = \"0.5.0\"\nobjc2 = \"0.5.1\"\n\n[target.\"cfg(target_arch = \\\"wasm32\\\")\".dependencies]\nwasm-bindgen = \"0.2.69\"\njs-sys = \"0.3.46\"\nwasm-bindgen-futures = \"0.4.19\"\n\n[package.metadata.docs.rs]\nfeatures = [ \"file-handle-inner\",]\n\n[target.\"cfg(target_os = \\\"macos\\\")\".dependencies.objc2-foundation]\nversion = \"0.2.0\"\nfeatures = [ \"dispatch\", \"NSArray\", \"NSEnumerator\", \"NSString\", \"NSThread\", \"NSURL\",]\n\n[target.\"cfg(target_os = \\\"macos\\\")\".dependencies.objc2-app-kit]\nversion = \"0.2.0\"\nfeatures = [ \"block2\", \"NSAlert\", \"NSApplication\", \"NSButton\", \"NSControl\", \"NSOpenPanel\", \"NSPanel\", \"NSResponder\", \"NSRunningApplication\", \"NSSavePanel\", \"NSView\", \"NSWindow\",]\n\n[target.\"cfg(target_os = \\\"windows\\\")\".dependencies.windows-sys]\nversion = \"0.48\"\nfeatures = [ \"Win32_Foundation\", \"Win32_System_Com\", \"Win32_UI_Shell_Common\", \"Win32_UI_Shell\", \"Win32_UI_WindowsAndMessaging\",]\n\n[target.\"cfg(any(target_os = \\\"linux\\\", target_os = \\\"freebsd\\\", target_os = \\\"dragonfly\\\", target_os = \\\"netbsd\\\", target_os = \\\"openbsd\\\"))\".dependencies.ashpd]\nversion = \"0.9\"\noptional = true\ndefault-features = false\nfeatures = [ \"raw_handle\",]\n\n[target.\"cfg(any(target_os = \\\"linux\\\", target_os = \\\"freebsd\\\", target_os = \\\"dragonfly\\\", target_os = \\\"netbsd\\\", target_os = \\\"openbsd\\\"))\".dependencies.urlencoding]\nversion = \"2.1.0\"\noptional = true\n\n[target.\"cfg(any(target_os = \\\"linux\\\", target_os = \\\"freebsd\\\", target_os = \\\"dragonfly\\\", target_os = \\\"netbsd\\\", target_os = \\\"openbsd\\\"))\".dependencies.pollster]\nversion = \"0.3\"\noptional = true\n\n[target.\"cfg(any(target_os = \\\"linux\\\", target_os = \\\"freebsd\\\", target_os = \\\"dragonfly\\\", target_os = \\\"netbsd\\\", target_os = \\\"openbsd\\\"))\".dependencies.gtk-sys]\nversion = \"0.18.0\"\nfeatures = [ \"v3_24\",]\noptional = true\n\n[target.\"cfg(any(target_os = \\\"linux\\\", target_os = \\\"freebsd\\\", target_os = \\\"dragonfly\\\", target_os = \\\"netbsd\\\", target_os = \\\"openbsd\\\"))\".dependencies.glib-sys]\nversion = \"0.18.0\"\noptional = true\n\n[target.\"cfg(any(target_os = \\\"linux\\\", target_os = \\\"freebsd\\\", target_os = \\\"dragonfly\\\", target_os = \\\"netbsd\\\", target_os = \\\"openbsd\\\"))\".dependencies.gobject-sys]\nversion = \"0.18.0\"\noptional = true\n\n[target.\"cfg(target_arch = \\\"wasm32\\\")\".dependencies.web-sys]\nversion = \"0.3.46\"\nfeatures = [ \"Document\", \"Element\", \"HtmlInputElement\", \"HtmlButtonElement\", \"HtmlAnchorElement\", \"Window\", \"File\", \"FileList\", \"FileReader\", \"Blob\", \"BlobPropertyBag\", \"Url\",]\n",
-        "dest": "cargo/vendor/rfd",
-        "dest-filename": "Cargo.toml"
-    },
-    {
-        "type": "inline",
-        "contents": "{\"package\": null, \"files\": {}}",
-        "dest": "cargo/vendor/rfd",
+        "contents": "{\"package\": \"8af382a047821a08aa6bfc09ab0d80ff48d45d8726f7cd8e44891f7cb4a4278e\", \"files\": {}}",
+        "dest": "cargo/vendor/rfd-0.15.0",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -8531,7 +8520,7 @@
     },
     {
         "type": "inline",
-        "contents": "[source.vendored-sources]\ndirectory = \"cargo/vendor\"\n\n[source.crates-io]\nreplace-with = \"vendored-sources\"\n\n[source.\"https://github.com/emilk/egui\"]\ngit = \"https://github.com/emilk/egui\"\nreplace-with = \"vendored-sources\"\nrev = \"06f709481a4e5e74bec961544c77e9afcae265db\"\n\n[source.\"https://github.com/ruffle-rs/rust-flash-lso\"]\ngit = \"https://github.com/ruffle-rs/rust-flash-lso\"\nreplace-with = \"vendored-sources\"\nrev = \"98679aa0cdcad5fecc5c7321b2eac35b69dbcd5f\"\n\n[source.\"https://github.com/ruffle-rs/h263-rs\"]\ngit = \"https://github.com/ruffle-rs/h263-rs\"\nreplace-with = \"vendored-sources\"\nrev = \"f0fa94c366a1d0383df99aa835add175658d6bad\"\n\n[source.\"https://github.com/ruffle-rs/jpegxr\"]\ngit = \"https://github.com/ruffle-rs/jpegxr\"\nreplace-with = \"vendored-sources\"\nrev = \"71dbe614c02c30a2e9fd1e9e2e7c7a749abe2798\"\n\n[source.\"https://github.com/ruffle-rs/nellymoser\"]\ngit = \"https://github.com/ruffle-rs/nellymoser\"\nreplace-with = \"vendored-sources\"\nrev = \"754b1184037aa9952a907107284fb73897e26adc\"\n\n[source.\"https://github.com/ruffle-rs/nihav-vp6\"]\ngit = \"https://github.com/ruffle-rs/nihav-vp6\"\nreplace-with = \"vendored-sources\"\nrev = \"83c7e1094d603d9fc1212d39d99abb17f3a3226b\"\n\n[source.\"https://github.com/polymeilex/rfd\"]\ngit = \"https://github.com/polymeilex/rfd\"\nreplace-with = \"vendored-sources\"\nrev = \"e0e725ec9a426acf7c93d9877c41e230fcee3fac\"\n",
+        "contents": "[source.vendored-sources]\ndirectory = \"cargo/vendor\"\n\n[source.crates-io]\nreplace-with = \"vendored-sources\"\n\n[source.\"https://github.com/emilk/egui\"]\ngit = \"https://github.com/emilk/egui\"\nreplace-with = \"vendored-sources\"\nrev = \"06f709481a4e5e74bec961544c77e9afcae265db\"\n\n[source.\"https://github.com/ruffle-rs/rust-flash-lso\"]\ngit = \"https://github.com/ruffle-rs/rust-flash-lso\"\nreplace-with = \"vendored-sources\"\nrev = \"98679aa0cdcad5fecc5c7321b2eac35b69dbcd5f\"\n\n[source.\"https://github.com/ruffle-rs/h263-rs\"]\ngit = \"https://github.com/ruffle-rs/h263-rs\"\nreplace-with = \"vendored-sources\"\nrev = \"f0fa94c366a1d0383df99aa835add175658d6bad\"\n\n[source.\"https://github.com/ruffle-rs/jpegxr\"]\ngit = \"https://github.com/ruffle-rs/jpegxr\"\nreplace-with = \"vendored-sources\"\nrev = \"71dbe614c02c30a2e9fd1e9e2e7c7a749abe2798\"\n\n[source.\"https://github.com/ruffle-rs/nellymoser\"]\ngit = \"https://github.com/ruffle-rs/nellymoser\"\nreplace-with = \"vendored-sources\"\nrev = \"754b1184037aa9952a907107284fb73897e26adc\"\n\n[source.\"https://github.com/ruffle-rs/nihav-vp6\"]\ngit = \"https://github.com/ruffle-rs/nihav-vp6\"\nreplace-with = \"vendored-sources\"\nrev = \"83c7e1094d603d9fc1212d39d99abb17f3a3226b\"\n",
         "dest": "cargo",
         "dest-filename": "config"
     }
