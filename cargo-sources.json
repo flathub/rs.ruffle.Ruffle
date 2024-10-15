@@ -747,14 +747,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/bytemuck/bytemuck-1.18.0.crate",
-        "sha256": "94bbb0ad554ad961ddc5da507a12a29b14e4ae5bda06b19f575a3e6079d2e2ae",
-        "dest": "cargo/vendor/bytemuck-1.18.0"
+        "url": "https://static.crates.io/crates/bytemuck/bytemuck-1.19.0.crate",
+        "sha256": "8334215b81e418a0a7bdb8ef0849474f40bb10c8b71f1c4ed315cff49f32494d",
+        "dest": "cargo/vendor/bytemuck-1.19.0"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"94bbb0ad554ad961ddc5da507a12a29b14e4ae5bda06b19f575a3e6079d2e2ae\", \"files\": {}}",
-        "dest": "cargo/vendor/bytemuck-1.18.0",
+        "contents": "{\"package\": \"8334215b81e418a0a7bdb8ef0849474f40bb10c8b71f1c4ed315cff49f32494d\", \"files\": {}}",
+        "dest": "cargo/vendor/bytemuck-1.19.0",
         "dest-filename": ".cargo-checksum.json"
     },
     {
