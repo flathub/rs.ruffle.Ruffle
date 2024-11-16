@@ -1,6 +1,12 @@
 [
     {
         "type": "git",
+        "url": "https://github.com/emilk/egui",
+        "commit": "3c7ad0ee12a794fa81882e8364e3f25e5d8c11d6",
+        "dest": "flatpak-cargo/git/egui-3c7ad0e"
+    },
+    {
+        "type": "git",
         "url": "https://github.com/ruffle-rs/rust-flash-lso",
         "commit": "cbd18e1a79cf902f8ff1d2bf551801c4021b3be6",
         "dest": "flatpak-cargo/git/rust-flash-lso-cbd18e1"
@@ -266,14 +272,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/anyhow/anyhow-1.0.91.crate",
-        "sha256": "c042108f3ed77fd83760a5fd79b53be043192bb3b9dba91d8c574c0ada7850c8",
-        "dest": "cargo/vendor/anyhow-1.0.91"
+        "url": "https://static.crates.io/crates/anyhow/anyhow-1.0.93.crate",
+        "sha256": "4c95c10ba0b00a02636238b814946408b1322d5ac4760326e6fb8ec956d85775",
+        "dest": "cargo/vendor/anyhow-1.0.93"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"c042108f3ed77fd83760a5fd79b53be043192bb3b9dba91d8c574c0ada7850c8\", \"files\": {}}",
-        "dest": "cargo/vendor/anyhow-1.0.91",
+        "contents": "{\"package\": \"4c95c10ba0b00a02636238b814946408b1322d5ac4760326e6fb8ec956d85775\", \"files\": {}}",
+        "dest": "cargo/vendor/anyhow-1.0.93",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -435,14 +441,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/async-io/async-io-2.3.4.crate",
-        "sha256": "444b0228950ee6501b3568d3c93bf1176a1fdbc3b758dcd9475046d30f4dc7e8",
-        "dest": "cargo/vendor/async-io-2.3.4"
+        "url": "https://static.crates.io/crates/async-io/async-io-2.4.0.crate",
+        "sha256": "43a2b323ccce0a1d90b449fd71f2a06ca7faa7c54c2751f06c9bd851fc061059",
+        "dest": "cargo/vendor/async-io-2.4.0"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"444b0228950ee6501b3568d3c93bf1176a1fdbc3b758dcd9475046d30f4dc7e8\", \"files\": {}}",
-        "dest": "cargo/vendor/async-io-2.3.4",
+        "contents": "{\"package\": \"43a2b323ccce0a1d90b449fd71f2a06ca7faa7c54c2751f06c9bd851fc061059\", \"files\": {}}",
+        "dest": "cargo/vendor/async-io-2.4.0",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -604,27 +610,27 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/bit-set/bit-set-0.6.0.crate",
-        "sha256": "f0481a0e032742109b1133a095184ee93d88f3dc9e0d28a5d033dc77a073f44f",
-        "dest": "cargo/vendor/bit-set-0.6.0"
+        "url": "https://static.crates.io/crates/bit-set/bit-set-0.8.0.crate",
+        "sha256": "08807e080ed7f9d5433fa9b275196cfc35414f66a0c79d864dc51a0d825231a3",
+        "dest": "cargo/vendor/bit-set-0.8.0"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"f0481a0e032742109b1133a095184ee93d88f3dc9e0d28a5d033dc77a073f44f\", \"files\": {}}",
-        "dest": "cargo/vendor/bit-set-0.6.0",
+        "contents": "{\"package\": \"08807e080ed7f9d5433fa9b275196cfc35414f66a0c79d864dc51a0d825231a3\", \"files\": {}}",
+        "dest": "cargo/vendor/bit-set-0.8.0",
         "dest-filename": ".cargo-checksum.json"
     },
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/bit-vec/bit-vec-0.7.0.crate",
-        "sha256": "d2c54ff287cfc0a34f38a6b832ea1bd8e448a330b3e40a50859e6488bee07f22",
-        "dest": "cargo/vendor/bit-vec-0.7.0"
+        "url": "https://static.crates.io/crates/bit-vec/bit-vec-0.8.0.crate",
+        "sha256": "5e764a1d40d510daf35e07be9eb06e75770908c27d411ee6c92109c9840eaaf7",
+        "dest": "cargo/vendor/bit-vec-0.8.0"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"d2c54ff287cfc0a34f38a6b832ea1bd8e448a330b3e40a50859e6488bee07f22\", \"files\": {}}",
-        "dest": "cargo/vendor/bit-vec-0.7.0",
+        "contents": "{\"package\": \"5e764a1d40d510daf35e07be9eb06e75770908c27d411ee6c92109c9840eaaf7\", \"files\": {}}",
+        "dest": "cargo/vendor/bit-vec-0.8.0",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -656,14 +662,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/bitstream-io/bitstream-io-2.5.3.crate",
-        "sha256": "b81e1519b0d82120d2fd469d5bfb2919a9361c48b02d82d04befc1cdd2002452",
-        "dest": "cargo/vendor/bitstream-io-2.5.3"
+        "url": "https://static.crates.io/crates/bitstream-io/bitstream-io-2.6.0.crate",
+        "sha256": "6099cdc01846bc367c4e7dd630dc5966dccf36b652fae7a74e17b640411a91b2",
+        "dest": "cargo/vendor/bitstream-io-2.6.0"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"b81e1519b0d82120d2fd469d5bfb2919a9361c48b02d82d04befc1cdd2002452\", \"files\": {}}",
-        "dest": "cargo/vendor/bitstream-io-2.5.3",
+        "contents": "{\"package\": \"6099cdc01846bc367c4e7dd630dc5966dccf36b652fae7a74e17b640411a91b2\", \"files\": {}}",
+        "dest": "cargo/vendor/bitstream-io-2.6.0",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -1124,45 +1130,6 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/com/com-0.6.0.crate",
-        "sha256": "7e17887fd17353b65b1b2ef1c526c83e26cd72e74f598a8dc1bee13a48f3d9f6",
-        "dest": "cargo/vendor/com-0.6.0"
-    },
-    {
-        "type": "inline",
-        "contents": "{\"package\": \"7e17887fd17353b65b1b2ef1c526c83e26cd72e74f598a8dc1bee13a48f3d9f6\", \"files\": {}}",
-        "dest": "cargo/vendor/com-0.6.0",
-        "dest-filename": ".cargo-checksum.json"
-    },
-    {
-        "type": "archive",
-        "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/com_macros/com_macros-0.6.0.crate",
-        "sha256": "d375883580a668c7481ea6631fc1a8863e33cc335bf56bfad8d7e6d4b04b13a5",
-        "dest": "cargo/vendor/com_macros-0.6.0"
-    },
-    {
-        "type": "inline",
-        "contents": "{\"package\": \"d375883580a668c7481ea6631fc1a8863e33cc335bf56bfad8d7e6d4b04b13a5\", \"files\": {}}",
-        "dest": "cargo/vendor/com_macros-0.6.0",
-        "dest-filename": ".cargo-checksum.json"
-    },
-    {
-        "type": "archive",
-        "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/com_macros_support/com_macros_support-0.6.0.crate",
-        "sha256": "ad899a1087a9296d5644792d7cb72b8e34c1bec8e7d4fbc002230169a6e8710c",
-        "dest": "cargo/vendor/com_macros_support-0.6.0"
-    },
-    {
-        "type": "inline",
-        "contents": "{\"package\": \"ad899a1087a9296d5644792d7cb72b8e34c1bec8e7d4fbc002230169a6e8710c\", \"files\": {}}",
-        "dest": "cargo/vendor/com_macros_support-0.6.0",
-        "dest-filename": ".cargo-checksum.json"
-    },
-    {
-        "type": "archive",
-        "archive-type": "tar-gzip",
         "url": "https://static.crates.io/crates/combine/combine-4.6.7.crate",
         "sha256": "ba5a308b75df32fe02788e748662718f03fde005016435c444eea572398219fd",
         "dest": "cargo/vendor/combine-4.6.7"
@@ -1488,14 +1455,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/csv/csv-1.3.0.crate",
-        "sha256": "ac574ff4d437a7b5ad237ef331c17ccca63c46479e5b5453eb8e10bb99a759fe",
-        "dest": "cargo/vendor/csv-1.3.0"
+        "url": "https://static.crates.io/crates/csv/csv-1.3.1.crate",
+        "sha256": "acdc4883a9c96732e4733212c01447ebd805833b7275a73ca3ee080fd77afdaf",
+        "dest": "cargo/vendor/csv-1.3.1"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"ac574ff4d437a7b5ad237ef331c17ccca63c46479e5b5453eb8e10bb99a759fe\", \"files\": {}}",
-        "dest": "cargo/vendor/csv-1.3.0",
+        "contents": "{\"package\": \"acdc4883a9c96732e4733212c01447ebd805833b7275a73ca3ee080fd77afdaf\", \"files\": {}}",
+        "dest": "cargo/vendor/csv-1.3.1",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -1522,19 +1489,6 @@
         "type": "inline",
         "contents": "{\"package\": \"96a6ac251f4a2aca6b3f91340350eab87ae57c3f127ffeb585e92bd336717991\", \"files\": {}}",
         "dest": "cargo/vendor/cursor-icon-1.1.0",
-        "dest-filename": ".cargo-checksum.json"
-    },
-    {
-        "type": "archive",
-        "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/d3d12/d3d12-22.0.0.crate",
-        "sha256": "bdbd1f579714e3c809ebd822c81ef148b1ceaeb3d535352afc73fd0c4c6a0017",
-        "dest": "cargo/vendor/d3d12-22.0.0"
-    },
-    {
-        "type": "inline",
-        "contents": "{\"package\": \"bdbd1f579714e3c809ebd822c81ef148b1ceaeb3d535352afc73fd0c4c6a0017\", \"files\": {}}",
-        "dest": "cargo/vendor/d3d12-22.0.0",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -1876,68 +1830,93 @@
         "dest-filename": ".cargo-checksum.json"
     },
     {
-        "type": "archive",
-        "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/ecolor/ecolor-0.29.1.crate",
-        "sha256": "775cfde491852059e386c4e1deb4aef381c617dc364184c6f6afee99b87c402b",
-        "dest": "cargo/vendor/ecolor-0.29.1"
+        "type": "shell",
+        "commands": [
+            "cp -r --reflink=auto \"flatpak-cargo/git/egui-3c7ad0e/crates/ecolor\" \"cargo/vendor/ecolor\""
+        ]
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"775cfde491852059e386c4e1deb4aef381c617dc364184c6f6afee99b87c402b\", \"files\": {}}",
-        "dest": "cargo/vendor/ecolor-0.29.1",
+        "contents": "[package]\nname = \"ecolor\"\nversion = \"0.29.1\"\nauthors = [ \"Emil Ernerfeldt <emil.ernerfeldt@gmail.com>\", \"Andreas Reich <reichandreas@gmx.de>\",]\ndescription = \"Color structs and color conversion utilities\"\nedition = \"2021\"\nrust-version = \"1.77\"\nhomepage = \"https://github.com/emilk/egui\"\nlicense = \"MIT OR Apache-2.0\"\nreadme = \"README.md\"\nrepository = \"https://github.com/emilk/egui\"\ncategories = [ \"mathematics\", \"encoding\",]\nkeywords = [ \"gui\", \"color\", \"conversion\", \"gamedev\", \"images\",]\ninclude = [ \"../LICENSE-APACHE\", \"../LICENSE-MIT\", \"**/*.rs\", \"Cargo.toml\",]\n\n[lib]\n\n[features]\ndefault = []\n\n[lints.rust]\nunsafe_code = \"deny\"\nelided_lifetimes_in_paths = \"warn\"\nfuture_incompatible = \"warn\"\nnonstandard_style = \"warn\"\nrust_2018_idioms = \"warn\"\nrust_2021_prelude_collisions = \"warn\"\nsemicolon_in_expressions_from_macros = \"warn\"\ntrivial_numeric_casts = \"warn\"\nunsafe_op_in_unsafe_fn = \"warn\"\nunused_extern_crates = \"warn\"\nunused_import_braces = \"warn\"\nunused_lifetimes = \"warn\"\ntrivial_casts = \"allow\"\nunused_qualifications = \"allow\"\n\n[lints.rustdoc]\nall = \"warn\"\nmissing_crate_level_docs = \"warn\"\nbroken_intra_doc_links = \"warn\"\n\n[lints.clippy]\nas_ptr_cast_mut = \"warn\"\nawait_holding_lock = \"warn\"\nbool_to_int_with_if = \"warn\"\nchar_lit_as_u8 = \"warn\"\nchecked_conversions = \"warn\"\nclear_with_drain = \"warn\"\ncloned_instead_of_copied = \"warn\"\ndbg_macro = \"warn\"\ndebug_assert_with_mut_call = \"warn\"\nderive_partial_eq_without_eq = \"warn\"\ndisallowed_macros = \"warn\"\ndisallowed_methods = \"warn\"\ndisallowed_names = \"warn\"\ndisallowed_script_idents = \"warn\"\ndisallowed_types = \"warn\"\ndoc_link_with_quotes = \"warn\"\ndoc_markdown = \"warn\"\nempty_enum = \"warn\"\nenum_glob_use = \"warn\"\nequatable_if_let = \"warn\"\nexit = \"warn\"\nexpl_impl_clone_on_copy = \"warn\"\nexplicit_deref_methods = \"warn\"\nexplicit_into_iter_loop = \"warn\"\nexplicit_iter_loop = \"warn\"\nfallible_impl_from = \"warn\"\nfilter_map_next = \"warn\"\nflat_map_option = \"warn\"\nfloat_cmp_const = \"warn\"\nfn_params_excessive_bools = \"warn\"\nfn_to_numeric_cast_any = \"warn\"\nfrom_iter_instead_of_collect = \"warn\"\nget_unwrap = \"warn\"\nif_let_mutex = \"warn\"\nimplicit_clone = \"warn\"\nimplied_bounds_in_impls = \"warn\"\nimprecise_flops = \"warn\"\nindex_refutable_slice = \"warn\"\ninefficient_to_string = \"warn\"\ninfinite_loop = \"warn\"\ninto_iter_without_iter = \"warn\"\ninvalid_upcast_comparisons = \"warn\"\niter_not_returning_iterator = \"warn\"\niter_on_empty_collections = \"warn\"\niter_on_single_items = \"warn\"\niter_without_into_iter = \"warn\"\nlarge_digit_groups = \"warn\"\nlarge_include_file = \"warn\"\nlarge_stack_arrays = \"warn\"\nlarge_stack_frames = \"warn\"\nlarge_types_passed_by_value = \"warn\"\nlet_unit_value = \"warn\"\nlinkedlist = \"warn\"\nlossy_float_literal = \"warn\"\nmacro_use_imports = \"warn\"\nmanual_assert = \"warn\"\nmanual_clamp = \"warn\"\nmanual_instant_elapsed = \"warn\"\nmanual_let_else = \"warn\"\nmanual_ok_or = \"warn\"\nmanual_string_new = \"warn\"\nmap_err_ignore = \"warn\"\nmap_flatten = \"warn\"\nmap_unwrap_or = \"warn\"\nmatch_bool = \"warn\"\nmatch_on_vec_items = \"warn\"\nmatch_same_arms = \"warn\"\nmatch_wild_err_arm = \"warn\"\nmatch_wildcard_for_single_variants = \"warn\"\nmem_forget = \"warn\"\nmismatched_target_os = \"warn\"\nmismatching_type_param_order = \"warn\"\nmissing_enforced_import_renames = \"warn\"\nmissing_errors_doc = \"warn\"\nmissing_safety_doc = \"warn\"\nmut_mut = \"warn\"\nmutex_integer = \"warn\"\nneedless_borrow = \"warn\"\nneedless_continue = \"warn\"\nneedless_for_each = \"warn\"\nneedless_pass_by_ref_mut = \"warn\"\nneedless_pass_by_value = \"warn\"\nnegative_feature_names = \"warn\"\nnonstandard_macro_braces = \"warn\"\noption_option = \"warn\"\npath_buf_push_overwrite = \"warn\"\nprint_stderr = \"warn\"\nptr_as_ptr = \"warn\"\nptr_cast_constness = \"warn\"\npub_without_shorthand = \"warn\"\nrc_mutex = \"warn\"\nreadonly_write_lock = \"warn\"\nredundant_type_annotations = \"warn\"\nref_option_ref = \"warn\"\nref_patterns = \"warn\"\nrest_pat_in_fully_bound_structs = \"warn\"\nsame_functions_in_if_condition = \"warn\"\nsemicolon_if_nothing_returned = \"warn\"\nsingle_match_else = \"warn\"\nstr_to_string = \"warn\"\nstring_add = \"warn\"\nstring_add_assign = \"warn\"\nstring_lit_as_bytes = \"warn\"\nstring_lit_chars_any = \"warn\"\nstring_to_string = \"warn\"\nsuspicious_command_arg_space = \"warn\"\nsuspicious_xor_used_as_pow = \"warn\"\ntodo = \"warn\"\ntrailing_empty_array = \"warn\"\ntrait_duplication_in_bounds = \"warn\"\ntuple_array_conversions = \"warn\"\nunchecked_duration_subtraction = \"warn\"\nundocumented_unsafe_blocks = \"warn\"\nunimplemented = \"warn\"\nuninhabited_references = \"warn\"\nuninlined_format_args = \"warn\"\nunnecessary_box_returns = \"warn\"\nunnecessary_safety_doc = \"warn\"\nunnecessary_struct_initialization = \"warn\"\nunnecessary_wraps = \"warn\"\nunnested_or_patterns = \"warn\"\nunused_peekable = \"warn\"\nunused_rounding = \"warn\"\nunused_self = \"warn\"\nuse_self = \"warn\"\nuseless_transmute = \"warn\"\nverbose_file_reads = \"warn\"\nwildcard_dependencies = \"warn\"\nwildcard_imports = \"warn\"\nzero_sized_map_values = \"warn\"\niter_over_hash_type = \"allow\"\nlet_underscore_untyped = \"allow\"\nmissing_assert_message = \"allow\"\nshould_panic_without_expect = \"allow\"\ntoo_many_lines = \"allow\"\nunwrap_used = \"allow\"\nmanual_range_contains = \"allow\"\nself_named_module_files = \"allow\"\nsignificant_drop_tightening = \"allow\"\n\n[dependencies.emath]\nversion = \"0.29.1\"\npath = \"crates/emath\"\ndefault-features = false\n\n[dependencies.bytemuck]\noptional = true\nfeatures = [ \"derive\",]\nversion = \"1.7.2\"\n\n[dependencies.cint]\nversion = \"0.3.1\"\noptional = true\n\n[dependencies.color-hex]\nversion = \"0.2.0\"\noptional = true\n\n[dependencies.document-features]\noptional = true\nversion = \"0.2.10\"\n\n[dependencies.serde]\noptional = true\nversion = \"1\"\nfeatures = [ \"derive\",]\n\n[package.metadata.docs.rs]\nall-features = true\nrustdoc-args = [ \"--generate-link-to-definition\",]\n",
+        "dest": "cargo/vendor/ecolor",
+        "dest-filename": "Cargo.toml"
+    },
+    {
+        "type": "inline",
+        "contents": "{\"package\": null, \"files\": {}}",
+        "dest": "cargo/vendor/ecolor",
         "dest-filename": ".cargo-checksum.json"
     },
     {
-        "type": "archive",
-        "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/egui/egui-0.29.1.crate",
-        "sha256": "53eafabcce0cb2325a59a98736efe0bf060585b437763f8c476957fb274bb974",
-        "dest": "cargo/vendor/egui-0.29.1"
+        "type": "shell",
+        "commands": [
+            "cp -r --reflink=auto \"flatpak-cargo/git/egui-3c7ad0e/crates/egui\" \"cargo/vendor/egui\""
+        ]
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"53eafabcce0cb2325a59a98736efe0bf060585b437763f8c476957fb274bb974\", \"files\": {}}",
-        "dest": "cargo/vendor/egui-0.29.1",
+        "contents": "[package]\nname = \"egui\"\nversion = \"0.29.1\"\nauthors = [ \"Emil Ernerfeldt <emil.ernerfeldt@gmail.com>\",]\ndescription = \"An easy-to-use immediate mode GUI that runs on both web and native\"\nedition = \"2021\"\nrust-version = \"1.77\"\nhomepage = \"https://github.com/emilk/egui\"\nlicense = \"MIT OR Apache-2.0\"\nreadme = \"../../README.md\"\nrepository = \"https://github.com/emilk/egui\"\ncategories = [ \"gui\", \"game-development\",]\nkeywords = [ \"gui\", \"imgui\", \"immediate\", \"portable\", \"gamedev\",]\ninclude = [ \"../LICENSE-APACHE\", \"../LICENSE-MIT\", \"**/*.rs\", \"Cargo.toml\",]\n\n[lib]\n\n[features]\ndefault = [ \"default_fonts\",]\naccesskit = [ \"dep:accesskit\",]\nbytemuck = [ \"epaint/bytemuck\",]\ncallstack = [ \"dep:backtrace\",]\ncint = [ \"epaint/cint\",]\ncolor-hex = [ \"epaint/color-hex\",]\ndeadlock_detection = [ \"epaint/deadlock_detection\",]\ndefault_fonts = [ \"epaint/default_fonts\",]\nlog = [ \"dep:log\", \"epaint/log\",]\nmint = [ \"epaint/mint\",]\npersistence = [ \"serde\", \"epaint/serde\", \"ron\",]\npuffin = [ \"dep:puffin\", \"epaint/puffin\",]\nrayon = [ \"epaint/rayon\",]\nserde = [ \"dep:serde\", \"epaint/serde\", \"accesskit?/serde\",]\nunity = [ \"epaint/unity\",]\n\n[dependencies]\nnohash-hasher = \"0.2\"\n\n[lints.rust]\nunsafe_code = \"deny\"\nelided_lifetimes_in_paths = \"warn\"\nfuture_incompatible = \"warn\"\nnonstandard_style = \"warn\"\nrust_2018_idioms = \"warn\"\nrust_2021_prelude_collisions = \"warn\"\nsemicolon_in_expressions_from_macros = \"warn\"\ntrivial_numeric_casts = \"warn\"\nunsafe_op_in_unsafe_fn = \"warn\"\nunused_extern_crates = \"warn\"\nunused_import_braces = \"warn\"\nunused_lifetimes = \"warn\"\ntrivial_casts = \"allow\"\nunused_qualifications = \"allow\"\n\n[lints.rustdoc]\nall = \"warn\"\nmissing_crate_level_docs = \"warn\"\nbroken_intra_doc_links = \"warn\"\n\n[lints.clippy]\nas_ptr_cast_mut = \"warn\"\nawait_holding_lock = \"warn\"\nbool_to_int_with_if = \"warn\"\nchar_lit_as_u8 = \"warn\"\nchecked_conversions = \"warn\"\nclear_with_drain = \"warn\"\ncloned_instead_of_copied = \"warn\"\ndbg_macro = \"warn\"\ndebug_assert_with_mut_call = \"warn\"\nderive_partial_eq_without_eq = \"warn\"\ndisallowed_macros = \"warn\"\ndisallowed_methods = \"warn\"\ndisallowed_names = \"warn\"\ndisallowed_script_idents = \"warn\"\ndisallowed_types = \"warn\"\ndoc_link_with_quotes = \"warn\"\ndoc_markdown = \"warn\"\nempty_enum = \"warn\"\nenum_glob_use = \"warn\"\nequatable_if_let = \"warn\"\nexit = \"warn\"\nexpl_impl_clone_on_copy = \"warn\"\nexplicit_deref_methods = \"warn\"\nexplicit_into_iter_loop = \"warn\"\nexplicit_iter_loop = \"warn\"\nfallible_impl_from = \"warn\"\nfilter_map_next = \"warn\"\nflat_map_option = \"warn\"\nfloat_cmp_const = \"warn\"\nfn_params_excessive_bools = \"warn\"\nfn_to_numeric_cast_any = \"warn\"\nfrom_iter_instead_of_collect = \"warn\"\nget_unwrap = \"warn\"\nif_let_mutex = \"warn\"\nimplicit_clone = \"warn\"\nimplied_bounds_in_impls = \"warn\"\nimprecise_flops = \"warn\"\nindex_refutable_slice = \"warn\"\ninefficient_to_string = \"warn\"\ninfinite_loop = \"warn\"\ninto_iter_without_iter = \"warn\"\ninvalid_upcast_comparisons = \"warn\"\niter_not_returning_iterator = \"warn\"\niter_on_empty_collections = \"warn\"\niter_on_single_items = \"warn\"\niter_without_into_iter = \"warn\"\nlarge_digit_groups = \"warn\"\nlarge_include_file = \"warn\"\nlarge_stack_arrays = \"warn\"\nlarge_stack_frames = \"warn\"\nlarge_types_passed_by_value = \"warn\"\nlet_unit_value = \"warn\"\nlinkedlist = \"warn\"\nlossy_float_literal = \"warn\"\nmacro_use_imports = \"warn\"\nmanual_assert = \"warn\"\nmanual_clamp = \"warn\"\nmanual_instant_elapsed = \"warn\"\nmanual_let_else = \"warn\"\nmanual_ok_or = \"warn\"\nmanual_string_new = \"warn\"\nmap_err_ignore = \"warn\"\nmap_flatten = \"warn\"\nmap_unwrap_or = \"warn\"\nmatch_bool = \"warn\"\nmatch_on_vec_items = \"warn\"\nmatch_same_arms = \"warn\"\nmatch_wild_err_arm = \"warn\"\nmatch_wildcard_for_single_variants = \"warn\"\nmem_forget = \"warn\"\nmismatched_target_os = \"warn\"\nmismatching_type_param_order = \"warn\"\nmissing_enforced_import_renames = \"warn\"\nmissing_errors_doc = \"warn\"\nmissing_safety_doc = \"warn\"\nmut_mut = \"warn\"\nmutex_integer = \"warn\"\nneedless_borrow = \"warn\"\nneedless_continue = \"warn\"\nneedless_for_each = \"warn\"\nneedless_pass_by_ref_mut = \"warn\"\nneedless_pass_by_value = \"warn\"\nnegative_feature_names = \"warn\"\nnonstandard_macro_braces = \"warn\"\noption_option = \"warn\"\npath_buf_push_overwrite = \"warn\"\nprint_stderr = \"warn\"\nptr_as_ptr = \"warn\"\nptr_cast_constness = \"warn\"\npub_without_shorthand = \"warn\"\nrc_mutex = \"warn\"\nreadonly_write_lock = \"warn\"\nredundant_type_annotations = \"warn\"\nref_option_ref = \"warn\"\nref_patterns = \"warn\"\nrest_pat_in_fully_bound_structs = \"warn\"\nsame_functions_in_if_condition = \"warn\"\nsemicolon_if_nothing_returned = \"warn\"\nsingle_match_else = \"warn\"\nstr_to_string = \"warn\"\nstring_add = \"warn\"\nstring_add_assign = \"warn\"\nstring_lit_as_bytes = \"warn\"\nstring_lit_chars_any = \"warn\"\nstring_to_string = \"warn\"\nsuspicious_command_arg_space = \"warn\"\nsuspicious_xor_used_as_pow = \"warn\"\ntodo = \"warn\"\ntrailing_empty_array = \"warn\"\ntrait_duplication_in_bounds = \"warn\"\ntuple_array_conversions = \"warn\"\nunchecked_duration_subtraction = \"warn\"\nundocumented_unsafe_blocks = \"warn\"\nunimplemented = \"warn\"\nuninhabited_references = \"warn\"\nuninlined_format_args = \"warn\"\nunnecessary_box_returns = \"warn\"\nunnecessary_safety_doc = \"warn\"\nunnecessary_struct_initialization = \"warn\"\nunnecessary_wraps = \"warn\"\nunnested_or_patterns = \"warn\"\nunused_peekable = \"warn\"\nunused_rounding = \"warn\"\nunused_self = \"warn\"\nuse_self = \"warn\"\nuseless_transmute = \"warn\"\nverbose_file_reads = \"warn\"\nwildcard_dependencies = \"warn\"\nwildcard_imports = \"warn\"\nzero_sized_map_values = \"warn\"\niter_over_hash_type = \"allow\"\nlet_underscore_untyped = \"allow\"\nmissing_assert_message = \"allow\"\nshould_panic_without_expect = \"allow\"\ntoo_many_lines = \"allow\"\nunwrap_used = \"allow\"\nmanual_range_contains = \"allow\"\nself_named_module_files = \"allow\"\nsignificant_drop_tightening = \"allow\"\n\n[dependencies.emath]\ndefault-features = false\nversion = \"0.29.1\"\npath = \"crates/emath\"\n\n[dependencies.epaint]\ndefault-features = false\nversion = \"0.29.1\"\npath = \"crates/epaint\"\n\n[dependencies.ahash]\nversion = \"0.8.11\"\ndefault-features = false\nfeatures = [ \"no-rng\", \"std\",]\n\n[dependencies.accesskit]\nversion = \"0.16\"\noptional = true\n\n[dependencies.backtrace]\noptional = true\nversion = \"0.3\"\n\n[dependencies.document-features]\noptional = true\nversion = \"0.2.10\"\n\n[dependencies.log]\noptional = true\nversion = \"0.4\"\nfeatures = [ \"std\",]\n\n[dependencies.puffin]\noptional = true\nversion = \"0.19\"\n\n[dependencies.ron]\noptional = true\nversion = \"0.8\"\n\n[dependencies.serde]\noptional = true\nfeatures = [ \"derive\", \"rc\", \"derive\",]\nversion = \"1\"\n\n[package.metadata.docs.rs]\nall-features = true\nrustdoc-args = [ \"--generate-link-to-definition\",]\n",
+        "dest": "cargo/vendor/egui",
+        "dest-filename": "Cargo.toml"
+    },
+    {
+        "type": "inline",
+        "contents": "{\"package\": null, \"files\": {}}",
+        "dest": "cargo/vendor/egui",
         "dest-filename": ".cargo-checksum.json"
     },
     {
-        "type": "archive",
-        "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/egui-wgpu/egui-wgpu-0.29.1.crate",
-        "sha256": "d00fd5d06d8405397e64a928fa0ef3934b3c30273ea7603e3dc4627b1f7a1a82",
-        "dest": "cargo/vendor/egui-wgpu-0.29.1"
+        "type": "shell",
+        "commands": [
+            "cp -r --reflink=auto \"flatpak-cargo/git/egui-3c7ad0e/crates/egui-wgpu\" \"cargo/vendor/egui-wgpu\""
+        ]
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"d00fd5d06d8405397e64a928fa0ef3934b3c30273ea7603e3dc4627b1f7a1a82\", \"files\": {}}",
-        "dest": "cargo/vendor/egui-wgpu-0.29.1",
+        "contents": "[package]\nname = \"egui-wgpu\"\nversion = \"0.29.1\"\ndescription = \"Bindings for using egui natively using the wgpu library\"\nauthors = [ \"Nils Hasenbanck <nils@hasenbanck.de>\", \"embotech <opensource@embotech.com>\", \"Emil Ernerfeldt <emil.ernerfeldt@gmail.com>\",]\nedition = \"2021\"\nrust-version = \"1.77\"\nhomepage = \"https://github.com/emilk/egui/tree/master/crates/egui-wgpu\"\nlicense = \"MIT OR Apache-2.0\"\nreadme = \"README.md\"\nrepository = \"https://github.com/emilk/egui/tree/master/crates/egui-wgpu\"\ncategories = [ \"gui\", \"game-development\",]\nkeywords = [ \"wgpu\", \"egui\", \"gui\", \"gamedev\",]\ninclude = [ \"../LICENSE-APACHE\", \"../LICENSE-MIT\", \"**/*.rs\", \"**/*.wgsl\", \"Cargo.toml\",]\n\n[features]\ndefault = [ \"fragile-send-sync-non-atomic-wasm\",]\npuffin = [ \"dep:puffin\",]\nwinit = [ \"dep:winit\", \"winit/rwh_06\",]\nwayland = [ \"winit?/wayland\",]\nx11 = [ \"winit?/x11\",]\nfragile-send-sync-non-atomic-wasm = [ \"wgpu/fragile-send-sync-non-atomic-wasm\",]\n\n[dependencies]\nbytemuck = \"1.7.2\"\ndocument-features = \"0.2.10\"\nthiserror = \"1.0.37\"\ntype-map = \"0.5.0\"\nweb-time = \"1.1.0\"\n\n[lints.rust]\nunsafe_code = \"deny\"\nelided_lifetimes_in_paths = \"warn\"\nfuture_incompatible = \"warn\"\nnonstandard_style = \"warn\"\nrust_2018_idioms = \"warn\"\nrust_2021_prelude_collisions = \"warn\"\nsemicolon_in_expressions_from_macros = \"warn\"\ntrivial_numeric_casts = \"warn\"\nunsafe_op_in_unsafe_fn = \"warn\"\nunused_extern_crates = \"warn\"\nunused_import_braces = \"warn\"\nunused_lifetimes = \"warn\"\ntrivial_casts = \"allow\"\nunused_qualifications = \"allow\"\n\n[lints.rustdoc]\nall = \"warn\"\nmissing_crate_level_docs = \"warn\"\nbroken_intra_doc_links = \"warn\"\n\n[lints.clippy]\nas_ptr_cast_mut = \"warn\"\nawait_holding_lock = \"warn\"\nbool_to_int_with_if = \"warn\"\nchar_lit_as_u8 = \"warn\"\nchecked_conversions = \"warn\"\nclear_with_drain = \"warn\"\ncloned_instead_of_copied = \"warn\"\ndbg_macro = \"warn\"\ndebug_assert_with_mut_call = \"warn\"\nderive_partial_eq_without_eq = \"warn\"\ndisallowed_macros = \"warn\"\ndisallowed_methods = \"warn\"\ndisallowed_names = \"warn\"\ndisallowed_script_idents = \"warn\"\ndisallowed_types = \"warn\"\ndoc_link_with_quotes = \"warn\"\ndoc_markdown = \"warn\"\nempty_enum = \"warn\"\nenum_glob_use = \"warn\"\nequatable_if_let = \"warn\"\nexit = \"warn\"\nexpl_impl_clone_on_copy = \"warn\"\nexplicit_deref_methods = \"warn\"\nexplicit_into_iter_loop = \"warn\"\nexplicit_iter_loop = \"warn\"\nfallible_impl_from = \"warn\"\nfilter_map_next = \"warn\"\nflat_map_option = \"warn\"\nfloat_cmp_const = \"warn\"\nfn_params_excessive_bools = \"warn\"\nfn_to_numeric_cast_any = \"warn\"\nfrom_iter_instead_of_collect = \"warn\"\nget_unwrap = \"warn\"\nif_let_mutex = \"warn\"\nimplicit_clone = \"warn\"\nimplied_bounds_in_impls = \"warn\"\nimprecise_flops = \"warn\"\nindex_refutable_slice = \"warn\"\ninefficient_to_string = \"warn\"\ninfinite_loop = \"warn\"\ninto_iter_without_iter = \"warn\"\ninvalid_upcast_comparisons = \"warn\"\niter_not_returning_iterator = \"warn\"\niter_on_empty_collections = \"warn\"\niter_on_single_items = \"warn\"\niter_without_into_iter = \"warn\"\nlarge_digit_groups = \"warn\"\nlarge_include_file = \"warn\"\nlarge_stack_arrays = \"warn\"\nlarge_stack_frames = \"warn\"\nlarge_types_passed_by_value = \"warn\"\nlet_unit_value = \"warn\"\nlinkedlist = \"warn\"\nlossy_float_literal = \"warn\"\nmacro_use_imports = \"warn\"\nmanual_assert = \"warn\"\nmanual_clamp = \"warn\"\nmanual_instant_elapsed = \"warn\"\nmanual_let_else = \"warn\"\nmanual_ok_or = \"warn\"\nmanual_string_new = \"warn\"\nmap_err_ignore = \"warn\"\nmap_flatten = \"warn\"\nmap_unwrap_or = \"warn\"\nmatch_bool = \"warn\"\nmatch_on_vec_items = \"warn\"\nmatch_same_arms = \"warn\"\nmatch_wild_err_arm = \"warn\"\nmatch_wildcard_for_single_variants = \"warn\"\nmem_forget = \"warn\"\nmismatched_target_os = \"warn\"\nmismatching_type_param_order = \"warn\"\nmissing_enforced_import_renames = \"warn\"\nmissing_errors_doc = \"warn\"\nmissing_safety_doc = \"warn\"\nmut_mut = \"warn\"\nmutex_integer = \"warn\"\nneedless_borrow = \"warn\"\nneedless_continue = \"warn\"\nneedless_for_each = \"warn\"\nneedless_pass_by_ref_mut = \"warn\"\nneedless_pass_by_value = \"warn\"\nnegative_feature_names = \"warn\"\nnonstandard_macro_braces = \"warn\"\noption_option = \"warn\"\npath_buf_push_overwrite = \"warn\"\nprint_stderr = \"warn\"\nptr_as_ptr = \"warn\"\nptr_cast_constness = \"warn\"\npub_without_shorthand = \"warn\"\nrc_mutex = \"warn\"\nreadonly_write_lock = \"warn\"\nredundant_type_annotations = \"warn\"\nref_option_ref = \"warn\"\nref_patterns = \"warn\"\nrest_pat_in_fully_bound_structs = \"warn\"\nsame_functions_in_if_condition = \"warn\"\nsemicolon_if_nothing_returned = \"warn\"\nsingle_match_else = \"warn\"\nstr_to_string = \"warn\"\nstring_add = \"warn\"\nstring_add_assign = \"warn\"\nstring_lit_as_bytes = \"warn\"\nstring_lit_chars_any = \"warn\"\nstring_to_string = \"warn\"\nsuspicious_command_arg_space = \"warn\"\nsuspicious_xor_used_as_pow = \"warn\"\ntodo = \"warn\"\ntrailing_empty_array = \"warn\"\ntrait_duplication_in_bounds = \"warn\"\ntuple_array_conversions = \"warn\"\nunchecked_duration_subtraction = \"warn\"\nundocumented_unsafe_blocks = \"warn\"\nunimplemented = \"warn\"\nuninhabited_references = \"warn\"\nuninlined_format_args = \"warn\"\nunnecessary_box_returns = \"warn\"\nunnecessary_safety_doc = \"warn\"\nunnecessary_struct_initialization = \"warn\"\nunnecessary_wraps = \"warn\"\nunnested_or_patterns = \"warn\"\nunused_peekable = \"warn\"\nunused_rounding = \"warn\"\nunused_self = \"warn\"\nuse_self = \"warn\"\nuseless_transmute = \"warn\"\nverbose_file_reads = \"warn\"\nwildcard_dependencies = \"warn\"\nwildcard_imports = \"warn\"\nzero_sized_map_values = \"warn\"\niter_over_hash_type = \"allow\"\nlet_underscore_untyped = \"allow\"\nmissing_assert_message = \"allow\"\nshould_panic_without_expect = \"allow\"\ntoo_many_lines = \"allow\"\nunwrap_used = \"allow\"\nmanual_range_contains = \"allow\"\nself_named_module_files = \"allow\"\nsignificant_drop_tightening = \"allow\"\n\n[dependencies.egui]\ndefault-features = false\nversion = \"0.29.1\"\npath = \"crates/egui\"\n\n[dependencies.epaint]\ndefault-features = false\nfeatures = [ \"bytemuck\",]\nversion = \"0.29.1\"\npath = \"crates/epaint\"\n\n[dependencies.ahash]\nversion = \"0.8.11\"\ndefault-features = false\nfeatures = [ \"no-rng\", \"std\",]\n\n[dependencies.log]\nversion = \"0.4\"\nfeatures = [ \"std\",]\n\n[dependencies.wgpu]\nfeatures = [ \"wgsl\",]\nversion = \"23.0.0\"\ndefault-features = false\n\n[dependencies.winit]\noptional = true\ndefault-features = false\nversion = \"0.30.5\"\n\n[package.metadata.docs.rs]\nall-features = true\nrustdoc-args = [ \"--generate-link-to-definition\",]\n\n[target.\"cfg(not(target_arch = \\\"wasm32\\\"))\".dependencies.puffin]\noptional = true\nversion = \"0.19\"\n",
+        "dest": "cargo/vendor/egui-wgpu",
+        "dest-filename": "Cargo.toml"
+    },
+    {
+        "type": "inline",
+        "contents": "{\"package\": null, \"files\": {}}",
+        "dest": "cargo/vendor/egui-wgpu",
         "dest-filename": ".cargo-checksum.json"
     },
     {
-        "type": "archive",
-        "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/egui-winit/egui-winit-0.29.1.crate",
-        "sha256": "0a9c430f4f816340e8e8c1b20eec274186b1be6bc4c7dfc467ed50d57abc36c6",
-        "dest": "cargo/vendor/egui-winit-0.29.1"
+        "type": "shell",
+        "commands": [
+            "cp -r --reflink=auto \"flatpak-cargo/git/egui-3c7ad0e/crates/egui-winit\" \"cargo/vendor/egui-winit\""
+        ]
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"0a9c430f4f816340e8e8c1b20eec274186b1be6bc4c7dfc467ed50d57abc36c6\", \"files\": {}}",
-        "dest": "cargo/vendor/egui-winit-0.29.1",
+        "contents": "[package]\nname = \"egui-winit\"\nversion = \"0.29.1\"\nauthors = [ \"Emil Ernerfeldt <emil.ernerfeldt@gmail.com>\",]\ndescription = \"Bindings for using egui with winit\"\nedition = \"2021\"\nrust-version = \"1.77\"\nhomepage = \"https://github.com/emilk/egui/tree/master/crates/egui-winit\"\nlicense = \"MIT OR Apache-2.0\"\nreadme = \"README.md\"\nrepository = \"https://github.com/emilk/egui/tree/master/crates/egui-winit\"\ncategories = [ \"gui\", \"game-development\",]\nkeywords = [ \"winit\", \"egui\", \"gui\", \"gamedev\",]\ninclude = [ \"../LICENSE-APACHE\", \"../LICENSE-MIT\", \"**/*.rs\", \"Cargo.toml\",]\n\n[features]\ndefault = [ \"clipboard\", \"links\", \"wayland\", \"winit/default\", \"x11\",]\naccesskit = [ \"dep:accesskit_winit\", \"egui/accesskit\",]\nandroid-game-activity = [ \"winit/android-game-activity\",]\nandroid-native-activity = [ \"winit/android-native-activity\",]\nbytemuck = [ \"egui/bytemuck\",]\nclipboard = [ \"arboard\", \"smithay-clipboard\",]\nlinks = [ \"webbrowser\",]\npuffin = [ \"dep:puffin\", \"egui/puffin\",]\nserde = [ \"egui/serde\", \"dep:serde\",]\nwayland = [ \"winit/wayland\", \"bytemuck\",]\nx11 = [ \"winit/x11\", \"bytemuck\",]\n\n[dependencies]\nraw-window-handle = \"0.6.0\"\nweb-time = \"1.1.0\"\n\n[lints.rust]\nunsafe_code = \"deny\"\nelided_lifetimes_in_paths = \"warn\"\nfuture_incompatible = \"warn\"\nnonstandard_style = \"warn\"\nrust_2018_idioms = \"warn\"\nrust_2021_prelude_collisions = \"warn\"\nsemicolon_in_expressions_from_macros = \"warn\"\ntrivial_numeric_casts = \"warn\"\nunsafe_op_in_unsafe_fn = \"warn\"\nunused_extern_crates = \"warn\"\nunused_import_braces = \"warn\"\nunused_lifetimes = \"warn\"\ntrivial_casts = \"allow\"\nunused_qualifications = \"allow\"\n\n[lints.rustdoc]\nall = \"warn\"\nmissing_crate_level_docs = \"warn\"\nbroken_intra_doc_links = \"warn\"\n\n[lints.clippy]\nas_ptr_cast_mut = \"warn\"\nawait_holding_lock = \"warn\"\nbool_to_int_with_if = \"warn\"\nchar_lit_as_u8 = \"warn\"\nchecked_conversions = \"warn\"\nclear_with_drain = \"warn\"\ncloned_instead_of_copied = \"warn\"\ndbg_macro = \"warn\"\ndebug_assert_with_mut_call = \"warn\"\nderive_partial_eq_without_eq = \"warn\"\ndisallowed_macros = \"warn\"\ndisallowed_methods = \"warn\"\ndisallowed_names = \"warn\"\ndisallowed_script_idents = \"warn\"\ndisallowed_types = \"warn\"\ndoc_link_with_quotes = \"warn\"\ndoc_markdown = \"warn\"\nempty_enum = \"warn\"\nenum_glob_use = \"warn\"\nequatable_if_let = \"warn\"\nexit = \"warn\"\nexpl_impl_clone_on_copy = \"warn\"\nexplicit_deref_methods = \"warn\"\nexplicit_into_iter_loop = \"warn\"\nexplicit_iter_loop = \"warn\"\nfallible_impl_from = \"warn\"\nfilter_map_next = \"warn\"\nflat_map_option = \"warn\"\nfloat_cmp_const = \"warn\"\nfn_params_excessive_bools = \"warn\"\nfn_to_numeric_cast_any = \"warn\"\nfrom_iter_instead_of_collect = \"warn\"\nget_unwrap = \"warn\"\nif_let_mutex = \"warn\"\nimplicit_clone = \"warn\"\nimplied_bounds_in_impls = \"warn\"\nimprecise_flops = \"warn\"\nindex_refutable_slice = \"warn\"\ninefficient_to_string = \"warn\"\ninfinite_loop = \"warn\"\ninto_iter_without_iter = \"warn\"\ninvalid_upcast_comparisons = \"warn\"\niter_not_returning_iterator = \"warn\"\niter_on_empty_collections = \"warn\"\niter_on_single_items = \"warn\"\niter_without_into_iter = \"warn\"\nlarge_digit_groups = \"warn\"\nlarge_include_file = \"warn\"\nlarge_stack_arrays = \"warn\"\nlarge_stack_frames = \"warn\"\nlarge_types_passed_by_value = \"warn\"\nlet_unit_value = \"warn\"\nlinkedlist = \"warn\"\nlossy_float_literal = \"warn\"\nmacro_use_imports = \"warn\"\nmanual_assert = \"warn\"\nmanual_clamp = \"warn\"\nmanual_instant_elapsed = \"warn\"\nmanual_let_else = \"warn\"\nmanual_ok_or = \"warn\"\nmanual_string_new = \"warn\"\nmap_err_ignore = \"warn\"\nmap_flatten = \"warn\"\nmap_unwrap_or = \"warn\"\nmatch_bool = \"warn\"\nmatch_on_vec_items = \"warn\"\nmatch_same_arms = \"warn\"\nmatch_wild_err_arm = \"warn\"\nmatch_wildcard_for_single_variants = \"warn\"\nmem_forget = \"warn\"\nmismatched_target_os = \"warn\"\nmismatching_type_param_order = \"warn\"\nmissing_enforced_import_renames = \"warn\"\nmissing_errors_doc = \"warn\"\nmissing_safety_doc = \"warn\"\nmut_mut = \"warn\"\nmutex_integer = \"warn\"\nneedless_borrow = \"warn\"\nneedless_continue = \"warn\"\nneedless_for_each = \"warn\"\nneedless_pass_by_ref_mut = \"warn\"\nneedless_pass_by_value = \"warn\"\nnegative_feature_names = \"warn\"\nnonstandard_macro_braces = \"warn\"\noption_option = \"warn\"\npath_buf_push_overwrite = \"warn\"\nprint_stderr = \"warn\"\nptr_as_ptr = \"warn\"\nptr_cast_constness = \"warn\"\npub_without_shorthand = \"warn\"\nrc_mutex = \"warn\"\nreadonly_write_lock = \"warn\"\nredundant_type_annotations = \"warn\"\nref_option_ref = \"warn\"\nref_patterns = \"warn\"\nrest_pat_in_fully_bound_structs = \"warn\"\nsame_functions_in_if_condition = \"warn\"\nsemicolon_if_nothing_returned = \"warn\"\nsingle_match_else = \"warn\"\nstr_to_string = \"warn\"\nstring_add = \"warn\"\nstring_add_assign = \"warn\"\nstring_lit_as_bytes = \"warn\"\nstring_lit_chars_any = \"warn\"\nstring_to_string = \"warn\"\nsuspicious_command_arg_space = \"warn\"\nsuspicious_xor_used_as_pow = \"warn\"\ntodo = \"warn\"\ntrailing_empty_array = \"warn\"\ntrait_duplication_in_bounds = \"warn\"\ntuple_array_conversions = \"warn\"\nunchecked_duration_subtraction = \"warn\"\nundocumented_unsafe_blocks = \"warn\"\nunimplemented = \"warn\"\nuninhabited_references = \"warn\"\nuninlined_format_args = \"warn\"\nunnecessary_box_returns = \"warn\"\nunnecessary_safety_doc = \"warn\"\nunnecessary_struct_initialization = \"warn\"\nunnecessary_wraps = \"warn\"\nunnested_or_patterns = \"warn\"\nunused_peekable = \"warn\"\nunused_rounding = \"warn\"\nunused_self = \"warn\"\nuse_self = \"warn\"\nuseless_transmute = \"warn\"\nverbose_file_reads = \"warn\"\nwildcard_dependencies = \"warn\"\nwildcard_imports = \"warn\"\nzero_sized_map_values = \"warn\"\niter_over_hash_type = \"allow\"\nlet_underscore_untyped = \"allow\"\nmissing_assert_message = \"allow\"\nshould_panic_without_expect = \"allow\"\ntoo_many_lines = \"allow\"\nunwrap_used = \"allow\"\nmanual_range_contains = \"allow\"\nself_named_module_files = \"allow\"\nsignificant_drop_tightening = \"allow\"\n\n[dependencies.egui]\ndefault-features = false\nfeatures = [ \"log\",]\nversion = \"0.29.1\"\npath = \"crates/egui\"\n\n[dependencies.ahash]\nversion = \"0.8.11\"\ndefault-features = false\nfeatures = [ \"no-rng\", \"std\",]\n\n[dependencies.log]\nversion = \"0.4\"\nfeatures = [ \"std\",]\n\n[dependencies.winit]\ndefault-features = false\nversion = \"0.30.5\"\n\n[dependencies.accesskit_winit]\nversion = \"0.22\"\noptional = true\n\n[dependencies.document-features]\noptional = true\nversion = \"0.2.10\"\n\n[dependencies.puffin]\noptional = true\nversion = \"0.19\"\n\n[dependencies.serde]\noptional = true\nversion = \"1\"\nfeatures = [ \"derive\",]\n\n[dependencies.webbrowser]\nversion = \"1.0.0\"\noptional = true\n\n[package.metadata.docs.rs]\nall-features = true\nrustdoc-args = [ \"--generate-link-to-definition\",]\n\n[target.\"cfg(any(target_os=\\\"linux\\\", target_os=\\\"dragonfly\\\", target_os=\\\"freebsd\\\", target_os=\\\"netbsd\\\", target_os=\\\"openbsd\\\"))\".dependencies.smithay-clipboard]\nversion = \"0.7.2\"\noptional = true\n\n[target.\"cfg(any(target_os=\\\"linux\\\", target_os=\\\"dragonfly\\\", target_os=\\\"freebsd\\\", target_os=\\\"netbsd\\\", target_os=\\\"openbsd\\\"))\".dependencies.wayland-cursor]\nversion = \"0.31.1\"\ndefault-features = false\noptional = true\n\n[target.\"cfg(not(target_os = \\\"android\\\"))\".dependencies.arboard]\nversion = \"3.3\"\noptional = true\ndefault-features = false\n",
+        "dest": "cargo/vendor/egui-winit",
+        "dest-filename": "Cargo.toml"
+    },
+    {
+        "type": "inline",
+        "contents": "{\"package\": null, \"files\": {}}",
+        "dest": "cargo/vendor/egui-winit",
         "dest-filename": ".cargo-checksum.json"
     },
     {
-        "type": "archive",
-        "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/egui_extras/egui_extras-0.29.1.crate",
-        "sha256": "bf3c1f5cd8dfe2ade470a218696c66cf556fcfd701e7830fa2e9f4428292a2a1",
-        "dest": "cargo/vendor/egui_extras-0.29.1"
+        "type": "shell",
+        "commands": [
+            "cp -r --reflink=auto \"flatpak-cargo/git/egui-3c7ad0e/crates/egui_extras\" \"cargo/vendor/egui_extras\""
+        ]
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"bf3c1f5cd8dfe2ade470a218696c66cf556fcfd701e7830fa2e9f4428292a2a1\", \"files\": {}}",
-        "dest": "cargo/vendor/egui_extras-0.29.1",
+        "contents": "[package]\nname = \"egui_extras\"\nversion = \"0.29.1\"\nauthors = [ \"Dominik R\u00f6ssler <dominik@freshx.de>\", \"Emil Ernerfeldt <emil.ernerfeldt@gmail.com>\", \"Ren\u00e9 R\u00f6ssler <rene@freshx.de>\",]\ndescription = \"Extra functionality and widgets for the egui GUI library\"\nedition = \"2021\"\nrust-version = \"1.77\"\nhomepage = \"https://github.com/emilk/egui\"\nlicense = \"MIT OR Apache-2.0\"\nreadme = \"README.md\"\nrepository = \"https://github.com/emilk/egui\"\ncategories = [ \"gui\", \"game-development\",]\nkeywords = [ \"gui\", \"imgui\", \"immediate\", \"portable\", \"gamedev\",]\ninclude = [ \"../LICENSE-APACHE\", \"../LICENSE-MIT\", \"**/*.rs\", \"Cargo.toml\",]\n\n[lib]\n\n[features]\ndefault = [ \"dep:mime_guess2\",]\nall_loaders = [ \"file\", \"http\", \"image\", \"svg\", \"gif\",]\ndatepicker = [ \"chrono\",]\nfile = [ \"dep:mime_guess2\",]\ngif = [ \"image\", \"image/gif\",]\nhttp = [ \"dep:ehttp\",]\nimage = [ \"dep:image\",]\npuffin = [ \"dep:puffin\", \"egui/puffin\",]\nserde = [ \"egui/serde\", \"dep:serde\",]\nsvg = [ \"resvg\",]\nsyntect = [ \"dep:syntect\",]\n\n[lints.rust]\nunsafe_code = \"deny\"\nelided_lifetimes_in_paths = \"warn\"\nfuture_incompatible = \"warn\"\nnonstandard_style = \"warn\"\nrust_2018_idioms = \"warn\"\nrust_2021_prelude_collisions = \"warn\"\nsemicolon_in_expressions_from_macros = \"warn\"\ntrivial_numeric_casts = \"warn\"\nunsafe_op_in_unsafe_fn = \"warn\"\nunused_extern_crates = \"warn\"\nunused_import_braces = \"warn\"\nunused_lifetimes = \"warn\"\ntrivial_casts = \"allow\"\nunused_qualifications = \"allow\"\n\n[lints.rustdoc]\nall = \"warn\"\nmissing_crate_level_docs = \"warn\"\nbroken_intra_doc_links = \"warn\"\n\n[lints.clippy]\nas_ptr_cast_mut = \"warn\"\nawait_holding_lock = \"warn\"\nbool_to_int_with_if = \"warn\"\nchar_lit_as_u8 = \"warn\"\nchecked_conversions = \"warn\"\nclear_with_drain = \"warn\"\ncloned_instead_of_copied = \"warn\"\ndbg_macro = \"warn\"\ndebug_assert_with_mut_call = \"warn\"\nderive_partial_eq_without_eq = \"warn\"\ndisallowed_macros = \"warn\"\ndisallowed_methods = \"warn\"\ndisallowed_names = \"warn\"\ndisallowed_script_idents = \"warn\"\ndisallowed_types = \"warn\"\ndoc_link_with_quotes = \"warn\"\ndoc_markdown = \"warn\"\nempty_enum = \"warn\"\nenum_glob_use = \"warn\"\nequatable_if_let = \"warn\"\nexit = \"warn\"\nexpl_impl_clone_on_copy = \"warn\"\nexplicit_deref_methods = \"warn\"\nexplicit_into_iter_loop = \"warn\"\nexplicit_iter_loop = \"warn\"\nfallible_impl_from = \"warn\"\nfilter_map_next = \"warn\"\nflat_map_option = \"warn\"\nfloat_cmp_const = \"warn\"\nfn_params_excessive_bools = \"warn\"\nfn_to_numeric_cast_any = \"warn\"\nfrom_iter_instead_of_collect = \"warn\"\nget_unwrap = \"warn\"\nif_let_mutex = \"warn\"\nimplicit_clone = \"warn\"\nimplied_bounds_in_impls = \"warn\"\nimprecise_flops = \"warn\"\nindex_refutable_slice = \"warn\"\ninefficient_to_string = \"warn\"\ninfinite_loop = \"warn\"\ninto_iter_without_iter = \"warn\"\ninvalid_upcast_comparisons = \"warn\"\niter_not_returning_iterator = \"warn\"\niter_on_empty_collections = \"warn\"\niter_on_single_items = \"warn\"\niter_without_into_iter = \"warn\"\nlarge_digit_groups = \"warn\"\nlarge_include_file = \"warn\"\nlarge_stack_arrays = \"warn\"\nlarge_stack_frames = \"warn\"\nlarge_types_passed_by_value = \"warn\"\nlet_unit_value = \"warn\"\nlinkedlist = \"warn\"\nlossy_float_literal = \"warn\"\nmacro_use_imports = \"warn\"\nmanual_assert = \"warn\"\nmanual_clamp = \"warn\"\nmanual_instant_elapsed = \"warn\"\nmanual_let_else = \"warn\"\nmanual_ok_or = \"warn\"\nmanual_string_new = \"warn\"\nmap_err_ignore = \"warn\"\nmap_flatten = \"warn\"\nmap_unwrap_or = \"warn\"\nmatch_bool = \"warn\"\nmatch_on_vec_items = \"warn\"\nmatch_same_arms = \"warn\"\nmatch_wild_err_arm = \"warn\"\nmatch_wildcard_for_single_variants = \"warn\"\nmem_forget = \"warn\"\nmismatched_target_os = \"warn\"\nmismatching_type_param_order = \"warn\"\nmissing_enforced_import_renames = \"warn\"\nmissing_errors_doc = \"warn\"\nmissing_safety_doc = \"warn\"\nmut_mut = \"warn\"\nmutex_integer = \"warn\"\nneedless_borrow = \"warn\"\nneedless_continue = \"warn\"\nneedless_for_each = \"warn\"\nneedless_pass_by_ref_mut = \"warn\"\nneedless_pass_by_value = \"warn\"\nnegative_feature_names = \"warn\"\nnonstandard_macro_braces = \"warn\"\noption_option = \"warn\"\npath_buf_push_overwrite = \"warn\"\nprint_stderr = \"warn\"\nptr_as_ptr = \"warn\"\nptr_cast_constness = \"warn\"\npub_without_shorthand = \"warn\"\nrc_mutex = \"warn\"\nreadonly_write_lock = \"warn\"\nredundant_type_annotations = \"warn\"\nref_option_ref = \"warn\"\nref_patterns = \"warn\"\nrest_pat_in_fully_bound_structs = \"warn\"\nsame_functions_in_if_condition = \"warn\"\nsemicolon_if_nothing_returned = \"warn\"\nsingle_match_else = \"warn\"\nstr_to_string = \"warn\"\nstring_add = \"warn\"\nstring_add_assign = \"warn\"\nstring_lit_as_bytes = \"warn\"\nstring_lit_chars_any = \"warn\"\nstring_to_string = \"warn\"\nsuspicious_command_arg_space = \"warn\"\nsuspicious_xor_used_as_pow = \"warn\"\ntodo = \"warn\"\ntrailing_empty_array = \"warn\"\ntrait_duplication_in_bounds = \"warn\"\ntuple_array_conversions = \"warn\"\nunchecked_duration_subtraction = \"warn\"\nundocumented_unsafe_blocks = \"warn\"\nunimplemented = \"warn\"\nuninhabited_references = \"warn\"\nuninlined_format_args = \"warn\"\nunnecessary_box_returns = \"warn\"\nunnecessary_safety_doc = \"warn\"\nunnecessary_struct_initialization = \"warn\"\nunnecessary_wraps = \"warn\"\nunnested_or_patterns = \"warn\"\nunused_peekable = \"warn\"\nunused_rounding = \"warn\"\nunused_self = \"warn\"\nuse_self = \"warn\"\nuseless_transmute = \"warn\"\nverbose_file_reads = \"warn\"\nwildcard_dependencies = \"warn\"\nwildcard_imports = \"warn\"\nzero_sized_map_values = \"warn\"\niter_over_hash_type = \"allow\"\nlet_underscore_untyped = \"allow\"\nmissing_assert_message = \"allow\"\nshould_panic_without_expect = \"allow\"\ntoo_many_lines = \"allow\"\nunwrap_used = \"allow\"\nmanual_range_contains = \"allow\"\nself_named_module_files = \"allow\"\nsignificant_drop_tightening = \"allow\"\n\n[dependencies.egui]\ndefault-features = false\nversion = \"0.29.1\"\npath = \"crates/egui\"\n\n[dependencies.ahash]\nversion = \"0.8.11\"\ndefault-features = false\nfeatures = [ \"no-rng\", \"std\",]\n\n[dependencies.enum-map]\nversion = \"2\"\nfeatures = [ \"serde\",]\n\n[dependencies.log]\nversion = \"0.4\"\nfeatures = [ \"std\",]\n\n[dependencies.serde]\noptional = true\nversion = \"1\"\nfeatures = [ \"derive\",]\n\n[dependencies.chrono]\nversion = \"0.4\"\noptional = true\ndefault-features = false\nfeatures = [ \"clock\", \"js-sys\", \"std\", \"wasmbind\",]\n\n[dependencies.document-features]\noptional = true\nversion = \"0.2.10\"\n\n[dependencies.image]\noptional = true\nversion = \"0.25\"\ndefault-features = false\n\n[dependencies.mime_guess2]\nversion = \"2\"\noptional = true\ndefault-features = false\n\n[dependencies.puffin]\noptional = true\nversion = \"0.19\"\n\n[dependencies.syntect]\nversion = \"5\"\noptional = true\ndefault-features = false\nfeatures = [ \"default-fancy\",]\n\n[dependencies.resvg]\nversion = \"0.37\"\noptional = true\ndefault-features = false\n\n[dependencies.ehttp]\nversion = \"0.5\"\noptional = true\ndefault-features = false\n\n[package.metadata.docs.rs]\nall-features = true\nrustdoc-args = [ \"--generate-link-to-definition\",]\n",
+        "dest": "cargo/vendor/egui_extras",
+        "dest-filename": "Cargo.toml"
+    },
+    {
+        "type": "inline",
+        "contents": "{\"package\": null, \"files\": {}}",
+        "dest": "cargo/vendor/egui_extras",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -1954,29 +1933,34 @@
         "dest-filename": ".cargo-checksum.json"
     },
     {
-        "type": "archive",
-        "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/emath/emath-0.29.1.crate",
-        "sha256": "b1fe0049ce51d0fb414d029e668dd72eb30bc2b739bf34296ed97bd33df544f3",
-        "dest": "cargo/vendor/emath-0.29.1"
+        "type": "shell",
+        "commands": [
+            "cp -r --reflink=auto \"flatpak-cargo/git/egui-3c7ad0e/crates/emath\" \"cargo/vendor/emath\""
+        ]
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"b1fe0049ce51d0fb414d029e668dd72eb30bc2b739bf34296ed97bd33df544f3\", \"files\": {}}",
-        "dest": "cargo/vendor/emath-0.29.1",
+        "contents": "[package]\nname = \"emath\"\nversion = \"0.29.1\"\nauthors = [ \"Emil Ernerfeldt <emil.ernerfeldt@gmail.com>\",]\ndescription = \"Minimal 2D math library for GUI work\"\nedition = \"2021\"\nrust-version = \"1.77\"\nhomepage = \"https://github.com/emilk/egui/tree/master/crates/emath\"\nlicense = \"MIT OR Apache-2.0\"\nreadme = \"README.md\"\nrepository = \"https://github.com/emilk/egui/tree/master/crates/emath\"\ncategories = [ \"mathematics\", \"gui\",]\nkeywords = [ \"math\", \"gui\",]\ninclude = [ \"../LICENSE-APACHE\", \"../LICENSE-MIT\", \"**/*.rs\", \"Cargo.toml\",]\n\n[lib]\n\n[features]\ndefault = []\n\n[lints.rust]\nunsafe_code = \"deny\"\nelided_lifetimes_in_paths = \"warn\"\nfuture_incompatible = \"warn\"\nnonstandard_style = \"warn\"\nrust_2018_idioms = \"warn\"\nrust_2021_prelude_collisions = \"warn\"\nsemicolon_in_expressions_from_macros = \"warn\"\ntrivial_numeric_casts = \"warn\"\nunsafe_op_in_unsafe_fn = \"warn\"\nunused_extern_crates = \"warn\"\nunused_import_braces = \"warn\"\nunused_lifetimes = \"warn\"\ntrivial_casts = \"allow\"\nunused_qualifications = \"allow\"\n\n[lints.rustdoc]\nall = \"warn\"\nmissing_crate_level_docs = \"warn\"\nbroken_intra_doc_links = \"warn\"\n\n[lints.clippy]\nas_ptr_cast_mut = \"warn\"\nawait_holding_lock = \"warn\"\nbool_to_int_with_if = \"warn\"\nchar_lit_as_u8 = \"warn\"\nchecked_conversions = \"warn\"\nclear_with_drain = \"warn\"\ncloned_instead_of_copied = \"warn\"\ndbg_macro = \"warn\"\ndebug_assert_with_mut_call = \"warn\"\nderive_partial_eq_without_eq = \"warn\"\ndisallowed_macros = \"warn\"\ndisallowed_methods = \"warn\"\ndisallowed_names = \"warn\"\ndisallowed_script_idents = \"warn\"\ndisallowed_types = \"warn\"\ndoc_link_with_quotes = \"warn\"\ndoc_markdown = \"warn\"\nempty_enum = \"warn\"\nenum_glob_use = \"warn\"\nequatable_if_let = \"warn\"\nexit = \"warn\"\nexpl_impl_clone_on_copy = \"warn\"\nexplicit_deref_methods = \"warn\"\nexplicit_into_iter_loop = \"warn\"\nexplicit_iter_loop = \"warn\"\nfallible_impl_from = \"warn\"\nfilter_map_next = \"warn\"\nflat_map_option = \"warn\"\nfloat_cmp_const = \"warn\"\nfn_params_excessive_bools = \"warn\"\nfn_to_numeric_cast_any = \"warn\"\nfrom_iter_instead_of_collect = \"warn\"\nget_unwrap = \"warn\"\nif_let_mutex = \"warn\"\nimplicit_clone = \"warn\"\nimplied_bounds_in_impls = \"warn\"\nimprecise_flops = \"warn\"\nindex_refutable_slice = \"warn\"\ninefficient_to_string = \"warn\"\ninfinite_loop = \"warn\"\ninto_iter_without_iter = \"warn\"\ninvalid_upcast_comparisons = \"warn\"\niter_not_returning_iterator = \"warn\"\niter_on_empty_collections = \"warn\"\niter_on_single_items = \"warn\"\niter_without_into_iter = \"warn\"\nlarge_digit_groups = \"warn\"\nlarge_include_file = \"warn\"\nlarge_stack_arrays = \"warn\"\nlarge_stack_frames = \"warn\"\nlarge_types_passed_by_value = \"warn\"\nlet_unit_value = \"warn\"\nlinkedlist = \"warn\"\nlossy_float_literal = \"warn\"\nmacro_use_imports = \"warn\"\nmanual_assert = \"warn\"\nmanual_clamp = \"warn\"\nmanual_instant_elapsed = \"warn\"\nmanual_let_else = \"warn\"\nmanual_ok_or = \"warn\"\nmanual_string_new = \"warn\"\nmap_err_ignore = \"warn\"\nmap_flatten = \"warn\"\nmap_unwrap_or = \"warn\"\nmatch_bool = \"warn\"\nmatch_on_vec_items = \"warn\"\nmatch_same_arms = \"warn\"\nmatch_wild_err_arm = \"warn\"\nmatch_wildcard_for_single_variants = \"warn\"\nmem_forget = \"warn\"\nmismatched_target_os = \"warn\"\nmismatching_type_param_order = \"warn\"\nmissing_enforced_import_renames = \"warn\"\nmissing_errors_doc = \"warn\"\nmissing_safety_doc = \"warn\"\nmut_mut = \"warn\"\nmutex_integer = \"warn\"\nneedless_borrow = \"warn\"\nneedless_continue = \"warn\"\nneedless_for_each = \"warn\"\nneedless_pass_by_ref_mut = \"warn\"\nneedless_pass_by_value = \"warn\"\nnegative_feature_names = \"warn\"\nnonstandard_macro_braces = \"warn\"\noption_option = \"warn\"\npath_buf_push_overwrite = \"warn\"\nprint_stderr = \"warn\"\nptr_as_ptr = \"warn\"\nptr_cast_constness = \"warn\"\npub_without_shorthand = \"warn\"\nrc_mutex = \"warn\"\nreadonly_write_lock = \"warn\"\nredundant_type_annotations = \"warn\"\nref_option_ref = \"warn\"\nref_patterns = \"warn\"\nrest_pat_in_fully_bound_structs = \"warn\"\nsame_functions_in_if_condition = \"warn\"\nsemicolon_if_nothing_returned = \"warn\"\nsingle_match_else = \"warn\"\nstr_to_string = \"warn\"\nstring_add = \"warn\"\nstring_add_assign = \"warn\"\nstring_lit_as_bytes = \"warn\"\nstring_lit_chars_any = \"warn\"\nstring_to_string = \"warn\"\nsuspicious_command_arg_space = \"warn\"\nsuspicious_xor_used_as_pow = \"warn\"\ntodo = \"warn\"\ntrailing_empty_array = \"warn\"\ntrait_duplication_in_bounds = \"warn\"\ntuple_array_conversions = \"warn\"\nunchecked_duration_subtraction = \"warn\"\nundocumented_unsafe_blocks = \"warn\"\nunimplemented = \"warn\"\nuninhabited_references = \"warn\"\nuninlined_format_args = \"warn\"\nunnecessary_box_returns = \"warn\"\nunnecessary_safety_doc = \"warn\"\nunnecessary_struct_initialization = \"warn\"\nunnecessary_wraps = \"warn\"\nunnested_or_patterns = \"warn\"\nunused_peekable = \"warn\"\nunused_rounding = \"warn\"\nunused_self = \"warn\"\nuse_self = \"warn\"\nuseless_transmute = \"warn\"\nverbose_file_reads = \"warn\"\nwildcard_dependencies = \"warn\"\nwildcard_imports = \"warn\"\nzero_sized_map_values = \"warn\"\niter_over_hash_type = \"allow\"\nlet_underscore_untyped = \"allow\"\nmissing_assert_message = \"allow\"\nshould_panic_without_expect = \"allow\"\ntoo_many_lines = \"allow\"\nunwrap_used = \"allow\"\nmanual_range_contains = \"allow\"\nself_named_module_files = \"allow\"\nsignificant_drop_tightening = \"allow\"\n\n[dependencies.bytemuck]\noptional = true\nfeatures = [ \"derive\",]\nversion = \"1.7.2\"\n\n[dependencies.document-features]\noptional = true\nversion = \"0.2.10\"\n\n[dependencies.mint]\nversion = \"0.5.6\"\noptional = true\n\n[dependencies.serde]\noptional = true\nversion = \"1\"\nfeatures = [ \"derive\",]\n\n[package.metadata.docs.rs]\nall-features = true\nrustdoc-args = [ \"--generate-link-to-definition\",]\n",
+        "dest": "cargo/vendor/emath",
+        "dest-filename": "Cargo.toml"
+    },
+    {
+        "type": "inline",
+        "contents": "{\"package\": null, \"files\": {}}",
+        "dest": "cargo/vendor/emath",
         "dest-filename": ".cargo-checksum.json"
     },
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/embed-resource/embed-resource-2.5.0.crate",
-        "sha256": "f4e24052d7be71f0efb50c201557f6fe7d237cfd5a64fd5bcd7fd8fe32dbbffa",
-        "dest": "cargo/vendor/embed-resource-2.5.0"
+        "url": "https://static.crates.io/crates/embed-resource/embed-resource-3.0.1.crate",
+        "sha256": "4762ce03154ba57ebaeee60cc631901ceae4f18219cbb874e464347471594742",
+        "dest": "cargo/vendor/embed-resource-3.0.1"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"f4e24052d7be71f0efb50c201557f6fe7d237cfd5a64fd5bcd7fd8fe32dbbffa\", \"files\": {}}",
-        "dest": "cargo/vendor/embed-resource-2.5.0",
+        "contents": "{\"package\": \"4762ce03154ba57ebaeee60cc631901ceae4f18219cbb874e464347471594742\", \"files\": {}}",
+        "dest": "cargo/vendor/embed-resource-3.0.1",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -2123,29 +2107,39 @@
         "dest-filename": ".cargo-checksum.json"
     },
     {
-        "type": "archive",
-        "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/epaint/epaint-0.29.1.crate",
-        "sha256": "a32af8da821bd4f43f2c137e295459ee2e1661d87ca8779dfa0eaf45d870e20f",
-        "dest": "cargo/vendor/epaint-0.29.1"
+        "type": "shell",
+        "commands": [
+            "cp -r --reflink=auto \"flatpak-cargo/git/egui-3c7ad0e/crates/epaint\" \"cargo/vendor/epaint\""
+        ]
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"a32af8da821bd4f43f2c137e295459ee2e1661d87ca8779dfa0eaf45d870e20f\", \"files\": {}}",
-        "dest": "cargo/vendor/epaint-0.29.1",
+        "contents": "[[bench]]\nname = \"benchmark\"\nharness = false\n\n[package]\nname = \"epaint\"\nversion = \"0.29.1\"\nauthors = [ \"Emil Ernerfeldt <emil.ernerfeldt@gmail.com>\",]\ndescription = \"Minimal 2D graphics library for GUI work\"\nedition = \"2021\"\nrust-version = \"1.77\"\nhomepage = \"https://github.com/emilk/egui/tree/master/crates/epaint\"\nlicense = \"MIT OR Apache-2.0\"\nreadme = \"README.md\"\nrepository = \"https://github.com/emilk/egui/tree/master/crates/epaint\"\ncategories = [ \"graphics\", \"gui\",]\nkeywords = [ \"graphics\", \"gui\", \"egui\",]\ninclude = [ \"../LICENSE-APACHE\", \"../LICENSE-MIT\", \"**/*.rs\", \"Cargo.toml\",]\n\n[lib]\n\n[features]\ndefault = [ \"default_fonts\",]\nbytemuck = [ \"dep:bytemuck\", \"emath/bytemuck\", \"ecolor/bytemuck\",]\ncint = [ \"ecolor/cint\",]\ncolor-hex = [ \"ecolor/color-hex\",]\ndeadlock_detection = [ \"dep:backtrace\",]\ndefault_fonts = [ \"epaint_default_fonts\",]\nlog = [ \"dep:log\",]\nmint = [ \"emath/mint\",]\npuffin = [ \"dep:puffin\",]\nrayon = [ \"dep:rayon\",]\nserde = [ \"dep:serde\", \"ahash/serde\", \"emath/serde\", \"ecolor/serde\",]\nunity = []\n\n[dependencies]\nab_glyph = \"0.2.11\"\nnohash-hasher = \"0.2\"\nparking_lot = \"0.12\"\n\n[lints.rust]\nunsafe_code = \"deny\"\nelided_lifetimes_in_paths = \"warn\"\nfuture_incompatible = \"warn\"\nnonstandard_style = \"warn\"\nrust_2018_idioms = \"warn\"\nrust_2021_prelude_collisions = \"warn\"\nsemicolon_in_expressions_from_macros = \"warn\"\ntrivial_numeric_casts = \"warn\"\nunsafe_op_in_unsafe_fn = \"warn\"\nunused_extern_crates = \"warn\"\nunused_import_braces = \"warn\"\nunused_lifetimes = \"warn\"\ntrivial_casts = \"allow\"\nunused_qualifications = \"allow\"\n\n[lints.rustdoc]\nall = \"warn\"\nmissing_crate_level_docs = \"warn\"\nbroken_intra_doc_links = \"warn\"\n\n[lints.clippy]\nas_ptr_cast_mut = \"warn\"\nawait_holding_lock = \"warn\"\nbool_to_int_with_if = \"warn\"\nchar_lit_as_u8 = \"warn\"\nchecked_conversions = \"warn\"\nclear_with_drain = \"warn\"\ncloned_instead_of_copied = \"warn\"\ndbg_macro = \"warn\"\ndebug_assert_with_mut_call = \"warn\"\nderive_partial_eq_without_eq = \"warn\"\ndisallowed_macros = \"warn\"\ndisallowed_methods = \"warn\"\ndisallowed_names = \"warn\"\ndisallowed_script_idents = \"warn\"\ndisallowed_types = \"warn\"\ndoc_link_with_quotes = \"warn\"\ndoc_markdown = \"warn\"\nempty_enum = \"warn\"\nenum_glob_use = \"warn\"\nequatable_if_let = \"warn\"\nexit = \"warn\"\nexpl_impl_clone_on_copy = \"warn\"\nexplicit_deref_methods = \"warn\"\nexplicit_into_iter_loop = \"warn\"\nexplicit_iter_loop = \"warn\"\nfallible_impl_from = \"warn\"\nfilter_map_next = \"warn\"\nflat_map_option = \"warn\"\nfloat_cmp_const = \"warn\"\nfn_params_excessive_bools = \"warn\"\nfn_to_numeric_cast_any = \"warn\"\nfrom_iter_instead_of_collect = \"warn\"\nget_unwrap = \"warn\"\nif_let_mutex = \"warn\"\nimplicit_clone = \"warn\"\nimplied_bounds_in_impls = \"warn\"\nimprecise_flops = \"warn\"\nindex_refutable_slice = \"warn\"\ninefficient_to_string = \"warn\"\ninfinite_loop = \"warn\"\ninto_iter_without_iter = \"warn\"\ninvalid_upcast_comparisons = \"warn\"\niter_not_returning_iterator = \"warn\"\niter_on_empty_collections = \"warn\"\niter_on_single_items = \"warn\"\niter_without_into_iter = \"warn\"\nlarge_digit_groups = \"warn\"\nlarge_include_file = \"warn\"\nlarge_stack_arrays = \"warn\"\nlarge_stack_frames = \"warn\"\nlarge_types_passed_by_value = \"warn\"\nlet_unit_value = \"warn\"\nlinkedlist = \"warn\"\nlossy_float_literal = \"warn\"\nmacro_use_imports = \"warn\"\nmanual_assert = \"warn\"\nmanual_clamp = \"warn\"\nmanual_instant_elapsed = \"warn\"\nmanual_let_else = \"warn\"\nmanual_ok_or = \"warn\"\nmanual_string_new = \"warn\"\nmap_err_ignore = \"warn\"\nmap_flatten = \"warn\"\nmap_unwrap_or = \"warn\"\nmatch_bool = \"warn\"\nmatch_on_vec_items = \"warn\"\nmatch_same_arms = \"warn\"\nmatch_wild_err_arm = \"warn\"\nmatch_wildcard_for_single_variants = \"warn\"\nmem_forget = \"warn\"\nmismatched_target_os = \"warn\"\nmismatching_type_param_order = \"warn\"\nmissing_enforced_import_renames = \"warn\"\nmissing_errors_doc = \"warn\"\nmissing_safety_doc = \"warn\"\nmut_mut = \"warn\"\nmutex_integer = \"warn\"\nneedless_borrow = \"warn\"\nneedless_continue = \"warn\"\nneedless_for_each = \"warn\"\nneedless_pass_by_ref_mut = \"warn\"\nneedless_pass_by_value = \"warn\"\nnegative_feature_names = \"warn\"\nnonstandard_macro_braces = \"warn\"\noption_option = \"warn\"\npath_buf_push_overwrite = \"warn\"\nprint_stderr = \"warn\"\nptr_as_ptr = \"warn\"\nptr_cast_constness = \"warn\"\npub_without_shorthand = \"warn\"\nrc_mutex = \"warn\"\nreadonly_write_lock = \"warn\"\nredundant_type_annotations = \"warn\"\nref_option_ref = \"warn\"\nref_patterns = \"warn\"\nrest_pat_in_fully_bound_structs = \"warn\"\nsame_functions_in_if_condition = \"warn\"\nsemicolon_if_nothing_returned = \"warn\"\nsingle_match_else = \"warn\"\nstr_to_string = \"warn\"\nstring_add = \"warn\"\nstring_add_assign = \"warn\"\nstring_lit_as_bytes = \"warn\"\nstring_lit_chars_any = \"warn\"\nstring_to_string = \"warn\"\nsuspicious_command_arg_space = \"warn\"\nsuspicious_xor_used_as_pow = \"warn\"\ntodo = \"warn\"\ntrailing_empty_array = \"warn\"\ntrait_duplication_in_bounds = \"warn\"\ntuple_array_conversions = \"warn\"\nunchecked_duration_subtraction = \"warn\"\nundocumented_unsafe_blocks = \"warn\"\nunimplemented = \"warn\"\nuninhabited_references = \"warn\"\nuninlined_format_args = \"warn\"\nunnecessary_box_returns = \"warn\"\nunnecessary_safety_doc = \"warn\"\nunnecessary_struct_initialization = \"warn\"\nunnecessary_wraps = \"warn\"\nunnested_or_patterns = \"warn\"\nunused_peekable = \"warn\"\nunused_rounding = \"warn\"\nunused_self = \"warn\"\nuse_self = \"warn\"\nuseless_transmute = \"warn\"\nverbose_file_reads = \"warn\"\nwildcard_dependencies = \"warn\"\nwildcard_imports = \"warn\"\nzero_sized_map_values = \"warn\"\niter_over_hash_type = \"allow\"\nlet_underscore_untyped = \"allow\"\nmissing_assert_message = \"allow\"\nshould_panic_without_expect = \"allow\"\ntoo_many_lines = \"allow\"\nunwrap_used = \"allow\"\nmanual_range_contains = \"allow\"\nself_named_module_files = \"allow\"\nsignificant_drop_tightening = \"allow\"\n\n[dependencies.emath]\nversion = \"0.29.1\"\npath = \"crates/emath\"\ndefault-features = false\n\n[dependencies.ecolor]\nversion = \"0.29.1\"\npath = \"crates/ecolor\"\ndefault-features = false\n\n[dependencies.ahash]\nversion = \"0.8.11\"\ndefault-features = false\nfeatures = [ \"no-rng\", \"std\",]\n\n[dependencies.bytemuck]\noptional = true\nfeatures = [ \"derive\",]\nversion = \"1.7.2\"\n\n[dependencies.document-features]\noptional = true\nversion = \"0.2.10\"\n\n[dependencies.log]\noptional = true\nversion = \"0.4\"\nfeatures = [ \"std\",]\n\n[dependencies.puffin]\noptional = true\nversion = \"0.19\"\n\n[dependencies.rayon]\nversion = \"1.7\"\noptional = true\n\n[dependencies.serde]\noptional = true\nfeatures = [ \"derive\", \"rc\", \"derive\",]\nversion = \"1\"\n\n[dependencies.epaint_default_fonts]\noptional = true\nversion = \"0.29.1\"\npath = \"crates/epaint_default_fonts\"\n\n[dev-dependencies.criterion]\nversion = \"0.5.1\"\ndefault-features = false\n\n[package.metadata.docs.rs]\nall-features = true\nrustdoc-args = [ \"--generate-link-to-definition\",]\n\n[target.\"cfg(not(target_arch = \\\"wasm32\\\"))\".dependencies.backtrace]\noptional = true\nversion = \"0.3\"\n",
+        "dest": "cargo/vendor/epaint",
+        "dest-filename": "Cargo.toml"
+    },
+    {
+        "type": "inline",
+        "contents": "{\"package\": null, \"files\": {}}",
+        "dest": "cargo/vendor/epaint",
         "dest-filename": ".cargo-checksum.json"
     },
     {
-        "type": "archive",
-        "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/epaint_default_fonts/epaint_default_fonts-0.29.1.crate",
-        "sha256": "483440db0b7993cf77a20314f08311dbe95675092405518c0677aa08c151a3ea",
-        "dest": "cargo/vendor/epaint_default_fonts-0.29.1"
+        "type": "shell",
+        "commands": [
+            "cp -r --reflink=auto \"flatpak-cargo/git/egui-3c7ad0e/crates/epaint_default_fonts\" \"cargo/vendor/epaint_default_fonts\""
+        ]
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"483440db0b7993cf77a20314f08311dbe95675092405518c0677aa08c151a3ea\", \"files\": {}}",
-        "dest": "cargo/vendor/epaint_default_fonts-0.29.1",
+        "contents": "[package]\nname = \"epaint_default_fonts\"\nversion = \"0.29.1\"\nauthors = [ \"Emil Ernerfeldt <emil.ernerfeldt@gmail.com>\",]\ndescription = \"Default fonts for use in epaint / egui\"\nedition = \"2021\"\nrust-version = \"1.77\"\nhomepage = \"https://github.com/emilk/egui/tree/master/crates/epaint_default_fonts\"\nlicense = \"(MIT OR Apache-2.0) AND OFL-1.1 AND LicenseRef-UFL-1.0\"\nreadme = \"README.md\"\nrepository = \"https://github.com/emilk/egui/tree/master/crates/epaint_default_fonts\"\ncategories = [ \"graphics\", \"gui\",]\nkeywords = [ \"graphics\", \"gui\", \"egui\",]\ninclude = [ \"../LICENSE-APACHE\", \"../LICENSE-MIT\", \"**/*.rs\", \"Cargo.toml\", \"fonts/*.ttf\", \"fonts/*.txt\", \"fonts/OFL.txt\", \"fonts/UFL.txt\",]\n\n[lints.rust]\nunsafe_code = \"deny\"\nelided_lifetimes_in_paths = \"warn\"\nfuture_incompatible = \"warn\"\nnonstandard_style = \"warn\"\nrust_2018_idioms = \"warn\"\nrust_2021_prelude_collisions = \"warn\"\nsemicolon_in_expressions_from_macros = \"warn\"\ntrivial_numeric_casts = \"warn\"\nunsafe_op_in_unsafe_fn = \"warn\"\nunused_extern_crates = \"warn\"\nunused_import_braces = \"warn\"\nunused_lifetimes = \"warn\"\ntrivial_casts = \"allow\"\nunused_qualifications = \"allow\"\n\n[lints.rustdoc]\nall = \"warn\"\nmissing_crate_level_docs = \"warn\"\nbroken_intra_doc_links = \"warn\"\n\n[lints.clippy]\nas_ptr_cast_mut = \"warn\"\nawait_holding_lock = \"warn\"\nbool_to_int_with_if = \"warn\"\nchar_lit_as_u8 = \"warn\"\nchecked_conversions = \"warn\"\nclear_with_drain = \"warn\"\ncloned_instead_of_copied = \"warn\"\ndbg_macro = \"warn\"\ndebug_assert_with_mut_call = \"warn\"\nderive_partial_eq_without_eq = \"warn\"\ndisallowed_macros = \"warn\"\ndisallowed_methods = \"warn\"\ndisallowed_names = \"warn\"\ndisallowed_script_idents = \"warn\"\ndisallowed_types = \"warn\"\ndoc_link_with_quotes = \"warn\"\ndoc_markdown = \"warn\"\nempty_enum = \"warn\"\nenum_glob_use = \"warn\"\nequatable_if_let = \"warn\"\nexit = \"warn\"\nexpl_impl_clone_on_copy = \"warn\"\nexplicit_deref_methods = \"warn\"\nexplicit_into_iter_loop = \"warn\"\nexplicit_iter_loop = \"warn\"\nfallible_impl_from = \"warn\"\nfilter_map_next = \"warn\"\nflat_map_option = \"warn\"\nfloat_cmp_const = \"warn\"\nfn_params_excessive_bools = \"warn\"\nfn_to_numeric_cast_any = \"warn\"\nfrom_iter_instead_of_collect = \"warn\"\nget_unwrap = \"warn\"\nif_let_mutex = \"warn\"\nimplicit_clone = \"warn\"\nimplied_bounds_in_impls = \"warn\"\nimprecise_flops = \"warn\"\nindex_refutable_slice = \"warn\"\ninefficient_to_string = \"warn\"\ninfinite_loop = \"warn\"\ninto_iter_without_iter = \"warn\"\ninvalid_upcast_comparisons = \"warn\"\niter_not_returning_iterator = \"warn\"\niter_on_empty_collections = \"warn\"\niter_on_single_items = \"warn\"\niter_without_into_iter = \"warn\"\nlarge_digit_groups = \"warn\"\nlarge_include_file = \"warn\"\nlarge_stack_arrays = \"warn\"\nlarge_stack_frames = \"warn\"\nlarge_types_passed_by_value = \"warn\"\nlet_unit_value = \"warn\"\nlinkedlist = \"warn\"\nlossy_float_literal = \"warn\"\nmacro_use_imports = \"warn\"\nmanual_assert = \"warn\"\nmanual_clamp = \"warn\"\nmanual_instant_elapsed = \"warn\"\nmanual_let_else = \"warn\"\nmanual_ok_or = \"warn\"\nmanual_string_new = \"warn\"\nmap_err_ignore = \"warn\"\nmap_flatten = \"warn\"\nmap_unwrap_or = \"warn\"\nmatch_bool = \"warn\"\nmatch_on_vec_items = \"warn\"\nmatch_same_arms = \"warn\"\nmatch_wild_err_arm = \"warn\"\nmatch_wildcard_for_single_variants = \"warn\"\nmem_forget = \"warn\"\nmismatched_target_os = \"warn\"\nmismatching_type_param_order = \"warn\"\nmissing_enforced_import_renames = \"warn\"\nmissing_errors_doc = \"warn\"\nmissing_safety_doc = \"warn\"\nmut_mut = \"warn\"\nmutex_integer = \"warn\"\nneedless_borrow = \"warn\"\nneedless_continue = \"warn\"\nneedless_for_each = \"warn\"\nneedless_pass_by_ref_mut = \"warn\"\nneedless_pass_by_value = \"warn\"\nnegative_feature_names = \"warn\"\nnonstandard_macro_braces = \"warn\"\noption_option = \"warn\"\npath_buf_push_overwrite = \"warn\"\nprint_stderr = \"warn\"\nptr_as_ptr = \"warn\"\nptr_cast_constness = \"warn\"\npub_without_shorthand = \"warn\"\nrc_mutex = \"warn\"\nreadonly_write_lock = \"warn\"\nredundant_type_annotations = \"warn\"\nref_option_ref = \"warn\"\nref_patterns = \"warn\"\nrest_pat_in_fully_bound_structs = \"warn\"\nsame_functions_in_if_condition = \"warn\"\nsemicolon_if_nothing_returned = \"warn\"\nsingle_match_else = \"warn\"\nstr_to_string = \"warn\"\nstring_add = \"warn\"\nstring_add_assign = \"warn\"\nstring_lit_as_bytes = \"warn\"\nstring_lit_chars_any = \"warn\"\nstring_to_string = \"warn\"\nsuspicious_command_arg_space = \"warn\"\nsuspicious_xor_used_as_pow = \"warn\"\ntodo = \"warn\"\ntrailing_empty_array = \"warn\"\ntrait_duplication_in_bounds = \"warn\"\ntuple_array_conversions = \"warn\"\nunchecked_duration_subtraction = \"warn\"\nundocumented_unsafe_blocks = \"warn\"\nunimplemented = \"warn\"\nuninhabited_references = \"warn\"\nuninlined_format_args = \"warn\"\nunnecessary_box_returns = \"warn\"\nunnecessary_safety_doc = \"warn\"\nunnecessary_struct_initialization = \"warn\"\nunnecessary_wraps = \"warn\"\nunnested_or_patterns = \"warn\"\nunused_peekable = \"warn\"\nunused_rounding = \"warn\"\nunused_self = \"warn\"\nuse_self = \"warn\"\nuseless_transmute = \"warn\"\nverbose_file_reads = \"warn\"\nwildcard_dependencies = \"warn\"\nwildcard_imports = \"warn\"\nzero_sized_map_values = \"warn\"\niter_over_hash_type = \"allow\"\nlet_underscore_untyped = \"allow\"\nmissing_assert_message = \"allow\"\nshould_panic_without_expect = \"allow\"\ntoo_many_lines = \"allow\"\nunwrap_used = \"allow\"\nmanual_range_contains = \"allow\"\nself_named_module_files = \"allow\"\nsignificant_drop_tightening = \"allow\"\n\n[package.metadata.docs.rs]\nall-features = true\nrustdoc-args = [ \"--generate-link-to-definition\",]\n",
+        "dest": "cargo/vendor/epaint_default_fonts",
+        "dest-filename": "Cargo.toml"
+    },
+    {
+        "type": "inline",
+        "contents": "{\"package\": null, \"files\": {}}",
+        "dest": "cargo/vendor/epaint_default_fonts",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -2585,14 +2579,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/futures-lite/futures-lite-2.3.0.crate",
-        "sha256": "52527eb5074e35e9339c6b4e8d12600c7128b68fb25dcb9fa9dec18f7c25f3a5",
-        "dest": "cargo/vendor/futures-lite-2.3.0"
+        "url": "https://static.crates.io/crates/futures-lite/futures-lite-2.5.0.crate",
+        "sha256": "cef40d21ae2c515b51041df9ed313ed21e572df340ea58a922a0aefe7e8891a1",
+        "dest": "cargo/vendor/futures-lite-2.5.0"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"52527eb5074e35e9339c6b4e8d12600c7128b68fb25dcb9fa9dec18f7c25f3a5\", \"files\": {}}",
-        "dest": "cargo/vendor/futures-lite-2.3.0",
+        "contents": "{\"package\": \"cef40d21ae2c515b51041df9ed313ed21e572df340ea58a922a0aefe7e8891a1\", \"files\": {}}",
+        "dest": "cargo/vendor/futures-lite-2.5.0",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -2845,14 +2839,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/glow/glow-0.13.1.crate",
-        "sha256": "bd348e04c43b32574f2de31c8bb397d96c9fcfa1371bd4ca6d8bdc464ab121b1",
-        "dest": "cargo/vendor/glow-0.13.1"
+        "url": "https://static.crates.io/crates/glow/glow-0.14.2.crate",
+        "sha256": "d51fa363f025f5c111e03f13eda21162faeacb6911fe8caa0c0349f9cf0c4483",
+        "dest": "cargo/vendor/glow-0.14.2"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"bd348e04c43b32574f2de31c8bb397d96c9fcfa1371bd4ca6d8bdc464ab121b1\", \"files\": {}}",
-        "dest": "cargo/vendor/glow-0.13.1",
+        "contents": "{\"package\": \"d51fa363f025f5c111e03f13eda21162faeacb6911fe8caa0c0349f9cf0c4483\", \"files\": {}}",
+        "dest": "cargo/vendor/glow-0.14.2",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -2897,14 +2891,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/gpu-allocator/gpu-allocator-0.26.0.crate",
-        "sha256": "fdd4240fc91d3433d5e5b0fc5b67672d771850dc19bbee03c1381e19322803d7",
-        "dest": "cargo/vendor/gpu-allocator-0.26.0"
+        "url": "https://static.crates.io/crates/gpu-allocator/gpu-allocator-0.27.0.crate",
+        "sha256": "c151a2a5ef800297b4e79efa4f4bec035c5f51d5ae587287c9b952bdf734cacd",
+        "dest": "cargo/vendor/gpu-allocator-0.27.0"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"fdd4240fc91d3433d5e5b0fc5b67672d771850dc19bbee03c1381e19322803d7\", \"files\": {}}",
-        "dest": "cargo/vendor/gpu-allocator-0.26.0",
+        "contents": "{\"package\": \"c151a2a5ef800297b4e79efa4f4bec035c5f51d5ae587287c9b952bdf734cacd\", \"files\": {}}",
+        "dest": "cargo/vendor/gpu-allocator-0.27.0",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -3024,19 +3018,6 @@
         "type": "inline",
         "contents": "{\"package\": \"1e087f84d4f86bf4b218b927129862374b72199ae7d8657835f1e89000eea4fb\", \"files\": {}}",
         "dest": "cargo/vendor/hashbrown-0.15.0",
-        "dest-filename": ".cargo-checksum.json"
-    },
-    {
-        "type": "archive",
-        "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/hassle-rs/hassle-rs-0.11.0.crate",
-        "sha256": "af2a7e73e1f34c48da31fb668a907f250794837e08faa144fd24f0b8b741e890",
-        "dest": "cargo/vendor/hassle-rs-0.11.0"
-    },
-    {
-        "type": "inline",
-        "contents": "{\"package\": \"af2a7e73e1f34c48da31fb668a907f250794837e08faa144fd24f0b8b741e890\", \"files\": {}}",
-        "dest": "cargo/vendor/hassle-rs-0.11.0",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -3302,14 +3283,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/image/image-0.25.4.crate",
-        "sha256": "bc144d44a31d753b02ce64093d532f55ff8dc4ebf2ffb8a63c0dda691385acae",
-        "dest": "cargo/vendor/image-0.25.4"
+        "url": "https://static.crates.io/crates/image/image-0.25.5.crate",
+        "sha256": "cd6f44aed642f18953a158afeb30206f4d50da59fbc66ecb53c66488de73563b",
+        "dest": "cargo/vendor/image-0.25.5"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"bc144d44a31d753b02ce64093d532f55ff8dc4ebf2ffb8a63c0dda691385acae\", \"files\": {}}",
-        "dest": "cargo/vendor/image-0.25.4",
+        "contents": "{\"package\": \"cd6f44aed642f18953a158afeb30206f4d50da59fbc66ecb53c66488de73563b\", \"files\": {}}",
+        "dest": "cargo/vendor/image-0.25.5",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -3328,14 +3309,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/indicatif/indicatif-0.17.8.crate",
-        "sha256": "763a5a8f45087d6bcea4222e7b72c291a054edf80e4ef6efd2a4979878c7bea3",
-        "dest": "cargo/vendor/indicatif-0.17.8"
+        "url": "https://static.crates.io/crates/indicatif/indicatif-0.17.9.crate",
+        "sha256": "cbf675b85ed934d3c67b5c5469701eec7db22689d0a2139d856e0925fa28b281",
+        "dest": "cargo/vendor/indicatif-0.17.9"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"763a5a8f45087d6bcea4222e7b72c291a054edf80e4ef6efd2a4979878c7bea3\", \"files\": {}}",
-        "dest": "cargo/vendor/indicatif-0.17.8",
+        "contents": "{\"package\": \"cbf675b85ed934d3c67b5c5469701eec7db22689d0a2139d856e0925fa28b281\", \"files\": {}}",
+        "dest": "cargo/vendor/indicatif-0.17.9",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -3367,27 +3348,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/insta/insta-1.41.0.crate",
-        "sha256": "a1f72d3e19488cf7d8ea52d2fc0f8754fc933398b337cd3cbdb28aaeb35159ef",
-        "dest": "cargo/vendor/insta-1.41.0"
+        "url": "https://static.crates.io/crates/insta/insta-1.41.1.crate",
+        "sha256": "7e9ffc4d4892617c50a928c52b2961cb5174b6fc6ebf252b2fac9d21955c48b8",
+        "dest": "cargo/vendor/insta-1.41.1"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"a1f72d3e19488cf7d8ea52d2fc0f8754fc933398b337cd3cbdb28aaeb35159ef\", \"files\": {}}",
-        "dest": "cargo/vendor/insta-1.41.0",
-        "dest-filename": ".cargo-checksum.json"
-    },
-    {
-        "type": "archive",
-        "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/instant/instant-0.1.13.crate",
-        "sha256": "e0242819d153cba4b4b05a5a8f2a7e9bbf97b6055b2a002b395c96b5ff3c0222",
-        "dest": "cargo/vendor/instant-0.1.13"
-    },
-    {
-        "type": "inline",
-        "contents": "{\"package\": \"e0242819d153cba4b4b05a5a8f2a7e9bbf97b6055b2a002b395c96b5ff3c0222\", \"files\": {}}",
-        "dest": "cargo/vendor/instant-0.1.13",
+        "contents": "{\"package\": \"7e9ffc4d4892617c50a928c52b2961cb5174b6fc6ebf252b2fac9d21955c48b8\", \"files\": {}}",
+        "dest": "cargo/vendor/insta-1.41.1",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -3606,14 +3574,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/libc/libc-0.2.159.crate",
-        "sha256": "561d97a539a36e26a9a5fad1ea11a3039a67714694aaa379433e580854bc3dc5",
-        "dest": "cargo/vendor/libc-0.2.159"
+        "url": "https://static.crates.io/crates/libc/libc-0.2.162.crate",
+        "sha256": "18d287de67fe55fd7e1581fe933d965a5a9477b38e949cfa9f8574ef01506398",
+        "dest": "cargo/vendor/libc-0.2.162"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"561d97a539a36e26a9a5fad1ea11a3039a67714694aaa379433e580854bc3dc5\", \"files\": {}}",
-        "dest": "cargo/vendor/libc-0.2.159",
+        "contents": "{\"package\": \"18d287de67fe55fd7e1581fe933d965a5a9477b38e949cfa9f8574ef01506398\", \"files\": {}}",
+        "dest": "cargo/vendor/libc-0.2.162",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -4061,14 +4029,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/naga/naga-22.1.0.crate",
-        "sha256": "8bd5a652b6faf21496f2cfd88fc49989c8db0825d1f6746b1a71a6ede24a63ad",
-        "dest": "cargo/vendor/naga-22.1.0"
+        "url": "https://static.crates.io/crates/naga/naga-23.0.0.crate",
+        "sha256": "3d5941e45a15b53aad4375eedf02033adb7a28931eedc31117faffa52e6a857e",
+        "dest": "cargo/vendor/naga-23.0.0"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"8bd5a652b6faf21496f2cfd88fc49989c8db0825d1f6746b1a71a6ede24a63ad\", \"files\": {}}",
-        "dest": "cargo/vendor/naga-22.1.0",
+        "contents": "{\"package\": \"3d5941e45a15b53aad4375eedf02033adb7a28931eedc31117faffa52e6a857e\", \"files\": {}}",
+        "dest": "cargo/vendor/naga-23.0.0",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -4666,14 +4634,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/once_cell/once_cell-1.19.0.crate",
-        "sha256": "3fdb12b2476b595f9358c5161aa467c2438859caa136dec86c26fdd2efe17b92",
-        "dest": "cargo/vendor/once_cell-1.19.0"
+        "url": "https://static.crates.io/crates/once_cell/once_cell-1.20.2.crate",
+        "sha256": "1261fe7e33c73b354eab43b1273a57c8f967d0391e80353e51f764ac02cf6775",
+        "dest": "cargo/vendor/once_cell-1.20.2"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"3fdb12b2476b595f9358c5161aa467c2438859caa136dec86c26fdd2efe17b92\", \"files\": {}}",
-        "dest": "cargo/vendor/once_cell-1.19.0",
+        "contents": "{\"package\": \"1261fe7e33c73b354eab43b1273a57c8f967d0391e80353e51f764ac02cf6775\", \"files\": {}}",
+        "dest": "cargo/vendor/once_cell-1.20.2",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -5576,14 +5544,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/rustix/rustix-0.38.37.crate",
-        "sha256": "8acb788b847c24f28525660c4d7758620a7210875711f79e7f663cc152726811",
-        "dest": "cargo/vendor/rustix-0.38.37"
+        "url": "https://static.crates.io/crates/rustix/rustix-0.38.40.crate",
+        "sha256": "99e4ea3e1cdc4b559b8e5650f9c8e5998e3e5c1343b4eaf034565f32318d63c0",
+        "dest": "cargo/vendor/rustix-0.38.40"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"8acb788b847c24f28525660c4d7758620a7210875711f79e7f663cc152726811\", \"files\": {}}",
-        "dest": "cargo/vendor/rustix-0.38.37",
+        "contents": "{\"package\": \"99e4ea3e1cdc4b559b8e5650f9c8e5998e3e5c1343b4eaf034565f32318d63c0\", \"files\": {}}",
+        "dest": "cargo/vendor/rustix-0.38.40",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -6213,27 +6181,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/syn/syn-1.0.109.crate",
-        "sha256": "72b64191b275b66ffe2469e8af2c1cfe3bafa67b529ead792a6d0160888b4237",
-        "dest": "cargo/vendor/syn-1.0.109"
+        "url": "https://static.crates.io/crates/syn/syn-2.0.87.crate",
+        "sha256": "25aa4ce346d03a6dcd68dd8b4010bcb74e54e62c90c573f394c46eae99aba32d",
+        "dest": "cargo/vendor/syn-2.0.87"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"72b64191b275b66ffe2469e8af2c1cfe3bafa67b529ead792a6d0160888b4237\", \"files\": {}}",
-        "dest": "cargo/vendor/syn-1.0.109",
-        "dest-filename": ".cargo-checksum.json"
-    },
-    {
-        "type": "archive",
-        "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/syn/syn-2.0.85.crate",
-        "sha256": "5023162dfcd14ef8f32034d8bcd4cc5ddc61ef7a247c024a33e24e1f24d21b56",
-        "dest": "cargo/vendor/syn-2.0.85"
-    },
-    {
-        "type": "inline",
-        "contents": "{\"package\": \"5023162dfcd14ef8f32034d8bcd4cc5ddc61ef7a247c024a33e24e1f24d21b56\", \"files\": {}}",
-        "dest": "cargo/vendor/syn-2.0.85",
+        "contents": "{\"package\": \"25aa4ce346d03a6dcd68dd8b4010bcb74e54e62c90c573f394c46eae99aba32d\", \"files\": {}}",
+        "dest": "cargo/vendor/syn-2.0.87",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -6265,14 +6220,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/sys-locale/sys-locale-0.3.1.crate",
-        "sha256": "e801cf239ecd6ccd71f03d270d67dd53d13e90aab208bf4b8fe4ad957ea949b0",
-        "dest": "cargo/vendor/sys-locale-0.3.1"
+        "url": "https://static.crates.io/crates/sys-locale/sys-locale-0.3.2.crate",
+        "sha256": "8eab9a99a024a169fe8a903cf9d4a3b3601109bcc13bd9e3c6fff259138626c4",
+        "dest": "cargo/vendor/sys-locale-0.3.2"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"e801cf239ecd6ccd71f03d270d67dd53d13e90aab208bf4b8fe4ad957ea949b0\", \"files\": {}}",
-        "dest": "cargo/vendor/sys-locale-0.3.1",
+        "contents": "{\"package\": \"8eab9a99a024a169fe8a903cf9d4a3b3601109bcc13bd9e3c6fff259138626c4\", \"files\": {}}",
+        "dest": "cargo/vendor/sys-locale-0.3.2",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -6304,14 +6259,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/tempfile/tempfile-3.13.0.crate",
-        "sha256": "f0f2c9fc62d0beef6951ccffd757e241266a2c833136efbe35af6cd2567dca5b",
-        "dest": "cargo/vendor/tempfile-3.13.0"
+        "url": "https://static.crates.io/crates/tempfile/tempfile-3.14.0.crate",
+        "sha256": "28cce251fcbc87fac86a866eeb0d6c2d536fc16d06f184bb61aeae11aa4cee0c",
+        "dest": "cargo/vendor/tempfile-3.14.0"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"f0f2c9fc62d0beef6951ccffd757e241266a2c833136efbe35af6cd2567dca5b\", \"files\": {}}",
-        "dest": "cargo/vendor/tempfile-3.13.0",
+        "contents": "{\"package\": \"28cce251fcbc87fac86a866eeb0d6c2d536fc16d06f184bb61aeae11aa4cee0c\", \"files\": {}}",
+        "dest": "cargo/vendor/tempfile-3.14.0",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -6330,27 +6285,27 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/thiserror/thiserror-1.0.65.crate",
-        "sha256": "5d11abd9594d9b38965ef50805c5e469ca9cc6f197f883f717e0269a3057b3d5",
-        "dest": "cargo/vendor/thiserror-1.0.65"
+        "url": "https://static.crates.io/crates/thiserror/thiserror-1.0.69.crate",
+        "sha256": "b6aaf5339b578ea85b50e080feb250a3e8ae8cfcdff9a461c9ec2904bc923f52",
+        "dest": "cargo/vendor/thiserror-1.0.69"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"5d11abd9594d9b38965ef50805c5e469ca9cc6f197f883f717e0269a3057b3d5\", \"files\": {}}",
-        "dest": "cargo/vendor/thiserror-1.0.65",
+        "contents": "{\"package\": \"b6aaf5339b578ea85b50e080feb250a3e8ae8cfcdff9a461c9ec2904bc923f52\", \"files\": {}}",
+        "dest": "cargo/vendor/thiserror-1.0.69",
         "dest-filename": ".cargo-checksum.json"
     },
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/thiserror-impl/thiserror-impl-1.0.65.crate",
-        "sha256": "ae71770322cbd277e69d762a16c444af02aa0575ac0d174f0b9562d3b37f8602",
-        "dest": "cargo/vendor/thiserror-impl-1.0.65"
+        "url": "https://static.crates.io/crates/thiserror-impl/thiserror-impl-1.0.69.crate",
+        "sha256": "4fee6c4efc90059e10f81e6d42c60a18f76588c3d74cb83a0b242a2b6c7504c1",
+        "dest": "cargo/vendor/thiserror-impl-1.0.69"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"ae71770322cbd277e69d762a16c444af02aa0575ac0d174f0b9562d3b37f8602\", \"files\": {}}",
-        "dest": "cargo/vendor/thiserror-impl-1.0.65",
+        "contents": "{\"package\": \"4fee6c4efc90059e10f81e6d42c60a18f76588c3d74cb83a0b242a2b6c7504c1\", \"files\": {}}",
+        "dest": "cargo/vendor/thiserror-impl-1.0.69",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -6486,14 +6441,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/tokio/tokio-1.41.0.crate",
-        "sha256": "145f3413504347a2be84393cc8a7d2fb4d863b375909ea59f2158261aa258bbb",
-        "dest": "cargo/vendor/tokio-1.41.0"
+        "url": "https://static.crates.io/crates/tokio/tokio-1.41.1.crate",
+        "sha256": "22cfb5bee7a6a52939ca9224d6ac897bb669134078daa8735560897f69de4d33",
+        "dest": "cargo/vendor/tokio-1.41.1"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"145f3413504347a2be84393cc8a7d2fb4d863b375909ea59f2158261aa258bbb\", \"files\": {}}",
-        "dest": "cargo/vendor/tokio-1.41.0",
+        "contents": "{\"package\": \"22cfb5bee7a6a52939ca9224d6ac897bb669134078daa8735560897f69de4d33\", \"files\": {}}",
+        "dest": "cargo/vendor/tokio-1.41.1",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -6993,6 +6948,19 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
+        "url": "https://static.crates.io/crates/unicode-width/unicode-width-0.2.0.crate",
+        "sha256": "1fc81956842c57dac11422a97c3b8195a1ff727f06e85c84ed2e8aa277c9a0fd",
+        "dest": "cargo/vendor/unicode-width-0.2.0"
+    },
+    {
+        "type": "inline",
+        "contents": "{\"package\": \"1fc81956842c57dac11422a97c3b8195a1ff727f06e85c84ed2e8aa277c9a0fd\", \"files\": {}}",
+        "dest": "cargo/vendor/unicode-width-0.2.0",
+        "dest-filename": ".cargo-checksum.json"
+    },
+    {
+        "type": "archive",
+        "archive-type": "tar-gzip",
         "url": "https://static.crates.io/crates/unicode-xid/unicode-xid-0.2.6.crate",
         "sha256": "ebc1c04c71510c7f702b52b7c350734c9ff1295c464a03335b00bb84fc54f853",
         "dest": "cargo/vendor/unicode-xid-0.2.6"
@@ -7487,53 +7455,53 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/wgpu/wgpu-22.1.0.crate",
-        "sha256": "e1d1c4ba43f80542cf63a0a6ed3134629ae73e8ab51e4b765a67f3aa062eb433",
-        "dest": "cargo/vendor/wgpu-22.1.0"
+        "url": "https://static.crates.io/crates/wgpu/wgpu-23.0.0.crate",
+        "sha256": "76ab52f2d3d18b70d5ab8dd270a1cff3ebe6dbe4a7d13c1cc2557138a9777fdc",
+        "dest": "cargo/vendor/wgpu-23.0.0"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"e1d1c4ba43f80542cf63a0a6ed3134629ae73e8ab51e4b765a67f3aa062eb433\", \"files\": {}}",
-        "dest": "cargo/vendor/wgpu-22.1.0",
+        "contents": "{\"package\": \"76ab52f2d3d18b70d5ab8dd270a1cff3ebe6dbe4a7d13c1cc2557138a9777fdc\", \"files\": {}}",
+        "dest": "cargo/vendor/wgpu-23.0.0",
         "dest-filename": ".cargo-checksum.json"
     },
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/wgpu-core/wgpu-core-22.1.0.crate",
-        "sha256": "0348c840d1051b8e86c3bcd31206080c5e71e5933dabd79be1ce732b0b2f089a",
-        "dest": "cargo/vendor/wgpu-core-22.1.0"
+        "url": "https://static.crates.io/crates/wgpu-core/wgpu-core-23.0.0.crate",
+        "sha256": "0e0c68e7b6322a03ee5b83fcd92caeac5c2a932f6457818179f4652ad2a9c065",
+        "dest": "cargo/vendor/wgpu-core-23.0.0"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"0348c840d1051b8e86c3bcd31206080c5e71e5933dabd79be1ce732b0b2f089a\", \"files\": {}}",
-        "dest": "cargo/vendor/wgpu-core-22.1.0",
+        "contents": "{\"package\": \"0e0c68e7b6322a03ee5b83fcd92caeac5c2a932f6457818179f4652ad2a9c065\", \"files\": {}}",
+        "dest": "cargo/vendor/wgpu-core-23.0.0",
         "dest-filename": ".cargo-checksum.json"
     },
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/wgpu-hal/wgpu-hal-22.0.0.crate",
-        "sha256": "f6bbf4b4de8b2a83c0401d9e5ae0080a2792055f25859a02bf9be97952bbed4f",
-        "dest": "cargo/vendor/wgpu-hal-22.0.0"
+        "url": "https://static.crates.io/crates/wgpu-hal/wgpu-hal-23.0.0.crate",
+        "sha256": "de6e7266b869de56c7e3ed72a954899f71d14fec6cc81c102b7530b92947601b",
+        "dest": "cargo/vendor/wgpu-hal-23.0.0"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"f6bbf4b4de8b2a83c0401d9e5ae0080a2792055f25859a02bf9be97952bbed4f\", \"files\": {}}",
-        "dest": "cargo/vendor/wgpu-hal-22.0.0",
+        "contents": "{\"package\": \"de6e7266b869de56c7e3ed72a954899f71d14fec6cc81c102b7530b92947601b\", \"files\": {}}",
+        "dest": "cargo/vendor/wgpu-hal-23.0.0",
         "dest-filename": ".cargo-checksum.json"
     },
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/wgpu-types/wgpu-types-22.0.0.crate",
-        "sha256": "bc9d91f0e2c4b51434dfa6db77846f2793149d8e73f800fa2e41f52b8eac3c5d",
-        "dest": "cargo/vendor/wgpu-types-22.0.0"
+        "url": "https://static.crates.io/crates/wgpu-types/wgpu-types-23.0.0.crate",
+        "sha256": "610f6ff27778148c31093f3b03abc4840f9636d58d597ca2f5977433acfe0068",
+        "dest": "cargo/vendor/wgpu-types-23.0.0"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"bc9d91f0e2c4b51434dfa6db77846f2793149d8e73f800fa2e41f52b8eac3c5d\", \"files\": {}}",
-        "dest": "cargo/vendor/wgpu-types-22.0.0",
+        "contents": "{\"package\": \"610f6ff27778148c31093f3b03abc4840f9636d58d597ca2f5977433acfe0068\", \"files\": {}}",
+        "dest": "cargo/vendor/wgpu-types-23.0.0",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -7547,19 +7515,6 @@
         "type": "inline",
         "contents": "{\"package\": \"b828f995bf1e9622031f8009f8481a85406ce1f4d4588ff746d872043e855690\", \"files\": {}}",
         "dest": "cargo/vendor/wide-0.7.28",
-        "dest-filename": ".cargo-checksum.json"
-    },
-    {
-        "type": "archive",
-        "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/widestring/widestring-1.1.0.crate",
-        "sha256": "7219d36b6eac893fa81e84ebe06485e7dcbb616177469b142df14f1f4deb1311",
-        "dest": "cargo/vendor/widestring-1.1.0"
-    },
-    {
-        "type": "inline",
-        "contents": "{\"package\": \"7219d36b6eac893fa81e84ebe06485e7dcbb616177469b142df14f1f4deb1311\", \"files\": {}}",
-        "dest": "cargo/vendor/widestring-1.1.0",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -7617,19 +7572,6 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/windows/windows-0.52.0.crate",
-        "sha256": "e48a53791691ab099e5e2ad123536d0fff50652600abaf43bbf952894110d0be",
-        "dest": "cargo/vendor/windows-0.52.0"
-    },
-    {
-        "type": "inline",
-        "contents": "{\"package\": \"e48a53791691ab099e5e2ad123536d0fff50652600abaf43bbf952894110d0be\", \"files\": {}}",
-        "dest": "cargo/vendor/windows-0.52.0",
-        "dest-filename": ".cargo-checksum.json"
-    },
-    {
-        "type": "archive",
-        "archive-type": "tar-gzip",
         "url": "https://static.crates.io/crates/windows/windows-0.54.0.crate",
         "sha256": "9252e5725dbed82865af151df558e754e4a3c2c30818359eb17465f1346a1b49",
         "dest": "cargo/vendor/windows-0.54.0"
@@ -7638,6 +7580,19 @@
         "type": "inline",
         "contents": "{\"package\": \"9252e5725dbed82865af151df558e754e4a3c2c30818359eb17465f1346a1b49\", \"files\": {}}",
         "dest": "cargo/vendor/windows-0.54.0",
+        "dest-filename": ".cargo-checksum.json"
+    },
+    {
+        "type": "archive",
+        "archive-type": "tar-gzip",
+        "url": "https://static.crates.io/crates/windows/windows-0.58.0.crate",
+        "sha256": "dd04d41d93c4992d421894c18c8b43496aa748dd4c081bac0dc93eb0489272b6",
+        "dest": "cargo/vendor/windows-0.58.0"
+    },
+    {
+        "type": "inline",
+        "contents": "{\"package\": \"dd04d41d93c4992d421894c18c8b43496aa748dd4c081bac0dc93eb0489272b6\", \"files\": {}}",
+        "dest": "cargo/vendor/windows-0.58.0",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -7664,6 +7619,45 @@
         "type": "inline",
         "contents": "{\"package\": \"12661b9c89351d684a50a8a643ce5f608e20243b9fb84687800163429f161d65\", \"files\": {}}",
         "dest": "cargo/vendor/windows-core-0.54.0",
+        "dest-filename": ".cargo-checksum.json"
+    },
+    {
+        "type": "archive",
+        "archive-type": "tar-gzip",
+        "url": "https://static.crates.io/crates/windows-core/windows-core-0.58.0.crate",
+        "sha256": "6ba6d44ec8c2591c134257ce647b7ea6b20335bf6379a27dac5f1641fcf59f99",
+        "dest": "cargo/vendor/windows-core-0.58.0"
+    },
+    {
+        "type": "inline",
+        "contents": "{\"package\": \"6ba6d44ec8c2591c134257ce647b7ea6b20335bf6379a27dac5f1641fcf59f99\", \"files\": {}}",
+        "dest": "cargo/vendor/windows-core-0.58.0",
+        "dest-filename": ".cargo-checksum.json"
+    },
+    {
+        "type": "archive",
+        "archive-type": "tar-gzip",
+        "url": "https://static.crates.io/crates/windows-implement/windows-implement-0.58.0.crate",
+        "sha256": "2bbd5b46c938e506ecbce286b6628a02171d56153ba733b6c741fc627ec9579b",
+        "dest": "cargo/vendor/windows-implement-0.58.0"
+    },
+    {
+        "type": "inline",
+        "contents": "{\"package\": \"2bbd5b46c938e506ecbce286b6628a02171d56153ba733b6c741fc627ec9579b\", \"files\": {}}",
+        "dest": "cargo/vendor/windows-implement-0.58.0",
+        "dest-filename": ".cargo-checksum.json"
+    },
+    {
+        "type": "archive",
+        "archive-type": "tar-gzip",
+        "url": "https://static.crates.io/crates/windows-interface/windows-interface-0.58.0.crate",
+        "sha256": "053c4c462dc91d3b1504c6fe5a726dd15e216ba718e84a0e46a88fbe5ded3515",
+        "dest": "cargo/vendor/windows-interface-0.58.0"
+    },
+    {
+        "type": "inline",
+        "contents": "{\"package\": \"053c4c462dc91d3b1504c6fe5a726dd15e216ba718e84a0e46a88fbe5ded3515\", \"files\": {}}",
+        "dest": "cargo/vendor/windows-interface-0.58.0",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -8409,7 +8403,7 @@
     },
     {
         "type": "inline",
-        "contents": "[source.vendored-sources]\ndirectory = \"cargo/vendor\"\n\n[source.crates-io]\nreplace-with = \"vendored-sources\"\n\n[source.\"https://github.com/ruffle-rs/rust-flash-lso\"]\ngit = \"https://github.com/ruffle-rs/rust-flash-lso\"\nreplace-with = \"vendored-sources\"\nrev = \"cbd18e1a79cf902f8ff1d2bf551801c4021b3be6\"\n\n[source.\"https://github.com/ruffle-rs/h263-rs\"]\ngit = \"https://github.com/ruffle-rs/h263-rs\"\nreplace-with = \"vendored-sources\"\nrev = \"f0fa94c366a1d0383df99aa835add175658d6bad\"\n\n[source.\"https://github.com/ruffle-rs/jpegxr\"]\ngit = \"https://github.com/ruffle-rs/jpegxr\"\nreplace-with = \"vendored-sources\"\nrev = \"71dbe614c02c30a2e9fd1e9e2e7c7a749abe2798\"\n\n[source.\"https://github.com/ruffle-rs/nellymoser\"]\ngit = \"https://github.com/ruffle-rs/nellymoser\"\nreplace-with = \"vendored-sources\"\nrev = \"754b1184037aa9952a907107284fb73897e26adc\"\n\n[source.\"https://github.com/ruffle-rs/nihav-vp6\"]\ngit = \"https://github.com/ruffle-rs/nihav-vp6\"\nreplace-with = \"vendored-sources\"\nrev = \"83c7e1094d603d9fc1212d39d99abb17f3a3226b\"\n",
+        "contents": "[source.vendored-sources]\ndirectory = \"cargo/vendor\"\n\n[source.crates-io]\nreplace-with = \"vendored-sources\"\n\n[source.\"https://github.com/emilk/egui\"]\ngit = \"https://github.com/emilk/egui\"\nreplace-with = \"vendored-sources\"\nbranch = \"master\"\n\n[source.\"https://github.com/ruffle-rs/rust-flash-lso\"]\ngit = \"https://github.com/ruffle-rs/rust-flash-lso\"\nreplace-with = \"vendored-sources\"\nrev = \"cbd18e1a79cf902f8ff1d2bf551801c4021b3be6\"\n\n[source.\"https://github.com/ruffle-rs/h263-rs\"]\ngit = \"https://github.com/ruffle-rs/h263-rs\"\nreplace-with = \"vendored-sources\"\nrev = \"f0fa94c366a1d0383df99aa835add175658d6bad\"\n\n[source.\"https://github.com/ruffle-rs/jpegxr\"]\ngit = \"https://github.com/ruffle-rs/jpegxr\"\nreplace-with = \"vendored-sources\"\nrev = \"71dbe614c02c30a2e9fd1e9e2e7c7a749abe2798\"\n\n[source.\"https://github.com/ruffle-rs/nellymoser\"]\ngit = \"https://github.com/ruffle-rs/nellymoser\"\nreplace-with = \"vendored-sources\"\nrev = \"754b1184037aa9952a907107284fb73897e26adc\"\n\n[source.\"https://github.com/ruffle-rs/nihav-vp6\"]\ngit = \"https://github.com/ruffle-rs/nihav-vp6\"\nreplace-with = \"vendored-sources\"\nrev = \"83c7e1094d603d9fc1212d39d99abb17f3a3226b\"\n",
         "dest": "cargo",
         "dest-filename": "config"
     }
