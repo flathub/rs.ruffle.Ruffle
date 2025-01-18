@@ -47,8 +47,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/ruffle-rs/ruffle.git
-        tag: nightly-2025-01-11
-        commit: 8bb90c0c6003a9da00280999c23bbf18bd203a17
+        tag: nightly-2025-01-17
+        commit: 60d0620c1120a0973c619a3b4fa5780a0777bd69
       # TODO Remove this patch when stable releases are present
       - type: patch
         path: patches/release.patch
