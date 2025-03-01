@@ -19,6 +19,12 @@
     },
     {
         "type": "git",
+        "url": "https://github.com/ruffle-rs/wgpu",
+        "commit": "f75a042f1c3e6f460d3b49d40717eef84b7da3f1",
+        "dest": "flatpak-cargo/git/wgpu-f75a042"
+    },
+    {
+        "type": "git",
         "url": "https://github.com/ruffle-rs/nellymoser",
         "commit": "754b1184037aa9952a907107284fb73897e26adc",
         "dest": "flatpak-cargo/git/nellymoser-754b118"
@@ -3903,16 +3909,21 @@
         "dest-filename": ".cargo-checksum.json"
     },
     {
-        "type": "archive",
-        "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/naga/naga-24.0.0.crate",
-        "sha256": "e380993072e52eef724eddfcde0ed013b0c023c3f0417336ed041aa9f076994e",
-        "dest": "cargo/vendor/naga-24.0.0"
+        "type": "shell",
+        "commands": [
+            "cp -r --reflink=auto \"flatpak-cargo/git/wgpu-f75a042/naga\" \"cargo/vendor/naga\""
+        ]
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"e380993072e52eef724eddfcde0ed013b0c023c3f0417336ed041aa9f076994e\", \"files\": {}}",
-        "dest": "cargo/vendor/naga-24.0.0",
+        "contents": "[[test]]\nname = \"naga-test\"\npath = \"tests/root.rs\"\n\n[package]\nname = \"naga\"\nversion = \"24.0.0\"\nauthors = [ \"gfx-rs developers\",]\nedition = \"2021\"\ndescription = \"Shader translator and validator. Part of the wgpu project\"\nrepository = \"https://github.com/gfx-rs/wgpu/tree/trunk/naga\"\nkeywords = [ \"shader\", \"SPIR-V\", \"GLSL\", \"MSL\",]\nlicense = \"MIT OR Apache-2.0\"\nexclude = [ \"bin/**/*\", \"tests/**/*\", \"Cargo.lock\", \"target/**/*\",]\nresolver = \"2\"\nautotests = false\nrust-version = \"1.76\"\n\n[features]\ndefault = []\ndot-out = []\nglsl-in = [ \"dep:pp-rs\",]\nglsl-out = []\nmsl-out = []\nmsl-out-if-target-apple = []\nserialize = [ \"dep:serde\", \"bitflags/serde\", \"indexmap/serde\",]\ndeserialize = [ \"dep:serde\", \"bitflags/serde\", \"indexmap/serde\",]\narbitrary = [ \"dep:arbitrary\", \"bitflags/arbitrary\", \"indexmap/arbitrary\",]\nspv-in = [ \"dep:petgraph\", \"dep:spirv\",]\nspv-out = [ \"dep:spirv\",]\nwgsl-in = [ \"dep:hexf-parse\", \"dep:unicode-xid\", \"compact\",]\nwgsl-out = []\nhlsl-out = []\nhlsl-out-if-target-windows = []\ncompact = []\n\n[dependencies]\narrayvec = \"0.7\"\nbitflags = \"2.7\"\nbit-set = \"0.8\"\nrustc-hash = \"1\"\nindexmap = \"2\"\nlog = \"0.4\"\nthiserror = \"2\"\n\n[build-dependencies]\ncfg_aliases = \"0.2.1\"\n\n[dev-dependencies]\ndiff = \"0.1\"\nenv_logger = \"0.11\"\nron = \"0.8.0\"\n\n[dependencies.arbitrary]\nversion = \"1.4\"\nfeatures = [ \"derive\",]\noptional = true\n\n[dependencies.termcolor]\nversion = \"1.4.1\"\n\n[dependencies.codespan-reporting]\nversion = \"0.11.0\"\n\n[dependencies.strum]\nversion = \"0.26.0\"\nfeatures = [ \"derive\",]\n\n[dependencies.spirv]\nversion = \"0.3\"\noptional = true\n\n[dependencies.serde]\nversion = \"1.0.217\"\nfeatures = [ \"default\", \"derive\",]\noptional = true\n\n[dependencies.petgraph]\nversion = \"0.7\"\noptional = true\n\n[dependencies.pp-rs]\nversion = \"0.2.1\"\noptional = true\n\n[dependencies.hexf-parse]\nversion = \"0.2.1\"\noptional = true\n\n[dependencies.unicode-xid]\nversion = \"0.2.6\"\noptional = true\n\n[dev-dependencies.itertools]\nversion = \"0.13.0\"\n\n[dev-dependencies.hlsl-snapshots]\npath = \"./hlsl-snapshots\"\n\n[dev-dependencies.rspirv]\nversion = \"0.11\"\ngit = \"https://github.com/gfx-rs/rspirv\"\nrev = \"b969f175d5663258b4891e44b76c1544da9661ab\"\n\n[dev-dependencies.serde]\nfeatures = [ \"default\", \"derive\",]\nversion = \"1\"\ndefault-features = false\n\n[dev-dependencies.spirv]\nversion = \"0.3\"\nfeatures = [ \"deserialize\",]\n\n[package.metadata.docs.rs]\nall-features = true\n",
+        "dest": "cargo/vendor/naga",
+        "dest-filename": "Cargo.toml"
+    },
+    {
+        "type": "inline",
+        "contents": "{\"package\": null, \"files\": {}}",
+        "dest": "cargo/vendor/naga",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -7394,55 +7405,75 @@
         "dest-filename": ".cargo-checksum.json"
     },
     {
-        "type": "archive",
-        "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/wgpu/wgpu-24.0.1.crate",
-        "sha256": "47f55718f85c2fa756edffa0e7f0e0a60aba463d1362b57e23123c58f035e4b6",
-        "dest": "cargo/vendor/wgpu-24.0.1"
+        "type": "shell",
+        "commands": [
+            "cp -r --reflink=auto \"flatpak-cargo/git/wgpu-f75a042/wgpu\" \"cargo/vendor/wgpu\""
+        ]
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"47f55718f85c2fa756edffa0e7f0e0a60aba463d1362b57e23123c58f035e4b6\", \"files\": {}}",
-        "dest": "cargo/vendor/wgpu-24.0.1",
+        "contents": "[package]\nname = \"wgpu\"\nversion = \"24.0.1\"\nauthors = [ \"gfx-rs developers\",]\nedition = \"2021\"\ndescription = \"Cross-platform, safe, pure-rust graphics API\"\nhomepage = \"https://wgpu.rs/\"\nrepository = \"https://github.com/gfx-rs/wgpu\"\nkeywords = [ \"graphics\",]\nlicense = \"MIT OR Apache-2.0\"\nreadme = \"../README.md\"\nexclude = [ \"Cargo.lock\",]\n\n[lib]\n\n[features]\ndefault = [ \"wgsl\", \"dx12\", \"metal\", \"webgpu\",]\ndx12 = [ \"wgc?/dx12\",]\nmetal = [ \"wgc?/metal\",]\nwebgpu = [ \"naga?/wgsl-out\",]\nangle = [ \"wgc?/gles\",]\nvulkan-portability = [ \"wgc?/vulkan\",]\nwebgl = [ \"dep:hal\", \"wgc/gles\",]\nspirv = [ \"naga/spv-in\", \"wgc/spirv\",]\nglsl = [ \"naga/glsl-in\", \"wgc/glsl\",]\nwgsl = [ \"wgc?/wgsl\",]\nnaga-ir = [ \"dep:naga\",]\nstrict_asserts = [ \"wgc?/strict_asserts\", \"wgt/strict_asserts\",]\nserde = [ \"dep:serde\", \"wgc/serde\",]\nreplay = [ \"serde\", \"wgc/replay\",]\ncounters = [ \"wgc/counters\",]\nfragile-send-sync-non-atomic-wasm = [ \"hal/fragile-send-sync-non-atomic-wasm\", \"wgc/fragile-send-sync-non-atomic-wasm\", \"wgt/fragile-send-sync-non-atomic-wasm\",]\nstatic-dxc = [ \"hal/static-dxc\",]\n\n[dependencies]\narrayvec = \"0.7\"\nbitflags = \"2.7\"\ndocument-features = \"0.2.10\"\nlog = \"0.4\"\nparking_lot = \"0.12.1\"\nsmallvec = \"1\"\nstatic_assertions = \"1.1.0\"\n\n[build-dependencies]\ncfg_aliases = \"0.2.1\"\n\n[dependencies.wgc]\noptional = true\nfeatures = [ \"raw-window-handle\",]\npackage = \"wgpu-core\"\npath = \"./wgpu-core\"\nversion = \"24.0.0\"\n\n[dependencies.wgt]\npackage = \"wgpu-types\"\npath = \"./wgpu-types\"\nversion = \"24.0.0\"\n\n[dependencies.profiling]\nversion = \"1\"\ndefault-features = false\n\n[dependencies.raw-window-handle]\nfeatures = [ \"std\",]\nversion = \"0.6\"\n\n[dependencies.serde]\nfeatures = [ \"default\", \"derive\",]\noptional = true\nversion = \"1\"\ndefault-features = false\n\n[dependencies.naga]\noptional = true\npath = \"./naga\"\nversion = \"24.0.0\"\n\n[dev-dependencies.naga]\nfeatures = [ \"wgsl-in\",]\npath = \"./naga\"\nversion = \"24.0.0\"\n\n[package.metadata.cargo-machete]\nignored = [ \"cfg_aliases\",]\n\n[target.\"cfg(target_arch = \\\"wasm32\\\")\".dependencies]\nwasm-bindgen = \"0.2.97\"\nwasm-bindgen-futures = \"0.4.45\"\nparking_lot = \"0.12.1\"\n\n[package.metadata.docs.rs]\nall-features = true\nrustdoc-args = [ \"--cfg\", \"docsrs\",]\ntargets = [ \"x86_64-unknown-linux-gnu\", \"x86_64-apple-darwin\", \"x86_64-pc-windows-msvc\", \"wasm32-unknown-unknown\",]\n\n[target.\"cfg(any(not(target_arch = \\\"wasm32\\\"), target_os = \\\"emscripten\\\"))\".dependencies.wgc]\nfeatures = [ \"raw-window-handle\",]\npackage = \"wgpu-core\"\npath = \"./wgpu-core\"\nversion = \"24.0.0\"\n\n[target.\"cfg(any(not(target_arch = \\\"wasm32\\\"), target_os = \\\"emscripten\\\"))\".dependencies.hal]\npackage = \"wgpu-hal\"\npath = \"./wgpu-hal\"\nversion = \"24.0.0\"\n\n[target.\"cfg(not(target_arch = \\\"wasm32\\\"))\".dependencies.wgc]\nfeatures = [ \"indirect-validation\",]\npackage = \"wgpu-core\"\npath = \"./wgpu-core\"\nversion = \"24.0.0\"\n\n[target.\"cfg(target_vendor = \\\"apple\\\")\".dependencies.wgc]\npackage = \"wgpu-core\"\npath = \"./wgpu-core\"\nversion = \"24.0.0\"\n\n[target.\"cfg(windows)\".dependencies.wgc]\nfeatures = [ \"gles\",]\npackage = \"wgpu-core\"\npath = \"./wgpu-core\"\nversion = \"24.0.0\"\n\n[target.\"cfg(windows)\".dependencies.hal]\nfeatures = [ \"renderdoc\",]\npackage = \"wgpu-hal\"\npath = \"./wgpu-hal\"\nversion = \"24.0.0\"\n\n[target.\"cfg(any(windows, all(unix, not(target_os = \\\"emscripten\\\"), not(target_vendor = \\\"apple\\\"))))\".dependencies.wgc]\nfeatures = [ \"vulkan\",]\npackage = \"wgpu-core\"\npath = \"./wgpu-core\"\nversion = \"24.0.0\"\n\n[target.\"cfg(all(unix, not(target_vendor = \\\"apple\\\")))\".dependencies.wgc]\nfeatures = [ \"gles\",]\npackage = \"wgpu-core\"\npath = \"./wgpu-core\"\nversion = \"24.0.0\"\n\n[target.\"cfg(all(not(target_arch = \\\"wasm32\\\"), unix, not(target_vendor = \\\"apple\\\")))\".dependencies.hal]\nfeatures = [ \"renderdoc\",]\npackage = \"wgpu-hal\"\npath = \"./wgpu-hal\"\nversion = \"24.0.0\"\n\n[target.\"cfg(target_arch = \\\"wasm32\\\")\".dependencies.hal]\noptional = true\npackage = \"wgpu-hal\"\npath = \"./wgpu-hal\"\nversion = \"24.0.0\"\n\n[target.\"cfg(target_arch = \\\"wasm32\\\")\".dependencies.web-sys]\nfeatures = [ \"default\", \"Document\", \"Navigator\", \"Node\", \"NodeList\", \"HtmlCanvasElement\", \"OffscreenCanvas\", \"ImageBitmap\", \"ImageBitmapRenderingContext\", \"Window\", \"WorkerGlobalScope\", \"WorkerNavigator\", \"Event\", \"EventTarget\",]\nversion = \"0.3.74\"\ndefault-features = false\n\n[target.\"cfg(target_arch = \\\"wasm32\\\")\".dependencies.js-sys]\nfeatures = [ \"default\",]\nversion = \"0.3.70\"\ndefault-features = false\n",
+        "dest": "cargo/vendor/wgpu",
+        "dest-filename": "Cargo.toml"
+    },
+    {
+        "type": "inline",
+        "contents": "{\"package\": null, \"files\": {}}",
+        "dest": "cargo/vendor/wgpu",
         "dest-filename": ".cargo-checksum.json"
     },
     {
-        "type": "archive",
-        "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/wgpu-core/wgpu-core-24.0.0.crate",
-        "sha256": "82a39b8842dc9ffcbe34346e3ab6d496b32a47f6497e119d762c97fcaae3cb37",
-        "dest": "cargo/vendor/wgpu-core-24.0.0"
+        "type": "shell",
+        "commands": [
+            "cp -r --reflink=auto \"flatpak-cargo/git/wgpu-f75a042/wgpu-core\" \"cargo/vendor/wgpu-core\""
+        ]
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"82a39b8842dc9ffcbe34346e3ab6d496b32a47f6497e119d762c97fcaae3cb37\", \"files\": {}}",
-        "dest": "cargo/vendor/wgpu-core-24.0.0",
+        "contents": "[package]\nname = \"wgpu-core\"\nversion = \"24.0.0\"\nauthors = [ \"gfx-rs developers\",]\nedition = \"2021\"\ndescription = \"Core implementation logic of wgpu, the cross-platform, safe, pure-rust graphics API\"\nhomepage = \"https://wgpu.rs/\"\nrepository = \"https://github.com/gfx-rs/wgpu\"\nkeywords = [ \"graphics\",]\nlicense = \"MIT OR Apache-2.0\"\nrust-version = \"1.76\"\n\n[lib]\n\n[features]\ncounters = [ \"wgt/counters\",]\napi_log_info = []\nresource_log_info = []\nrenderdoc = [ \"hal/renderdoc\",]\nstrict_asserts = [ \"wgt/strict_asserts\",]\nindirect-validation = [ \"naga/wgsl-in\",]\nserde = [ \"dep:serde\", \"wgt/serde\", \"arrayvec/serde\",]\ntrace = [ \"dep:ron\", \"serde\", \"naga/serialize\",]\nobserve_locks = [ \"dep:ron\", \"serde/serde_derive\",]\nreplay = [ \"serde\", \"naga/deserialize\",]\nraw-window-handle = [ \"dep:raw-window-handle\",]\nwgsl = [ \"naga/wgsl-in\",]\nglsl = [ \"naga/glsl-in\",]\nspirv = [ \"naga/spv-in\", \"dep:bytemuck\",]\nfragile-send-sync-non-atomic-wasm = [ \"hal/fragile-send-sync-non-atomic-wasm\", \"wgt/fragile-send-sync-non-atomic-wasm\",]\nmetal = [ \"hal/metal\",]\nvulkan = [ \"hal/vulkan\",]\ngles = [ \"hal/gles\",]\ndx12 = [ \"hal/dx12\",]\n\n[dependencies]\narrayvec = \"0.7\"\nbit-vec = \"0.8\"\nbitflags = \"2.7\"\ndocument-features = \"0.2.10\"\nindexmap = \"2\"\nlog = \"0.4\"\nonce_cell = \"1.20.2\"\nparking_lot = \"0.12.1\"\nrustc-hash = \"1\"\nsmallvec = \"1\"\nthiserror = \"2\"\n\n[build-dependencies]\ncfg_aliases = \"0.2.1\"\n\n[dependencies.bytemuck]\noptional = true\nversion = \"1.21\"\nfeatures = [ \"derive\", \"min_const_generics\",]\n\n[dependencies.profiling]\ndefault-features = false\nversion = \"1\"\n\n[dependencies.raw-window-handle]\noptional = true\nversion = \"0.6\"\n\n[dependencies.ron]\noptional = true\nversion = \"0.8\"\n\n[dependencies.serde]\nfeatures = [ \"default\", \"derive\",]\noptional = true\nversion = \"1\"\ndefault-features = false\n\n[dependencies.naga]\npath = \"../naga\"\nversion = \"24.0.0\"\n\n[dependencies.wgt]\npackage = \"wgpu-types\"\npath = \"../wgpu-types\"\nversion = \"24.0.0\"\n\n[dependencies.hal]\npackage = \"wgpu-hal\"\npath = \"../wgpu-hal\"\nversion = \"24.0.0\"\ndefault-features = false\n\n[package.metadata.cargo-machete]\nignored = [ \"cfg_aliases\",]\n\n[lints.rust.unexpected_cfgs]\nlevel = \"warn\"\ncheck-cfg = [ \"cfg(wgpu_validate_locks)\",]\n\n[package.metadata.docs.rs]\nall-features = true\nrustdoc-args = [ \"--cfg\", \"docsrs\",]\ntargets = [ \"x86_64-unknown-linux-gnu\", \"x86_64-apple-darwin\", \"x86_64-pc-windows-msvc\", \"wasm32-unknown-unknown\",]\n",
+        "dest": "cargo/vendor/wgpu-core",
+        "dest-filename": "Cargo.toml"
+    },
+    {
+        "type": "inline",
+        "contents": "{\"package\": null, \"files\": {}}",
+        "dest": "cargo/vendor/wgpu-core",
         "dest-filename": ".cargo-checksum.json"
     },
     {
-        "type": "archive",
-        "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/wgpu-hal/wgpu-hal-24.0.0.crate",
-        "sha256": "5a782e5056b060b0b4010881d1decddd059e44f2ecd01e2db2971b48ad3627e5",
-        "dest": "cargo/vendor/wgpu-hal-24.0.0"
+        "type": "shell",
+        "commands": [
+            "cp -r --reflink=auto \"flatpak-cargo/git/wgpu-f75a042/wgpu-hal\" \"cargo/vendor/wgpu-hal\""
+        ]
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"5a782e5056b060b0b4010881d1decddd059e44f2ecd01e2db2971b48ad3627e5\", \"files\": {}}",
-        "dest": "cargo/vendor/wgpu-hal-24.0.0",
+        "contents": "[[example]]\nname = \"halmark\"\n\n[[example]]\nname = \"raw-gles\"\nrequired-features = [ \"gles\",]\n\n[package]\nname = \"wgpu-hal\"\nversion = \"24.0.0\"\nauthors = [ \"gfx-rs developers\",]\nedition = \"2021\"\ndescription = \"Hardware abstraction layer for wgpu, the cross-platform, safe, pure-rust graphics API\"\nhomepage = \"https://wgpu.rs/\"\nrepository = \"https://github.com/gfx-rs/wgpu\"\nkeywords = [ \"graphics\",]\nlicense = \"MIT OR Apache-2.0\"\nrust-version = \"1.76\"\n\n[lib]\n\n[features]\nmetal = [ \"naga/msl-out-if-target-apple\", \"dep:block\",]\nvulkan = [ \"naga/spv-out\", \"dep:ash\", \"dep:gpu-alloc\", \"dep:gpu-descriptor\", \"dep:libloading\", \"dep:smallvec\", \"dep:android_system_properties\", \"dep:ordered-float\",]\ngles = [ \"naga/glsl-out\", \"dep:bytemuck\", \"dep:glow\", \"dep:glutin_wgl_sys\", \"dep:khronos-egl\", \"dep:libloading\", \"dep:ndk-sys\", \"windows/Win32_Graphics_OpenGL\", \"windows/Win32_Graphics_Gdi\", \"windows/Win32_System_LibraryLoader\", \"windows/Win32_UI_WindowsAndMessaging\",]\ndx12 = [ \"dep:bit-set\", \"dep:libloading\", \"dep:range-alloc\", \"dep:windows-core\", \"gpu-allocator/d3d12\", \"naga/hlsl-out-if-target-windows\", \"windows/Win32_Graphics_Direct3D_Fxc\", \"windows/Win32_Graphics_Direct3D_Dxc\", \"windows/Win32_Graphics_Direct3D\", \"windows/Win32_Graphics_Direct3D12\", \"windows/Win32_Graphics_DirectComposition\", \"windows/Win32_Graphics_Dxgi_Common\", \"windows/Win32_Security\", \"windows/Win32_System_Diagnostics_Debug\", \"windows/Win32_System_Kernel\", \"windows/Win32_System_Performance\", \"windows/Win32_System_Threading\", \"windows/Win32_UI_WindowsAndMessaging\",]\nstatic-dxc = [ \"dep:mach-dxcompiler-rs\",]\nrenderdoc = [ \"dep:libloading\", \"dep:renderdoc-sys\",]\nfragile-send-sync-non-atomic-wasm = [ \"wgt/fragile-send-sync-non-atomic-wasm\",]\noom_panic = []\ndevice_lost_panic = []\ninternal_error_panic = []\n\n[dependencies]\nbitflags = \"2.7\"\nparking_lot = \"0.12.1\"\nraw-window-handle = \"0.6\"\nthiserror = \"2\"\nonce_cell = \"1.20.2\"\narrayvec = \"0.7\"\nrustc-hash = \"1\"\nlog = \"0.4\"\n\n[build-dependencies]\ncfg_aliases = \"0.2.1\"\n\n[dev-dependencies]\ncfg-if = \"1\"\nenv_logger = \"0.11\"\nglam = \"0.29\"\n\n[dependencies.profiling]\ndefault-features = false\nversion = \"1\"\n\n[dependencies.ordered-float]\noptional = true\nversion = \">=3,<=4.6\"\n\n[dependencies.bytemuck]\noptional = true\nversion = \"1.21\"\nfeatures = [ \"derive\", \"min_const_generics\",]\n\n[dependencies.glow]\noptional = true\nversion = \"0.16\"\n\n[dependencies.wgt]\npackage = \"wgpu-types\"\npath = \"../wgpu-types\"\nversion = \"24.0.0\"\n\n[dependencies.naga]\npath = \"../naga\"\nversion = \"24.0.0\"\n\n[dev-dependencies.naga]\npath = \"../naga\"\nversion = \"24.0.0\"\nfeatures = [ \"wgsl-in\",]\n\n[dev-dependencies.winit]\nversion = \"0.29\"\nfeatures = [ \"android-native-activity\",]\n\n[package.metadata.cargo-machete]\nignored = [ \"cfg_aliases\",]\n\n[lints.rust.unexpected_cfgs]\nlevel = \"warn\"\ncheck-cfg = [ \"cfg(web_sys_unstable_apis)\",]\n\n[target.\"cfg(target_vendor = \\\"apple\\\")\".dependencies]\nmetal = \"0.31.0\"\nobjc = \"0.2.5\"\ncore-graphics-types = \"0.1\"\n\n[target.\"cfg(all(target_arch = \\\"wasm32\\\", not(target_os = \\\"emscripten\\\")))\".dependencies]\nwasm-bindgen = \"0.2.97\"\n\n[target.\"cfg(unix)\".dependencies]\nlibc = \"0.2\"\n\n[package.metadata.docs.rs]\nfeatures = [ \"vulkan\", \"gles\", \"renderdoc\",]\nrustdoc-args = [ \"--cfg\", \"docsrs\",]\ntargets = [ \"x86_64-unknown-linux-gnu\", \"x86_64-apple-darwin\", \"x86_64-pc-windows-msvc\", \"wasm32-unknown-unknown\",]\n\n[target.\"cfg(not(target_arch = \\\"wasm32\\\"))\".dependencies.ash]\noptional = true\nversion = \"0.38.0\"\n\n[target.\"cfg(not(target_arch = \\\"wasm32\\\"))\".dependencies.gpu-alloc]\noptional = true\nversion = \"0.6\"\n\n[target.\"cfg(not(target_arch = \\\"wasm32\\\"))\".dependencies.gpu-descriptor]\noptional = true\nversion = \"0.3\"\n\n[target.\"cfg(not(target_arch = \\\"wasm32\\\"))\".dependencies.smallvec]\noptional = true\nfeatures = [ \"union\",]\nversion = \"1\"\n\n[target.\"cfg(not(target_arch = \\\"wasm32\\\"))\".dependencies.khronos-egl]\nfeatures = [ \"dynamic\",]\noptional = true\nversion = \"6\"\n\n[target.\"cfg(not(target_arch = \\\"wasm32\\\"))\".dependencies.libloading]\noptional = true\nversion = \"0.8\"\n\n[target.\"cfg(not(target_arch = \\\"wasm32\\\"))\".dependencies.renderdoc-sys]\noptional = true\nversion = \"1.1.0\"\n\n[target.\"cfg(target_os = \\\"emscripten\\\")\".dependencies.khronos-egl]\nfeatures = [ \"static\", \"no-pkg-config\",]\nversion = \"6\"\n\n[target.\"cfg(target_os = \\\"emscripten\\\")\".dependencies.libloading]\noptional = true\nversion = \"0.8\"\n\n[target.\"cfg(windows)\".dependencies.windows]\noptional = true\nversion = \"0.58\"\ndefault-features = false\n\n[target.\"cfg(windows)\".dependencies.bit-set]\noptional = true\nversion = \"0.8\"\n\n[target.\"cfg(windows)\".dependencies.range-alloc]\noptional = true\nversion = \"0.1\"\n\n[target.\"cfg(windows)\".dependencies.gpu-allocator]\noptional = true\nversion = \"0.27\"\ndefault-features = false\n\n[target.\"cfg(windows)\".dependencies.windows-core]\noptional = true\nversion = \"0.58\"\ndefault-features = false\n\n[target.\"cfg(windows)\".dependencies.glutin_wgl_sys]\noptional = true\nversion = \"0.6\"\n\n[target.\"cfg(all(windows, not(target_arch = \\\"aarch64\\\")))\".dependencies.mach-dxcompiler-rs]\noptional = true\nversion = \"0.1.4\"\ndefault-features = false\n\n[target.\"cfg(target_vendor = \\\"apple\\\")\".dependencies.block]\noptional = true\nversion = \"0.1\"\n\n[target.\"cfg(all(target_arch = \\\"wasm32\\\", not(target_os = \\\"emscripten\\\")))\".dependencies.web-sys]\nfeatures = [ \"default\", \"Window\", \"HtmlCanvasElement\", \"WebGl2RenderingContext\", \"OffscreenCanvas\",]\nversion = \"0.3.74\"\ndefault-features = false\n\n[target.\"cfg(all(target_arch = \\\"wasm32\\\", not(target_os = \\\"emscripten\\\")))\".dependencies.js-sys]\nfeatures = [ \"default\",]\nversion = \"0.3.70\"\ndefault-features = false\n\n[target.\"cfg(target_os = \\\"android\\\")\".dependencies.android_system_properties]\noptional = true\nversion = \"0.1.1\"\n\n[target.\"cfg(target_os = \\\"android\\\")\".dependencies.ndk-sys]\noptional = true\nversion = \"0.5.0\"\n\n[target.\"cfg(not(any(target_arch = \\\"wasm32\\\", target_os = \\\"ios\\\", target_os = \\\"visionos\\\")))\".dev-dependencies.glutin-winit]\nfeatures = [ \"egl\", \"wgl\", \"wayland\", \"x11\",]\nversion = \"0.4\"\ndefault-features = false\n\n[target.\"cfg(not(any(target_arch = \\\"wasm32\\\", target_os = \\\"ios\\\", target_os = \\\"visionos\\\")))\".dev-dependencies.glutin]\nfeatures = [ \"egl\", \"wgl\", \"wayland\", \"x11\",]\nversion = \"0.31\"\ndefault-features = false\n\n[target.\"cfg(not(any(target_arch = \\\"wasm32\\\", target_os = \\\"ios\\\", target_os = \\\"visionos\\\")))\".dev-dependencies.rwh_05]\nversion = \"0.5\"\npackage = \"raw-window-handle\"\n\n[target.\"cfg(not(any(target_arch = \\\"wasm32\\\", target_os = \\\"ios\\\", target_os = \\\"visionos\\\")))\".dev-dependencies.winit]\nfeatures = [ \"rwh_05\", \"android-native-activity\",]\nversion = \"0.29\"\n",
+        "dest": "cargo/vendor/wgpu-hal",
+        "dest-filename": "Cargo.toml"
+    },
+    {
+        "type": "inline",
+        "contents": "{\"package\": null, \"files\": {}}",
+        "dest": "cargo/vendor/wgpu-hal",
         "dest-filename": ".cargo-checksum.json"
     },
     {
-        "type": "archive",
-        "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/wgpu-types/wgpu-types-24.0.0.crate",
-        "sha256": "50ac044c0e76c03a0378e7786ac505d010a873665e2d51383dcff8dd227dc69c",
-        "dest": "cargo/vendor/wgpu-types-24.0.0"
+        "type": "shell",
+        "commands": [
+            "cp -r --reflink=auto \"flatpak-cargo/git/wgpu-f75a042/wgpu-types\" \"cargo/vendor/wgpu-types\""
+        ]
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"50ac044c0e76c03a0378e7786ac505d010a873665e2d51383dcff8dd227dc69c\", \"files\": {}}",
-        "dest": "cargo/vendor/wgpu-types-24.0.0",
+        "contents": "[package]\nname = \"wgpu-types\"\nversion = \"24.0.0\"\nauthors = [ \"gfx-rs developers\",]\nedition = \"2021\"\ndescription = \"Common types and utilities for wgpu, the cross-platform, safe, pure-rust graphics API\"\nhomepage = \"https://wgpu.rs/\"\nrepository = \"https://github.com/gfx-rs/wgpu\"\nkeywords = [ \"graphics\",]\nlicense = \"MIT OR Apache-2.0\"\nrust-version = \"1.76\"\n\n[lib]\n\n[features]\ndefault = [ \"std\",]\nstd = [ \"js-sys/std\", \"web-sys/std\",]\nstrict_asserts = []\nfragile-send-sync-non-atomic-wasm = []\nserde = [ \"dep:serde\",]\ncounters = []\n\n[dependencies]\nlog = \"0.4\"\n\n[dev-dependencies]\nserde_json = \"1.0.134\"\n\n[lints.clippy]\nstd_instead_of_core = \"warn\"\nstd_instead_of_alloc = \"warn\"\nalloc_instead_of_core = \"warn\"\n\n[dependencies.bitflags]\nfeatures = [ \"serde\",]\nversion = \"2.7\"\n\n[dependencies.serde]\ndefault-features = false\nfeatures = [ \"alloc\", \"derive\",]\noptional = true\nversion = \"1\"\n\n[dev-dependencies.serde]\nfeatures = [ \"derive\",]\nversion = \"1\"\ndefault-features = false\n\n[lints.rust.unexpected_cfgs]\nlevel = \"warn\"\ncheck-cfg = [ \"cfg(web_sys_unstable_apis)\",]\n\n[package.metadata.docs.rs]\nall-features = true\nrustdoc-args = [ \"--cfg\", \"docsrs\",]\ntargets = [ \"x86_64-unknown-linux-gnu\", \"x86_64-apple-darwin\", \"x86_64-pc-windows-msvc\", \"wasm32-unknown-unknown\",]\n\n[target.\"cfg(target_arch = \\\"wasm32\\\")\".dependencies.js-sys]\ndefault-features = false\nversion = \"0.3.70\"\n\n[target.\"cfg(target_arch = \\\"wasm32\\\")\".dependencies.web-sys]\ndefault-features = false\nfeatures = [ \"ImageBitmap\", \"ImageData\", \"HtmlImageElement\", \"HtmlVideoElement\", \"HtmlCanvasElement\", \"OffscreenCanvas\", \"VideoFrame\",]\nversion = \"0.3.74\"\n",
+        "dest": "cargo/vendor/wgpu-types",
+        "dest-filename": "Cargo.toml"
+    },
+    {
+        "type": "inline",
+        "contents": "{\"package\": null, \"files\": {}}",
+        "dest": "cargo/vendor/wgpu-types",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -8344,7 +8375,7 @@
     },
     {
         "type": "inline",
-        "contents": "[source.vendored-sources]\ndirectory = \"cargo/vendor\"\n\n[source.crates-io]\nreplace-with = \"vendored-sources\"\n\n[source.\"https://github.com/ruffle-rs/rust-flash-lso\"]\ngit = \"https://github.com/ruffle-rs/rust-flash-lso\"\nreplace-with = \"vendored-sources\"\nrev = \"a5e938d9bb1909095f2340c2435867f6aae930b0\"\n\n[source.\"https://github.com/ruffle-rs/h263-rs\"]\ngit = \"https://github.com/ruffle-rs/h263-rs\"\nreplace-with = \"vendored-sources\"\nrev = \"b3f905511acc7b80861dac45fdc5ca913b6029e5\"\n\n[source.\"https://github.com/ruffle-rs/jpegxr\"]\ngit = \"https://github.com/ruffle-rs/jpegxr\"\nreplace-with = \"vendored-sources\"\nrev = \"2a429b0d71ab416e10b73d4dbdcf34cfe2900395\"\n\n[source.\"https://github.com/ruffle-rs/nellymoser\"]\ngit = \"https://github.com/ruffle-rs/nellymoser\"\nreplace-with = \"vendored-sources\"\nrev = \"754b1184037aa9952a907107284fb73897e26adc\"\n\n[source.\"https://github.com/ruffle-rs/nihav-vp6\"]\ngit = \"https://github.com/ruffle-rs/nihav-vp6\"\nreplace-with = \"vendored-sources\"\nrev = \"83c7e1094d603d9fc1212d39d99abb17f3a3226b\"\n",
+        "contents": "[source.vendored-sources]\ndirectory = \"cargo/vendor\"\n\n[source.crates-io]\nreplace-with = \"vendored-sources\"\n\n[source.\"https://github.com/ruffle-rs/rust-flash-lso\"]\ngit = \"https://github.com/ruffle-rs/rust-flash-lso\"\nreplace-with = \"vendored-sources\"\nrev = \"a5e938d9bb1909095f2340c2435867f6aae930b0\"\n\n[source.\"https://github.com/ruffle-rs/h263-rs\"]\ngit = \"https://github.com/ruffle-rs/h263-rs\"\nreplace-with = \"vendored-sources\"\nrev = \"b3f905511acc7b80861dac45fdc5ca913b6029e5\"\n\n[source.\"https://github.com/ruffle-rs/jpegxr\"]\ngit = \"https://github.com/ruffle-rs/jpegxr\"\nreplace-with = \"vendored-sources\"\nrev = \"2a429b0d71ab416e10b73d4dbdcf34cfe2900395\"\n\n[source.\"https://github.com/ruffle-rs/wgpu\"]\ngit = \"https://github.com/ruffle-rs/wgpu\"\nreplace-with = \"vendored-sources\"\ntag = \"v24.0.1-ruffle1\"\n\n[source.\"https://github.com/ruffle-rs/nellymoser\"]\ngit = \"https://github.com/ruffle-rs/nellymoser\"\nreplace-with = \"vendored-sources\"\nrev = \"754b1184037aa9952a907107284fb73897e26adc\"\n\n[source.\"https://github.com/ruffle-rs/nihav-vp6\"]\ngit = \"https://github.com/ruffle-rs/nihav-vp6\"\nreplace-with = \"vendored-sources\"\nrev = \"83c7e1094d603d9fc1212d39d99abb17f3a3226b\"\n",
         "dest": "cargo",
         "dest-filename": "config"
     }
