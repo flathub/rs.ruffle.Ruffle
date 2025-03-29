@@ -7,6 +7,12 @@
     },
     {
         "type": "git",
+        "url": "https://github.com/kyren/gc-arena",
+        "commit": "d394233a367ec7352a361cf93572c428ec092d66",
+        "dest": "flatpak-cargo/git/gc-arena-d394233"
+    },
+    {
+        "type": "git",
         "url": "https://github.com/ruffle-rs/h263-rs",
         "commit": "b3f905511acc7b80861dac45fdc5ca913b6029e5",
         "dest": "flatpak-cargo/git/h263-rs-b3f9055"
@@ -1566,14 +1572,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/deranged/deranged-0.3.11.crate",
-        "sha256": "b42b6fa04a440b495c8b04d0e71b707c585f83cb9cb28cf8cd0d976c315e31b4",
-        "dest": "cargo/vendor/deranged-0.3.11"
+        "url": "https://static.crates.io/crates/deranged/deranged-0.4.1.crate",
+        "sha256": "28cfac68e08048ae1883171632c2aef3ebc555621ae56fbccce1cbf22dd7f058",
+        "dest": "cargo/vendor/deranged-0.4.1"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"b42b6fa04a440b495c8b04d0e71b707c585f83cb9cb28cf8cd0d976c315e31b4\", \"files\": {}}",
-        "dest": "cargo/vendor/deranged-0.3.11",
+        "contents": "{\"package\": \"28cfac68e08048ae1883171632c2aef3ebc555621ae56fbccce1cbf22dd7f058\", \"files\": {}}",
+        "dest": "cargo/vendor/deranged-0.4.1",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -2505,29 +2511,39 @@
         "dest-filename": ".cargo-checksum.json"
     },
     {
-        "type": "archive",
-        "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/gc-arena/gc-arena-0.5.3.crate",
-        "sha256": "3cd70cf88a32937834aae9614ff2569b5d9467fa0c42c5d7762fd94a8de88266",
-        "dest": "cargo/vendor/gc-arena-0.5.3"
+        "type": "shell",
+        "commands": [
+            "cp -r --reflink=auto \"flatpak-cargo/git/gc-arena-d394233/.\" \"cargo/vendor/gc-arena\""
+        ]
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"3cd70cf88a32937834aae9614ff2569b5d9467fa0c42c5d7762fd94a8de88266\", \"files\": {}}",
-        "dest": "cargo/vendor/gc-arena-0.5.3",
+        "contents": "[workspace]\nresolver = \"2\"\nmembers = [ \"derive\",]\n\n[package]\nname = \"gc-arena\"\ndescription = \"safe, incrementally garbage collected arenas\"\nversion = \"0.5.3\"\nauthors = [ \"kyren <catherine@kyju.org>\", \"moulins\", \"Aaron Hill <aa1ronham@gmail.com>\",]\nedition = \"2021\"\nlicense = \"MIT\"\nreadme = \"README.md\"\nrepository = \"https://github.com/kyren/gc-arena\"\n\n[features]\ndefault = [ \"std\",]\nstd = []\ntracing = [ \"dep:tracing\",]\nallocator-api2 = [ \"dep:allocator-api2\", \"hashbrown?/allocator-api2\",]\n\n[dependencies]\nsptr = \"0.3.2\"\n\n[dev-dependencies]\nrand = \"0.8\"\ntrybuild = \"1.0\"\n\n[workspace.package]\nversion = \"0.5.3\"\nauthors = [ \"kyren <catherine@kyju.org>\", \"moulins\", \"Aaron Hill <aa1ronham@gmail.com>\",]\nedition = \"2021\"\nlicense = \"MIT\"\nreadme = \"README.md\"\nrepository = \"https://github.com/kyren/gc-arena\"\n\n[dependencies.allocator-api2]\nversion = \"0.2\"\noptional = true\ndefault-features = false\nfeatures = [ \"alloc\",]\n\n[dependencies.gc-arena-derive]\npath = \"./derive\"\nversion = \"0.5.3\"\n\n[dependencies.hashbrown]\nversion = \"0.15.2\"\noptional = true\ndefault-features = false\n\n[dependencies.tracing]\nversion = \"0.1.37\"\noptional = true\ndefault-features = false\n",
+        "dest": "cargo/vendor/gc-arena",
+        "dest-filename": "Cargo.toml"
+    },
+    {
+        "type": "inline",
+        "contents": "{\"package\": null, \"files\": {}}",
+        "dest": "cargo/vendor/gc-arena",
         "dest-filename": ".cargo-checksum.json"
     },
     {
-        "type": "archive",
-        "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/gc-arena-derive/gc-arena-derive-0.5.3.crate",
-        "sha256": "c612a69f5557a11046b77a7408d2836fe77077f842171cd211c5ef504bd3cddd",
-        "dest": "cargo/vendor/gc-arena-derive-0.5.3"
+        "type": "shell",
+        "commands": [
+            "cp -r --reflink=auto \"flatpak-cargo/git/gc-arena-d394233/derive\" \"cargo/vendor/gc-arena-derive\""
+        ]
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"c612a69f5557a11046b77a7408d2836fe77077f842171cd211c5ef504bd3cddd\", \"files\": {}}",
-        "dest": "cargo/vendor/gc-arena-derive-0.5.3",
+        "contents": "[package]\nname = \"gc-arena-derive\"\ndescription = \"proc-macro support for gc-arena\"\nversion = \"0.5.3\"\nauthors = [ \"kyren <catherine@kyju.org>\", \"moulins\", \"Aaron Hill <aa1ronham@gmail.com>\",]\nedition = \"2021\"\nlicense = \"MIT\"\nreadme = \"README.md\"\nrepository = \"https://github.com/kyren/gc-arena\"\n\n[lib]\nproc-macro = true\n\n[dependencies]\nproc-macro2 = \"1.0.56\"\nquote = \"1.0.26\"\nsynstructure = \"0.13\"\n\n[dependencies.syn]\nversion = \"2.0.17\"\nfeatures = [ \"default\", \"visit-mut\",]\n",
+        "dest": "cargo/vendor/gc-arena-derive",
+        "dest-filename": "Cargo.toml"
+    },
+    {
+        "type": "inline",
+        "contents": "{\"package\": null, \"files\": {}}",
+        "dest": "cargo/vendor/gc-arena-derive",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -3632,14 +3648,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/log/log-0.4.26.crate",
-        "sha256": "30bde2b3dc3671ae49d8e2e9f044c7c005836e7a023ee57cffa25ab82764bb9e",
-        "dest": "cargo/vendor/log-0.4.26"
+        "url": "https://static.crates.io/crates/log/log-0.4.27.crate",
+        "sha256": "13dc2df351e3202783a1fe0d44375f7295ffb4049267b0f3018346dc122a1d94",
+        "dest": "cargo/vendor/log-0.4.27"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"30bde2b3dc3671ae49d8e2e9f044c7c005836e7a023ee57cffa25ab82764bb9e\", \"files\": {}}",
-        "dest": "cargo/vendor/log-0.4.26",
+        "contents": "{\"package\": \"13dc2df351e3202783a1fe0d44375f7295ffb4049267b0f3018346dc122a1d94\", \"files\": {}}",
+        "dest": "cargo/vendor/log-0.4.27",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -6291,40 +6307,40 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/time/time-0.3.37.crate",
-        "sha256": "35e7868883861bd0e56d9ac6efcaaca0d6d5d82a2a7ec8209ff492c07cf37b21",
-        "dest": "cargo/vendor/time-0.3.37"
+        "url": "https://static.crates.io/crates/time/time-0.3.41.crate",
+        "sha256": "8a7619e19bc266e0f9c5e6686659d394bc57973859340060a69221e57dbc0c40",
+        "dest": "cargo/vendor/time-0.3.41"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"35e7868883861bd0e56d9ac6efcaaca0d6d5d82a2a7ec8209ff492c07cf37b21\", \"files\": {}}",
-        "dest": "cargo/vendor/time-0.3.37",
+        "contents": "{\"package\": \"8a7619e19bc266e0f9c5e6686659d394bc57973859340060a69221e57dbc0c40\", \"files\": {}}",
+        "dest": "cargo/vendor/time-0.3.41",
         "dest-filename": ".cargo-checksum.json"
     },
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/time-core/time-core-0.1.2.crate",
-        "sha256": "ef927ca75afb808a4d64dd374f00a2adf8d0fcff8e7b184af886c3c87ec4a3f3",
-        "dest": "cargo/vendor/time-core-0.1.2"
+        "url": "https://static.crates.io/crates/time-core/time-core-0.1.4.crate",
+        "sha256": "c9e9a38711f559d9e3ce1cdb06dd7c5b8ea546bc90052da6d06bb76da74bb07c",
+        "dest": "cargo/vendor/time-core-0.1.4"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"ef927ca75afb808a4d64dd374f00a2adf8d0fcff8e7b184af886c3c87ec4a3f3\", \"files\": {}}",
-        "dest": "cargo/vendor/time-core-0.1.2",
+        "contents": "{\"package\": \"c9e9a38711f559d9e3ce1cdb06dd7c5b8ea546bc90052da6d06bb76da74bb07c\", \"files\": {}}",
+        "dest": "cargo/vendor/time-core-0.1.4",
         "dest-filename": ".cargo-checksum.json"
     },
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/time-macros/time-macros-0.2.19.crate",
-        "sha256": "2834e6017e3e5e4b9834939793b282bc03b37a3336245fa820e35e233e2a85de",
-        "dest": "cargo/vendor/time-macros-0.2.19"
+        "url": "https://static.crates.io/crates/time-macros/time-macros-0.2.22.crate",
+        "sha256": "3526739392ec93fd8b359c8e98514cb3e8e021beb4e5f597b00a0221f8ed8a49",
+        "dest": "cargo/vendor/time-macros-0.2.22"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"2834e6017e3e5e4b9834939793b282bc03b37a3336245fa820e35e233e2a85de\", \"files\": {}}",
-        "dest": "cargo/vendor/time-macros-0.2.19",
+        "contents": "{\"package\": \"3526739392ec93fd8b359c8e98514cb3e8e021beb4e5f597b00a0221f8ed8a49\", \"files\": {}}",
+        "dest": "cargo/vendor/time-macros-0.2.22",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -7058,14 +7074,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/vfs/vfs-0.12.0.crate",
-        "sha256": "654cd097e182a71dbf899178e6b5662c2157dd0b8afd5975de18008f6fc173d1",
-        "dest": "cargo/vendor/vfs-0.12.0"
+        "url": "https://static.crates.io/crates/vfs/vfs-0.12.1.crate",
+        "sha256": "2ec343ec20aa715908fd028a4b8e7c99a349d13143224222e4d61c316d1e7f0a",
+        "dest": "cargo/vendor/vfs-0.12.1"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"654cd097e182a71dbf899178e6b5662c2157dd0b8afd5975de18008f6fc173d1\", \"files\": {}}",
-        "dest": "cargo/vendor/vfs-0.12.0",
+        "contents": "{\"package\": \"2ec343ec20aa715908fd028a4b8e7c99a349d13143224222e4d61c316d1e7f0a\", \"files\": {}}",
+        "dest": "cargo/vendor/vfs-0.12.1",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -8319,14 +8335,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/zip/zip-2.4.2.crate",
-        "sha256": "fabe6324e908f85a1c52063ce7aa26b68dcb7eb6dbc83a2d148403c9bc3eba50",
-        "dest": "cargo/vendor/zip-2.4.2"
+        "url": "https://static.crates.io/crates/zip/zip-2.5.0.crate",
+        "sha256": "27c03817464f64e23f6f37574b4fdc8cf65925b5bfd2b0f2aedf959791941f88",
+        "dest": "cargo/vendor/zip-2.5.0"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"fabe6324e908f85a1c52063ce7aa26b68dcb7eb6dbc83a2d148403c9bc3eba50\", \"files\": {}}",
-        "dest": "cargo/vendor/zip-2.4.2",
+        "contents": "{\"package\": \"27c03817464f64e23f6f37574b4fdc8cf65925b5bfd2b0f2aedf959791941f88\", \"files\": {}}",
+        "dest": "cargo/vendor/zip-2.5.0",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -8383,7 +8399,7 @@
     },
     {
         "type": "inline",
-        "contents": "[source.vendored-sources]\ndirectory = \"cargo/vendor\"\n\n[source.crates-io]\nreplace-with = \"vendored-sources\"\n\n[source.\"https://github.com/ruffle-rs/rust-flash-lso\"]\ngit = \"https://github.com/ruffle-rs/rust-flash-lso\"\nreplace-with = \"vendored-sources\"\nrev = \"a5e938d9bb1909095f2340c2435867f6aae930b0\"\n\n[source.\"https://github.com/ruffle-rs/h263-rs\"]\ngit = \"https://github.com/ruffle-rs/h263-rs\"\nreplace-with = \"vendored-sources\"\nrev = \"b3f905511acc7b80861dac45fdc5ca913b6029e5\"\n\n[source.\"https://github.com/ruffle-rs/jpegxr\"]\ngit = \"https://github.com/ruffle-rs/jpegxr\"\nreplace-with = \"vendored-sources\"\nrev = \"2a429b0d71ab416e10b73d4dbdcf34cfe2900395\"\n\n[source.\"https://github.com/ruffle-rs/nellymoser\"]\ngit = \"https://github.com/ruffle-rs/nellymoser\"\nreplace-with = \"vendored-sources\"\nrev = \"754b1184037aa9952a907107284fb73897e26adc\"\n\n[source.\"https://github.com/ruffle-rs/nihav-vp6\"]\ngit = \"https://github.com/ruffle-rs/nihav-vp6\"\nreplace-with = \"vendored-sources\"\nrev = \"83c7e1094d603d9fc1212d39d99abb17f3a3226b\"\n",
+        "contents": "[source.vendored-sources]\ndirectory = \"cargo/vendor\"\n\n[source.crates-io]\nreplace-with = \"vendored-sources\"\n\n[source.\"https://github.com/ruffle-rs/rust-flash-lso\"]\ngit = \"https://github.com/ruffle-rs/rust-flash-lso\"\nreplace-with = \"vendored-sources\"\nrev = \"a5e938d9bb1909095f2340c2435867f6aae930b0\"\n\n[source.\"https://github.com/kyren/gc-arena\"]\ngit = \"https://github.com/kyren/gc-arena\"\nreplace-with = \"vendored-sources\"\nrev = \"d394233a367ec7352a361cf93572c428ec092d66\"\n\n[source.\"https://github.com/ruffle-rs/h263-rs\"]\ngit = \"https://github.com/ruffle-rs/h263-rs\"\nreplace-with = \"vendored-sources\"\nrev = \"b3f905511acc7b80861dac45fdc5ca913b6029e5\"\n\n[source.\"https://github.com/ruffle-rs/jpegxr\"]\ngit = \"https://github.com/ruffle-rs/jpegxr\"\nreplace-with = \"vendored-sources\"\nrev = \"2a429b0d71ab416e10b73d4dbdcf34cfe2900395\"\n\n[source.\"https://github.com/ruffle-rs/nellymoser\"]\ngit = \"https://github.com/ruffle-rs/nellymoser\"\nreplace-with = \"vendored-sources\"\nrev = \"754b1184037aa9952a907107284fb73897e26adc\"\n\n[source.\"https://github.com/ruffle-rs/nihav-vp6\"]\ngit = \"https://github.com/ruffle-rs/nihav-vp6\"\nreplace-with = \"vendored-sources\"\nrev = \"83c7e1094d603d9fc1212d39d99abb17f3a3226b\"\n",
         "dest": "cargo",
         "dest-filename": "config"
     }
