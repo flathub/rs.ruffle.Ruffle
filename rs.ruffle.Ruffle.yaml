@@ -37,6 +37,7 @@ modules:
     build-options:
       env:
         CARGO_HOME: /run/build/ruffle/cargo
+        CFG_RELEASE_CHANNEL: nightly
     build-commands:
       - cargo --frozen fetch --manifest-path Cargo.toml --verbose
       - cargo --frozen build --release --verbose --package ruffle_desktop
