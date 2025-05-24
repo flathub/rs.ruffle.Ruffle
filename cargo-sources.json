@@ -2,8 +2,8 @@
     {
         "type": "git",
         "url": "https://github.com/ruffle-rs/rust-flash-lso",
-        "commit": "a5e938d9bb1909095f2340c2435867f6aae930b0",
-        "dest": "flatpak-cargo/git/rust-flash-lso-a5e938d"
+        "commit": "998f47c926b9986aabd518fbb7394ff56936d0b0",
+        "dest": "flatpak-cargo/git/rust-flash-lso-998f47c"
     },
     {
         "type": "git",
@@ -34,6 +34,12 @@
         "url": "https://github.com/ruffle-rs/nihav-vp6",
         "commit": "83c7e1094d603d9fc1212d39d99abb17f3a3226b",
         "dest": "flatpak-cargo/git/nihav-vp6-83c7e10"
+    },
+    {
+        "type": "git",
+        "url": "https://github.com/ruffle-rs/regras3",
+        "commit": "5fcb02513c5ab4e00df4346459f5a8d0521d8fed",
+        "dest": "flatpak-cargo/git/regras3-5fcb025"
     },
     {
         "type": "archive",
@@ -571,27 +577,27 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/bitflags/bitflags-2.9.0.crate",
-        "sha256": "5c8214115b7bf84099f1309324e63141d4c5d7cc26862f97a0a857dbefe165bd",
-        "dest": "cargo/vendor/bitflags-2.9.0"
+        "url": "https://static.crates.io/crates/bitflags/bitflags-2.9.1.crate",
+        "sha256": "1b8e56985ec62d17e9c1001dc89c88ecd7dc08e47eba5ec7c29c7b5eeecde967",
+        "dest": "cargo/vendor/bitflags-2.9.1"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"5c8214115b7bf84099f1309324e63141d4c5d7cc26862f97a0a857dbefe165bd\", \"files\": {}}",
-        "dest": "cargo/vendor/bitflags-2.9.0",
+        "contents": "{\"package\": \"1b8e56985ec62d17e9c1001dc89c88ecd7dc08e47eba5ec7c29c7b5eeecde967\", \"files\": {}}",
+        "dest": "cargo/vendor/bitflags-2.9.1",
         "dest-filename": ".cargo-checksum.json"
     },
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/bitstream-io/bitstream-io-4.0.0.crate",
-        "sha256": "4dc7691a79ba3cf60484e3fb6c53003b2a609921b6578aec7726a655939266d6",
-        "dest": "cargo/vendor/bitstream-io-4.0.0"
+        "url": "https://static.crates.io/crates/bitstream-io/bitstream-io-4.1.0.crate",
+        "sha256": "95a4952b106ee0920c957fc00cf32ddb1e885c5d8beee8f66ab973458129ff5b",
+        "dest": "cargo/vendor/bitstream-io-4.1.0"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"4dc7691a79ba3cf60484e3fb6c53003b2a609921b6578aec7726a655939266d6\", \"files\": {}}",
-        "dest": "cargo/vendor/bitstream-io-4.0.0",
+        "contents": "{\"package\": \"95a4952b106ee0920c957fc00cf32ddb1e885c5d8beee8f66ab973458129ff5b\", \"files\": {}}",
+        "dest": "cargo/vendor/bitstream-io-4.1.0",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -2144,7 +2150,7 @@
     {
         "type": "shell",
         "commands": [
-            "cp -r --reflink=auto \"flatpak-cargo/git/rust-flash-lso-a5e938d/flash-lso\" \"cargo/vendor/flash-lso\""
+            "cp -r --reflink=auto \"flatpak-cargo/git/rust-flash-lso-998f47c/flash-lso\" \"cargo/vendor/flash-lso\""
         ]
     },
     {
@@ -3557,27 +3563,40 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/linkme/linkme-0.3.32.crate",
-        "sha256": "22d227772b5999ddc0690e733f734f95ca05387e329c4084fe65678c51198ffe",
-        "dest": "cargo/vendor/linkme-0.3.32"
+        "url": "https://static.crates.io/crates/libz-rs-sys/libz-rs-sys-0.5.0.crate",
+        "sha256": "6489ca9bd760fe9642d7644e827b0c9add07df89857b0416ee15c1cc1a3b8c5a",
+        "dest": "cargo/vendor/libz-rs-sys-0.5.0"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"22d227772b5999ddc0690e733f734f95ca05387e329c4084fe65678c51198ffe\", \"files\": {}}",
-        "dest": "cargo/vendor/linkme-0.3.32",
+        "contents": "{\"package\": \"6489ca9bd760fe9642d7644e827b0c9add07df89857b0416ee15c1cc1a3b8c5a\", \"files\": {}}",
+        "dest": "cargo/vendor/libz-rs-sys-0.5.0",
         "dest-filename": ".cargo-checksum.json"
     },
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/linkme-impl/linkme-impl-0.3.32.crate",
-        "sha256": "71a98813fa0073a317ed6a8055dcd4722a49d9b862af828ee68449adb799b6be",
-        "dest": "cargo/vendor/linkme-impl-0.3.32"
+        "url": "https://static.crates.io/crates/linkme/linkme-0.3.33.crate",
+        "sha256": "a1b1703c00b2a6a70738920544aa51652532cacddfec2e162d2e29eae01e665c",
+        "dest": "cargo/vendor/linkme-0.3.33"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"71a98813fa0073a317ed6a8055dcd4722a49d9b862af828ee68449adb799b6be\", \"files\": {}}",
-        "dest": "cargo/vendor/linkme-impl-0.3.32",
+        "contents": "{\"package\": \"a1b1703c00b2a6a70738920544aa51652532cacddfec2e162d2e29eae01e665c\", \"files\": {}}",
+        "dest": "cargo/vendor/linkme-0.3.33",
+        "dest-filename": ".cargo-checksum.json"
+    },
+    {
+        "type": "archive",
+        "archive-type": "tar-gzip",
+        "url": "https://static.crates.io/crates/linkme-impl/linkme-impl-0.3.33.crate",
+        "sha256": "04d55ca5d5a14363da83bf3c33874b8feaa34653e760d5216d7ef9829c88001a",
+        "dest": "cargo/vendor/linkme-impl-0.3.33"
+    },
+    {
+        "type": "inline",
+        "contents": "{\"package\": \"04d55ca5d5a14363da83bf3c33874b8feaa34653e760d5216d7ef9829c88001a\", \"files\": {}}",
+        "dest": "cargo/vendor/linkme-impl-0.3.33",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -5278,16 +5297,21 @@
         "dest-filename": ".cargo-checksum.json"
     },
     {
-        "type": "archive",
-        "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/regress/regress-0.10.3.crate",
-        "sha256": "78ef7fa9ed0256d64a688a3747d0fef7a88851c18a5e1d57f115f38ec2e09366",
-        "dest": "cargo/vendor/regress-0.10.3"
+        "type": "shell",
+        "commands": [
+            "cp -r --reflink=auto \"flatpak-cargo/git/regras3-5fcb025/.\" \"cargo/vendor/regress\""
+        ]
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"78ef7fa9ed0256d64a688a3747d0fef7a88851c18a5e1d57f115f38ec2e09366\", \"files\": {}}",
-        "dest": "cargo/vendor/regress-0.10.3",
+        "contents": "[package]\nname = \"regress\"\nversion = \"0.10.3\"\nauthors = [ \"ridiculousfish <corydoras@ridiculousfish.com>\",]\ndescription = \"A regular expression engine targeting EcmaScript syntax\"\nlicense = \"MIT OR Apache-2.0\"\nrepository = \"https://github.com/ridiculousfish/regress\"\nkeywords = [ \"regex\", \"regexp\",]\nedition = \"2021\"\nreadme = \"README.md\"\n\n[workspace]\nmembers = [ \"regress-tool\", \"gen-unicode\", \".\",]\ndefault-members = [ \"regress-tool\", \".\",]\n\n[features]\ndefault = [ \"backend-pikevm\", \"std\",]\nstd = [ \"memchr/std\",]\nbackend-pikevm = []\nindex-positions = []\nprohibit-unsafe = []\nutf16 = []\n\n[dependencies]\nhashbrown = \"0.15.0\"\n\n[profile.release]\n\n[dependencies.memchr]\nversion = \"2.4.0\"\ndefault-features = false\n",
+        "dest": "cargo/vendor/regress",
+        "dest-filename": "Cargo.toml"
+    },
+    {
+        "type": "inline",
+        "contents": "{\"package\": null, \"files\": {}}",
+        "dest": "cargo/vendor/regress",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -8374,14 +8398,27 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/zip/zip-2.6.1.crate",
-        "sha256": "1dcb24d0152526ae49b9b96c1dcf71850ca1e0b882e4e28ed898a93c41334744",
-        "dest": "cargo/vendor/zip-2.6.1"
+        "url": "https://static.crates.io/crates/zip/zip-3.0.0.crate",
+        "sha256": "12598812502ed0105f607f941c386f43d441e00148fce9dec3ca5ffb0bde9308",
+        "dest": "cargo/vendor/zip-3.0.0"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"1dcb24d0152526ae49b9b96c1dcf71850ca1e0b882e4e28ed898a93c41334744\", \"files\": {}}",
-        "dest": "cargo/vendor/zip-2.6.1",
+        "contents": "{\"package\": \"12598812502ed0105f607f941c386f43d441e00148fce9dec3ca5ffb0bde9308\", \"files\": {}}",
+        "dest": "cargo/vendor/zip-3.0.0",
+        "dest-filename": ".cargo-checksum.json"
+    },
+    {
+        "type": "archive",
+        "archive-type": "tar-gzip",
+        "url": "https://static.crates.io/crates/zlib-rs/zlib-rs-0.5.0.crate",
+        "sha256": "868b928d7949e09af2f6086dfc1e01936064cc7a819253bce650d4e2a2d63ba8",
+        "dest": "cargo/vendor/zlib-rs-0.5.0"
+    },
+    {
+        "type": "inline",
+        "contents": "{\"package\": \"868b928d7949e09af2f6086dfc1e01936064cc7a819253bce650d4e2a2d63ba8\", \"files\": {}}",
+        "dest": "cargo/vendor/zlib-rs-0.5.0",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -8438,7 +8475,7 @@
     },
     {
         "type": "inline",
-        "contents": "[source.vendored-sources]\ndirectory = \"cargo/vendor\"\n\n[source.crates-io]\nreplace-with = \"vendored-sources\"\n\n[source.\"https://github.com/ruffle-rs/rust-flash-lso\"]\ngit = \"https://github.com/ruffle-rs/rust-flash-lso\"\nreplace-with = \"vendored-sources\"\nrev = \"a5e938d9bb1909095f2340c2435867f6aae930b0\"\n\n[source.\"https://github.com/kyren/gc-arena\"]\ngit = \"https://github.com/kyren/gc-arena\"\nreplace-with = \"vendored-sources\"\nrev = \"d394233a367ec7352a361cf93572c428ec092d66\"\n\n[source.\"https://github.com/ruffle-rs/h263-rs\"]\ngit = \"https://github.com/ruffle-rs/h263-rs\"\nreplace-with = \"vendored-sources\"\nrev = \"b3f905511acc7b80861dac45fdc5ca913b6029e5\"\n\n[source.\"https://github.com/ruffle-rs/jpegxr\"]\ngit = \"https://github.com/ruffle-rs/jpegxr\"\nreplace-with = \"vendored-sources\"\nrev = \"2a429b0d71ab416e10b73d4dbdcf34cfe2900395\"\n\n[source.\"https://github.com/ruffle-rs/nellymoser\"]\ngit = \"https://github.com/ruffle-rs/nellymoser\"\nreplace-with = \"vendored-sources\"\nrev = \"073eb48d907201f46dea0c8feb4e8d9a1d92208c\"\n\n[source.\"https://github.com/ruffle-rs/nihav-vp6\"]\ngit = \"https://github.com/ruffle-rs/nihav-vp6\"\nreplace-with = \"vendored-sources\"\nrev = \"83c7e1094d603d9fc1212d39d99abb17f3a3226b\"\n",
+        "contents": "[source.vendored-sources]\ndirectory = \"cargo/vendor\"\n\n[source.crates-io]\nreplace-with = \"vendored-sources\"\n\n[source.\"https://github.com/ruffle-rs/rust-flash-lso\"]\ngit = \"https://github.com/ruffle-rs/rust-flash-lso\"\nreplace-with = \"vendored-sources\"\nrev = \"998f47c926b9986aabd518fbb7394ff56936d0b0\"\n\n[source.\"https://github.com/kyren/gc-arena\"]\ngit = \"https://github.com/kyren/gc-arena\"\nreplace-with = \"vendored-sources\"\nrev = \"d394233a367ec7352a361cf93572c428ec092d66\"\n\n[source.\"https://github.com/ruffle-rs/h263-rs\"]\ngit = \"https://github.com/ruffle-rs/h263-rs\"\nreplace-with = \"vendored-sources\"\nrev = \"b3f905511acc7b80861dac45fdc5ca913b6029e5\"\n\n[source.\"https://github.com/ruffle-rs/jpegxr\"]\ngit = \"https://github.com/ruffle-rs/jpegxr\"\nreplace-with = \"vendored-sources\"\nrev = \"2a429b0d71ab416e10b73d4dbdcf34cfe2900395\"\n\n[source.\"https://github.com/ruffle-rs/nellymoser\"]\ngit = \"https://github.com/ruffle-rs/nellymoser\"\nreplace-with = \"vendored-sources\"\nrev = \"073eb48d907201f46dea0c8feb4e8d9a1d92208c\"\n\n[source.\"https://github.com/ruffle-rs/nihav-vp6\"]\ngit = \"https://github.com/ruffle-rs/nihav-vp6\"\nreplace-with = \"vendored-sources\"\nrev = \"83c7e1094d603d9fc1212d39d99abb17f3a3226b\"\n\n[source.\"https://github.com/ruffle-rs/regras3\"]\ngit = \"https://github.com/ruffle-rs/regras3\"\nreplace-with = \"vendored-sources\"\nrev = \"5fcb02513c5ab4e00df4346459f5a8d0521d8fed\"\n",
         "dest": "cargo",
         "dest-filename": "config"
     }
