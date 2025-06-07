@@ -3875,27 +3875,27 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/macro_rules_attribute/macro_rules_attribute-0.2.0.crate",
-        "sha256": "8a82271f7bc033d84bbca59a3ce3e4159938cb08a9c3aebbe54d215131518a13",
-        "dest": "cargo/vendor/macro_rules_attribute-0.2.0"
+        "url": "https://static.crates.io/crates/macro_rules_attribute/macro_rules_attribute-0.2.2.crate",
+        "sha256": "65049d7923698040cd0b1ddcced9b0eb14dd22c5f86ae59c3740eab64a676520",
+        "dest": "cargo/vendor/macro_rules_attribute-0.2.2"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"8a82271f7bc033d84bbca59a3ce3e4159938cb08a9c3aebbe54d215131518a13\", \"files\": {}}",
-        "dest": "cargo/vendor/macro_rules_attribute-0.2.0",
+        "contents": "{\"package\": \"65049d7923698040cd0b1ddcced9b0eb14dd22c5f86ae59c3740eab64a676520\", \"files\": {}}",
+        "dest": "cargo/vendor/macro_rules_attribute-0.2.2",
         "dest-filename": ".cargo-checksum.json"
     },
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/macro_rules_attribute-proc_macro/macro_rules_attribute-proc_macro-0.2.0.crate",
-        "sha256": "b8dd856d451cc0da70e2ef2ce95a18e39a93b7558bedf10201ad28503f918568",
-        "dest": "cargo/vendor/macro_rules_attribute-proc_macro-0.2.0"
+        "url": "https://static.crates.io/crates/macro_rules_attribute-proc_macro/macro_rules_attribute-proc_macro-0.2.2.crate",
+        "sha256": "670fdfda89751bc4a84ac13eaa63e205cf0fd22b4c9a5fbfa085b63c1f1d3a30",
+        "dest": "cargo/vendor/macro_rules_attribute-proc_macro-0.2.2"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"b8dd856d451cc0da70e2ef2ce95a18e39a93b7558bedf10201ad28503f918568\", \"files\": {}}",
-        "dest": "cargo/vendor/macro_rules_attribute-proc_macro-0.2.0",
+        "contents": "{\"package\": \"670fdfda89751bc4a84ac13eaa63e205cf0fd22b4c9a5fbfa085b63c1f1d3a30\", \"files\": {}}",
+        "dest": "cargo/vendor/macro_rules_attribute-proc_macro-0.2.2",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -5551,14 +5551,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/reqwest/reqwest-0.12.16.crate",
-        "sha256": "2bf597b113be201cb2269b4c39b39a804d01b99ee95a4278f0ed04e45cff1c71",
-        "dest": "cargo/vendor/reqwest-0.12.16"
+        "url": "https://static.crates.io/crates/reqwest/reqwest-0.12.19.crate",
+        "sha256": "a2f8e5513d63f2e5b386eb5106dc67eaf3f84e95258e210489136b8b92ad6119",
+        "dest": "cargo/vendor/reqwest-0.12.19"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"2bf597b113be201cb2269b4c39b39a804d01b99ee95a4278f0ed04e45cff1c71\", \"files\": {}}",
-        "dest": "cargo/vendor/reqwest-0.12.16",
+        "contents": "{\"package\": \"a2f8e5513d63f2e5b386eb5106dc67eaf3f84e95258e210489136b8b92ad6119\", \"files\": {}}",
+        "dest": "cargo/vendor/reqwest-0.12.19",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -6747,14 +6747,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/tower-http/tower-http-0.6.4.crate",
-        "sha256": "0fdb0c213ca27a9f57ab69ddb290fd80d970922355b83ae380b395d3986b8a2e",
-        "dest": "cargo/vendor/tower-http-0.6.4"
+        "url": "https://static.crates.io/crates/tower-http/tower-http-0.6.5.crate",
+        "sha256": "5cc2d9e086a412a451384326f521c8123a99a466b329941a9403696bff9b0da2",
+        "dest": "cargo/vendor/tower-http-0.6.5"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"0fdb0c213ca27a9f57ab69ddb290fd80d970922355b83ae380b395d3986b8a2e\", \"files\": {}}",
-        "dest": "cargo/vendor/tower-http-0.6.4",
+        "contents": "{\"package\": \"5cc2d9e086a412a451384326f521c8123a99a466b329941a9403696bff9b0da2\", \"files\": {}}",
+        "dest": "cargo/vendor/tower-http-0.6.5",
         "dest-filename": ".cargo-checksum.json"
     },
     {
