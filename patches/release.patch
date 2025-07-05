@@ -1,11 +1,12 @@
 diff --git a/desktop/packages/linux/rs.ruffle.Ruffle.metainfo.xml b/desktop/packages/linux/rs.ruffle.Ruffle.metainfo.xml
-index fcdd5a4..bf2c8f6 100644
+index fcdd5a4..db57f5e 100644
 --- a/desktop/packages/linux/rs.ruffle.Ruffle.metainfo.xml
 +++ b/desktop/packages/linux/rs.ruffle.Ruffle.metainfo.xml
-@@ -286,5 +286,59 @@
+@@ -286,5 +286,60 @@
          <color type="primary" scheme_preference="dark">#2c4270</color>
      </branding>
      <releases>
++        <release version="0.1.0-nightly.2025.7.5" date="2025-07-05"/>
 +        <release version="0.1.0-nightly.2025.6.28" date="2025-06-28"/>
 +        <release version="0.1.0-nightly.2025.6.21" date="2025-06-21"/>
 +        <release version="0.1.0-nightly.2025.6.16" date="2025-06-16"/>
