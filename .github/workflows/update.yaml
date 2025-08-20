@@ -10,10 +10,6 @@ jobs:
     name: Update
     runs-on: ubuntu-22.04
     steps:
-      - name: Install tools
-        run: |
-          sudo apt-get install -y xmlstarlet
-
       - name: Get the latest Ruffle tag
         id: tag
         env:
@@ -26,18 +22,6 @@ jobs:
             exit 1
           fi
           echo "tag=$tag" | tee -a $GITHUB_OUTPUT
-
-      - name: Calculate version
-        id: version
-        run: |
-          version=$(echo "${{ steps.tag.outputs.tag }}" | sed --regexp-extended 's/nightly-([0-9]+)-0*([0-9]+)-0*([0-9]+)/0.1.0-nightly.\1.\2.\3/')
-          echo "version=$version" | tee -a $GITHUB_OUTPUT
-
-      - name: Calculate date
-        id: date
-        run: |
-          date=$(echo "${{ steps.tag.outputs.tag }}" | sed 's/nightly-//')
-          echo "date=$date" | tee -a $GITHUB_OUTPUT
 
       - name: Check out Ruffle repo
         uses: actions/checkout@v4
@@ -52,6 +36,13 @@ jobs:
         run: |
           commit=$(git rev-parse HEAD)
           echo "commit=$commit" | tee -a $GITHUB_OUTPUT
+
+      - name: Get Ruffle version
+        id: version
+        working-directory: ruffle
+        run: |
+          version=$(cargo metadata --no-deps --format-version=1 | jq -r '.packages[] | select(.name=="ruffle_desktop") | .version')
+          echo "version=$version" | tee -a $GITHUB_OUTPUT
 
       - name: Check out Flathub repo
         uses: actions/checkout@v4
@@ -70,20 +61,6 @@ jobs:
           yqblank '.modules[0].sources[0].tag = "${{ steps.tag.outputs.tag }}"' rs.ruffle.Ruffle.yaml
           yqblank '.modules[0].sources[0].commit = "${{ steps.commit.outputs.commit }}"' rs.ruffle.Ruffle.yaml
 
-      - name: Update release patch
-        working-directory: ruffle
-        run: |
-          git apply < ../flathub/patches/release.patch
-          xmlstarlet ed --inplace --pf \
-            -i '//component/releases/release[1]' -t elem -n release \
-            -a '//component/releases/release[1]' -t text -n release -v "\n        " \
-            -s '//component/releases/release[1]' -t attr -n version -v '${{ steps.version.outputs.version }}' \
-            -s '//component/releases/release[1]' -t attr -n date -v '${{ steps.date.outputs.date }}' \
-            desktop/packages/linux/rs.ruffle.Ruffle.metainfo.xml
-          # I can't find a way to add a literal newline with xmlstarlet
-          sed -i 's/\\n/\n/' desktop/packages/linux/rs.ruffle.Ruffle.metainfo.xml
-          git diff > ../flathub/patches/release.patch
-
       - name: Update cargo sources
         working-directory: flathub
         run: |
@@ -100,17 +77,13 @@ jobs:
           git config user.name "RuffleBuild"
           git config user.email "ruffle@ruffle.rs"
 
-      - name: Commit
+      - name: Commit and push
         working-directory: flathub
         run: |
           git checkout -b update
           git add .
           git commit -m "Update to ${{ steps.version.outputs.version }}"
           git push -u origin update
-
-      - name: Push
-        working-directory: flathub
-        run: git push -u origin update
 
       - name: Create a PR
         working-directory: flathub

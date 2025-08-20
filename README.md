@@ -14,7 +14,6 @@ You can optionally comment out the tag.
 Remember to regenerate sources afterwards! (See below.)
 
 There's no need to commit the update, as it's done automatically.
-However, if you plan on doing so, remember to update `patches/release.patch`.
 
 ## Regenerating Sources
 
