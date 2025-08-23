@@ -19,7 +19,9 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          tag=$(gh --repo ruffle-rs/ruffle release list --limit 1 | cut -f 3)
+          # Use the one before last version of Ruffle, not the last one.
+          # This adds some stability despite not having stable releases.
+          tag=$(gh --repo ruffle-rs/ruffle release list --limit 2 | tail -n 1 | cut -f 3)
           if [[ -z "$tag" ]]; then
             exit 1
           fi
