@@ -9016,14 +9016,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/zip/zip-4.5.0.crate",
-        "sha256": "8835eb39822904d39cb19465de1159e05d371973f0c6df3a365ad50565ddc8b9",
-        "dest": "cargo/vendor/zip-4.5.0"
+        "url": "https://static.crates.io/crates/zip/zip-5.0.0.crate",
+        "sha256": "b9fdfa5f34b5980f2c21b3a2c68c09ade4debddc7be52c51056695effc73a08c",
+        "dest": "cargo/vendor/zip-5.0.0"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"8835eb39822904d39cb19465de1159e05d371973f0c6df3a365ad50565ddc8b9\", \"files\": {}}",
-        "dest": "cargo/vendor/zip-4.5.0",
+        "contents": "{\"package\": \"b9fdfa5f34b5980f2c21b3a2c68c09ade4debddc7be52c51056695effc73a08c\", \"files\": {}}",
+        "dest": "cargo/vendor/zip-5.0.0",
         "dest-filename": ".cargo-checksum.json"
     },
     {
