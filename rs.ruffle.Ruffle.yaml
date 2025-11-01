@@ -48,6 +48,6 @@ modules:
     sources:
       - type: git
         url: https://github.com/ruffle-rs/ruffle.git
-        tag: nightly-2025-10-24
-        commit: 0f6e94ec4a6a01af3be1663ab5aa6003dc0d51b5
+        tag: nightly-2025-10-31
+        commit: 5e1cc9343367d9cb6eb82326cff066bace3a3dba
       - cargo-sources.json
