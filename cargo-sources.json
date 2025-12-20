@@ -843,14 +843,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/cfg-expr/cfg-expr-0.20.4.crate",
-        "sha256": "9acd0bdbbf4b2612d09f52ba61da432140cb10930354079d0d53fafc12968726",
-        "dest": "cargo/vendor/cfg-expr-0.20.4"
+        "url": "https://static.crates.io/crates/cfg-expr/cfg-expr-0.20.5.crate",
+        "sha256": "21be0e1ce6cdb2ee7fff840f922fb04ead349e5cfb1e750b769132d44ce04720",
+        "dest": "cargo/vendor/cfg-expr-0.20.5"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"9acd0bdbbf4b2612d09f52ba61da432140cb10930354079d0d53fafc12968726\", \"files\": {}}",
-        "dest": "cargo/vendor/cfg-expr-0.20.4",
+        "contents": "{\"package\": \"21be0e1ce6cdb2ee7fff840f922fb04ead349e5cfb1e750b769132d44ce04720\", \"files\": {}}",
+        "dest": "cargo/vendor/cfg-expr-0.20.5",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -1116,14 +1116,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/cookie_store/cookie_store-0.21.1.crate",
-        "sha256": "2eac901828f88a5241ee0600950ab981148a18f2f756900ffba1b125ca6a3ef9",
-        "dest": "cargo/vendor/cookie_store-0.21.1"
+        "url": "https://static.crates.io/crates/cookie_store/cookie_store-0.22.0.crate",
+        "sha256": "3fc4bff745c9b4c7fb1e97b25d13153da2bc7796260141df62378998d070207f",
+        "dest": "cargo/vendor/cookie_store-0.22.0"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"2eac901828f88a5241ee0600950ab981148a18f2f756900ffba1b125ca6a3ef9\", \"files\": {}}",
-        "dest": "cargo/vendor/cookie_store-0.21.1",
+        "contents": "{\"package\": \"3fc4bff745c9b4c7fb1e97b25d13153da2bc7796260141df62378998d070207f\", \"files\": {}}",
+        "dest": "cargo/vendor/cookie_store-0.22.0",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -5623,14 +5623,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/reqwest/reqwest-0.12.25.crate",
-        "sha256": "b6eff9328d40131d43bd911d42d79eb6a47312002a4daefc9e37f17e74a7701a",
-        "dest": "cargo/vendor/reqwest-0.12.25"
+        "url": "https://static.crates.io/crates/reqwest/reqwest-0.12.26.crate",
+        "sha256": "3b4c14b2d9afca6a60277086b0cc6a6ae0b568f6f7916c943a8cdc79f8be240f",
+        "dest": "cargo/vendor/reqwest-0.12.26"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"b6eff9328d40131d43bd911d42d79eb6a47312002a4daefc9e37f17e74a7701a\", \"files\": {}}",
-        "dest": "cargo/vendor/reqwest-0.12.25",
+        "contents": "{\"package\": \"3b4c14b2d9afca6a60277086b0cc6a6ae0b568f6f7916c943a8cdc79f8be240f\", \"files\": {}}",
+        "dest": "cargo/vendor/reqwest-0.12.26",
         "dest-filename": ".cargo-checksum.json"
     },
     {
