@@ -2,32 +2,58 @@ name: Update
 
 on:
   schedule:
-    - cron: "42 4 * * 6"
+    - cron: "0 * * * *"
   workflow_dispatch:
 
 jobs:
-  update:
-    name: Update
+  check:
+    name: Check for updates
     runs-on: ubuntu-22.04
+    outputs:
+      tag: ${{ steps.latest.outputs.tag }}
+      old_tag: ${{ steps.current.outputs.tag }}
+      needed: ${{ steps.check.outputs.needed }}
     steps:
       - name: Get the latest Ruffle tag
-        id: tag
+        id: latest
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          # Use the one before last version of Ruffle, not the last one.
-          # This adds some stability despite not having stable releases.
-          tag=$(gh --repo ruffle-rs/ruffle release list --limit 2 | tail -n 1 | cut -f 3)
+          tag=$(gh --repo ruffle-rs/ruffle release view --json tagName --jq '.tagName')
           if [[ -z "$tag" ]]; then
             exit 1
           fi
           echo "tag=$tag" | tee -a $GITHUB_OUTPUT
 
+      - name: Check out Flathub repo
+        uses: actions/checkout@v4
+
+      - name: Get current tag from manifest
+        id: current
+        run: |
+          current_tag=$(yq '.modules[0].sources[0].tag' rs.ruffle.Ruffle.yaml)
+          echo "tag=$current_tag" | tee -a $GITHUB_OUTPUT
+
+      - name: Check if update is needed
+        id: check
+        run: |
+          if [[ "${{ steps.latest.outputs.tag }}" == "${{ steps.current.outputs.tag }}" ]]; then
+            echo "needed=false" | tee -a $GITHUB_OUTPUT
+          else
+            echo "needed=true" | tee -a $GITHUB_OUTPUT
+          fi
+
+  update:
+    name: Update
+    needs: check
+    if: needs.check.outputs.needed == 'true'
+    runs-on: ubuntu-22.04
+    steps:
       - name: Check out Ruffle repo
         uses: actions/checkout@v4
         with:
           repository: ruffle-rs/ruffle
-          ref: ${{ steps.tag.outputs.tag }}
+          ref: ${{ needs.check.outputs.tag }}
           path: ruffle
 
       - name: Get Ruffle commit
@@ -58,7 +84,7 @@ jobs:
           yqblank() {
             yq "$1" "$2" | diff -B "$2" - | patch "$2" -
           }
-          yqblank '.modules[0].sources[0].tag = "${{ steps.tag.outputs.tag }}"' rs.ruffle.Ruffle.yaml
+          yqblank '.modules[0].sources[0].tag = "${{ needs.check.outputs.tag }}"' rs.ruffle.Ruffle.yaml
           yqblank '.modules[0].sources[0].commit = "${{ steps.commit.outputs.commit }}"' rs.ruffle.Ruffle.yaml
 
       - name: Update cargo sources
@@ -93,4 +119,4 @@ jobs:
           gh pr create \
             -B master -H update \
             --title 'Update to ${{ steps.version.outputs.version }}' \
-            --body 'Automatic update of Ruffle to [${{ steps.version.outputs.version }}](https://github.com/ruffle-rs/ruffle/releases/tag/${{ steps.tag.outputs.tag }}).'
+            --body 'Automatic update of Ruffle to [${{ steps.version.outputs.version }}](https://github.com/ruffle-rs/ruffle/releases/tag/${{ needs.check.outputs.tag }}). [View changes](https://github.com/ruffle-rs/ruffle/compare/${{ needs.check.outputs.old_tag }}...${{ needs.check.outputs.tag }}).'
