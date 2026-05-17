@@ -36,8 +36,16 @@ jobs:
 
       - name: Check if update is needed
         id: check
+        env:
+          GH_TOKEN: ${{ github.token }}
+          LATEST: ${{ steps.latest.outputs.tag }}
+          CURRENT: ${{ steps.current.outputs.tag }}
         run: |
-          if [[ "${{ steps.latest.outputs.tag }}" == "${{ steps.current.outputs.tag }}" ]]; then
+          if [[ "$LATEST" == "$CURRENT" ]]; then
+            echo "No new version"
+            echo "needed=false" | tee -a $GITHUB_OUTPUT
+          elif gh api repos/{owner}/{repo}/branches/update --silent 2>/dev/null; then
+            echo "The update branch already exists"
             echo "needed=false" | tee -a $GITHUB_OUTPUT
           else
             echo "needed=true" | tee -a $GITHUB_OUTPUT
