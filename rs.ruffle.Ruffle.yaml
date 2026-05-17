@@ -28,7 +28,7 @@ modules:
     build-options:
       env:
         CARGO_HOME: /run/build/ruffle/cargo
-        CFG_RELEASE_CHANNEL: nightly
+        CFG_RELEASE_CHANNEL: stable
     build-commands:
       - cargo --frozen fetch --manifest-path Cargo.toml --verbose
       - cargo --frozen build --release --verbose --package ruffle_desktop
@@ -39,6 +39,6 @@ modules:
     sources:
       - type: git
         url: https://github.com/ruffle-rs/ruffle.git
-        tag: nightly-2026-05-15
-        commit: 69afbe077a11dcdf44af307a85eedbe4bc314352
+        tag: v0.2.0
+        commit: b001ac439e9cf1a860116f3cfe1b85d2881228c3
       - cargo-sources.json
