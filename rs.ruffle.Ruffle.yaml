@@ -31,11 +31,11 @@ modules:
         CFG_RELEASE_CHANNEL: stable
     build-commands:
       - cargo --frozen fetch --manifest-path Cargo.toml --verbose
-      - cargo --frozen build --release --verbose --package ruffle_desktop
+      - cargo --frozen build --profile dist --verbose --package ruffle_desktop
       - install -D -T ./desktop/packages/linux/rs.ruffle.Ruffle.svg /app/share/icons/hicolor/scalable/apps/rs.ruffle.Ruffle.svg
       - install -D -T ./desktop/packages/linux/rs.ruffle.Ruffle.desktop /app/share/applications/rs.ruffle.Ruffle.desktop
       - install -D -T ./desktop/packages/linux/rs.ruffle.Ruffle.metainfo.xml /app/share/metainfo/rs.ruffle.Ruffle.metainfo.xml
-      - install -D -T ./target/release/ruffle_desktop /app/bin/ruffle
+      - install -D -T ./target/dist/ruffle_desktop /app/bin/ruffle
     sources:
       - type: git
         url: https://github.com/ruffle-rs/ruffle.git
