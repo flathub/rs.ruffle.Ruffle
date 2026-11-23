@@ -5,9 +5,10 @@ sdk: org.freedesktop.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.rust-stable
   - org.freedesktop.Sdk.Extension.openjdk25
+  - org.freedesktop.Sdk.Extension.llvm23
 command: ruffle
 build-options:
-  append-path: /usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/openjdk25/bin
+  append-path: /usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/openjdk25/bin:/usr/lib/sdk/llvm23/bin
 
 finish-args:
   - --socket=wayland
@@ -31,7 +32,7 @@ modules:
         CFG_RELEASE_CHANNEL: stable
     build-commands:
       - cargo --frozen fetch --manifest-path Cargo.toml --verbose
-      - cargo --frozen build --profile dist --verbose --package ruffle_desktop
+      - cargo --frozen build --profile dist --verbose --package ruffle_desktop --features jpegxr
       - install -D -T ./desktop/packages/linux/rs.ruffle.Ruffle.svg /app/share/icons/hicolor/scalable/apps/rs.ruffle.Ruffle.svg
       - install -D -T ./desktop/packages/linux/rs.ruffle.Ruffle.desktop /app/share/applications/rs.ruffle.Ruffle.desktop
       - install -D -T ./desktop/packages/linux/rs.ruffle.Ruffle.metainfo.xml /app/share/metainfo/rs.ruffle.Ruffle.metainfo.xml
